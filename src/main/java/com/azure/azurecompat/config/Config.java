@@ -26,6 +26,8 @@ public class Config {
     }
 
     public BooleanValue USE_COMPATIBILITY_ON_WYRMROOST_ITEMS;
+    public BooleanValue USE_COMPATIBILITY_ON_ENIGMATICLEGACY_ITEMS;
+    public BooleanValue USE_COMPATIBILITY_ON_FORBIDDENARCANUS_ITEMS;
     public BooleanValue USE_COMPATIBILITY_ON_VANILLA_ITEMS;
     
     Config(ForgeConfigSpec.Builder builder) {
@@ -34,6 +36,14 @@ public class Config {
         USE_COMPATIBILITY_ON_WYRMROOST_ITEMS = builder.comment("Turns on Auto Compatibility for Wyrmroost to get Mine and Slash stats. Turn off to configure yourself")
                 .translation("azurecompat.config.use_compatibility_on_wyrmroost_items")
                 .define("USE_COMPATIBILITY_ON_WYRMROOST_ITEMS", true);
+        
+        USE_COMPATIBILITY_ON_ENIGMATICLEGACY_ITEMS = builder.comment("Turns on Auto Compatibility for Enigmatic Legacy to get Mine and Slash stats. Turn off to configure yourself")
+                .translation("azurecompat.config.use_compatibility_on_enigmaticlegacy_items")
+                .define("USE_COMPATIBILITY_ON_ENIGMATICLEGACY_ITEMS", true);
+        
+        USE_COMPATIBILITY_ON_FORBIDDENARCANUS_ITEMS = builder.comment("Turns on Auto Compatibility for Forbidden and Arcanus to get Mine and Slash stats. Turn off to configure yourself")
+                .translation("azurecompat.config.use_compatibility_on_forbiddenarcanus_items")
+                .define("USE_COMPATIBILITY_ON_FORBIDDENARCANUS_ITEMS", true);
         
         USE_COMPATIBILITY_ON_VANILLA_ITEMS = builder.comment("Turns on Auto Compatibility for Vanilla Gear to get Mine and Slash stats. Turn off to configure yourself")
                 .translation("azurecompat.config.use_compatibility_on_vanilla_items")

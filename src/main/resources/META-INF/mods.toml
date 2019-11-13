@@ -15,6 +15,6 @@ This mods adds autocompat for linking currently Vanilla and Wyrmroost to Mine an
 [[dependencies.azurecompat]]
     modId="mmorpg" 
     mandatory=true
-    versionRange="[28,)"
+    versionRange="[1,)" 
     ordering="NONE"
     side="BOTH"

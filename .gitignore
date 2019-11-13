@@ -24,3 +24,5 @@ run
 gradlew
 gradlew.bat
 gradle/wrapper/*
+Build.bat
+libs/*
