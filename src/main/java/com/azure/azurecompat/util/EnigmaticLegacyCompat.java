@@ -20,16 +20,16 @@ public class EnigmaticLegacyCompat {
 	private static final Logger LOGGER = LogManager.getLogger();
 	
 	public EnigmaticLegacyCompat() {
-		MineAndSlashAPI.addCompatibleItem("enigmaticlegacy:etherium_sword", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(false));
-		MineAndSlashAPI.addCompatibleItem("enigmaticlegacy:etherium_axe", new ConfigItem().setType(Axe.INSTANCE).setSalvagable(false));
-		MineAndSlashAPI.addCompatibleItem("enigmaticlegacy:etherium_scythe", new ConfigItem().setType(Hammer.INSTANCE).setSalvagable(false));
-		MineAndSlashAPI.addCompatibleItem("enigmaticlegacy:forbidden_axe", new ConfigItem().setType(Axe.INSTANCE).setSalvagable(false));
-		MineAndSlashAPI.addCompatibleItem("enigmaticlegacy:astral_breaker", new ConfigItem().setType(Hammer.INSTANCE).setSalvagable(false));
+		MineAndSlashAPI.addCompatibleItem("enigmaticlegacy:etherium_sword", new ConfigItem().setType(Sword.INSTANCE));
+		MineAndSlashAPI.addCompatibleItem("enigmaticlegacy:etherium_axe", new ConfigItem().setType(Axe.INSTANCE));
+		MineAndSlashAPI.addCompatibleItem("enigmaticlegacy:etherium_scythe", new ConfigItem().setType(Hammer.INSTANCE));
+		MineAndSlashAPI.addCompatibleItem("enigmaticlegacy:forbidden_axe", new ConfigItem().setType(Axe.INSTANCE));
+		MineAndSlashAPI.addCompatibleItem("enigmaticlegacy:astral_breaker", new ConfigItem().setType(Hammer.INSTANCE));
 		LOGGER.debug("Registered Enigmatic Legacy Weapons");
-		MineAndSlashAPI.addCompatibleItem("enigmaticlegacy:etherium_helmet", new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(false));
-		MineAndSlashAPI.addCompatibleItem("enigmaticlegacy:etherium_chestplate", new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(false));
-		MineAndSlashAPI.addCompatibleItem("enigmaticlegacy:etherium_leggings", new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(false));
-		MineAndSlashAPI.addCompatibleItem("enigmaticlegacy:etherium_boots", new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(false));
+		MineAndSlashAPI.addCompatibleItem("enigmaticlegacy:etherium_helmet", new ConfigItem().setType(PlateHelmet.INSTANCE));
+		MineAndSlashAPI.addCompatibleItem("enigmaticlegacy:etherium_chestplate", new ConfigItem().setType(PlateChest.INSTANCE));
+		MineAndSlashAPI.addCompatibleItem("enigmaticlegacy:etherium_leggings", new ConfigItem().setType(PlatePants.INSTANCE));
+		MineAndSlashAPI.addCompatibleItem("enigmaticlegacy:etherium_boots", new ConfigItem().setType(PlateBoots.INSTANCE));
 		LOGGER.debug("Registered Enigmatic Legacy Gear");
 		MineAndSlashAPI.addCompatibleItem("enigmaticlegacy:monster_charm", new ConfigItem().setType(Charm.INSTANCE));
 		MineAndSlashAPI.addCompatibleItem("enigmaticlegacy:mega_sponge", new ConfigItem().setType(Charm.INSTANCE));

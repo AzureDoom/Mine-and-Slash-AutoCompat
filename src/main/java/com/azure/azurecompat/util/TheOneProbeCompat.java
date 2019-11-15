@@ -13,9 +13,9 @@ private static final Logger LOGGER = LogManager.getLogger();
 	
 	public TheOneProbeCompat() {
 		
-		MineAndSlashAPI.addCompatibleItem("theoneprobe:iron_helmet_probe", new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(false));
-		MineAndSlashAPI.addCompatibleItem("theoneprobe:gold_helmet_probe", new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(false));
-		MineAndSlashAPI.addCompatibleItem("theoneprobe:diamond_helmet_probe", new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(false));
+		MineAndSlashAPI.addCompatibleItem("theoneprobe:iron_helmet_probe", new ConfigItem().setType(PlateHelmet.INSTANCE));
+		MineAndSlashAPI.addCompatibleItem("theoneprobe:gold_helmet_probe", new ConfigItem().setType(PlateHelmet.INSTANCE));
+		MineAndSlashAPI.addCompatibleItem("theoneprobe:diamond_helmet_probe", new ConfigItem().setType(PlateHelmet.INSTANCE));
 		LOGGER.debug("Registered The One Probe Gear");
 	}
 

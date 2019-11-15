@@ -13,9 +13,9 @@ private static final Logger LOGGER = LogManager.getLogger();
 	
 	public CompactedCompat() {
 		
-		MineAndSlashAPI.addCompatibleItem("compacted:stone_hammer", new ConfigItem().setType(Hammer.INSTANCE).setSalvagable(false));
-		MineAndSlashAPI.addCompatibleItem("compacted:compacted_hammer", new ConfigItem().setType(Hammer.INSTANCE).setSalvagable(false));
-		MineAndSlashAPI.addCompatibleItem("compacted:double_compacted_hammer", new ConfigItem().setType(Hammer.INSTANCE).setSalvagable(false));
+		MineAndSlashAPI.addCompatibleItem("compacted:stone_hammer", new ConfigItem().setType(Hammer.INSTANCE));
+		MineAndSlashAPI.addCompatibleItem("compacted:compacted_hammer", new ConfigItem().setType(Hammer.INSTANCE));
+		MineAndSlashAPI.addCompatibleItem("compacted:double_compacted_hammer", new ConfigItem().setType(Hammer.INSTANCE));
 		LOGGER.debug("Registered Better Animals Plus Gear");
 	}
 

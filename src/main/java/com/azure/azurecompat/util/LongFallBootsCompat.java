@@ -12,7 +12,7 @@ public class LongFallBootsCompat {
 	private static final Logger LOGGER = LogManager.getLogger();
 
 	public LongFallBootsCompat() {
-		MineAndSlashAPI.addCompatibleItem("longfallboots:longfallboots", new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(false));
+		MineAndSlashAPI.addCompatibleItem("longfallboots:longfallboots", new ConfigItem().setType(PlateBoots.INSTANCE));
 		LOGGER.debug("Registered Long Fall Boots Gear");
 	}
 

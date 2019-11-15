@@ -14,9 +14,9 @@ public class SimpleDiveGearCompat {
 	private static final Logger LOGGER = LogManager.getLogger();
 
 	public SimpleDiveGearCompat() {
-		MineAndSlashAPI.addCompatibleItem("simpledivegear:divechest", new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(false));
-		MineAndSlashAPI.addCompatibleItem("simpledivegear:divelegs", new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(false));
-		MineAndSlashAPI.addCompatibleItem("simpledivegear:diveboots", new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(false));
+		MineAndSlashAPI.addCompatibleItem("simpledivegear:divechest", new ConfigItem().setType(PlateChest.INSTANCE));
+		MineAndSlashAPI.addCompatibleItem("simpledivegear:divelegs", new ConfigItem().setType(PlatePants.INSTANCE));
+		MineAndSlashAPI.addCompatibleItem("simpledivegear:diveboots", new ConfigItem().setType(PlateBoots.INSTANCE));
 		LOGGER.debug("Registered Long Fall Boots Gear");
 	}
 

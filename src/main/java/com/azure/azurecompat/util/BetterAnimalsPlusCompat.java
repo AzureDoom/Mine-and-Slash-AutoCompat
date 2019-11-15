@@ -13,9 +13,9 @@ private static final Logger LOGGER = LogManager.getLogger();
 	
 	public BetterAnimalsPlusCompat() {
 		
-		MineAndSlashAPI.addCompatibleItem("betteranimalsplus:bear_cape_brown", new ConfigItem().setType(LeatherChest.INSTANCE).setSalvagable(false));
-		MineAndSlashAPI.addCompatibleItem("betteranimalsplus:bear_cape_black", new ConfigItem().setType(LeatherChest.INSTANCE).setSalvagable(false));
-		MineAndSlashAPI.addCompatibleItem("betteranimalsplus:bear_cape_kermode", new ConfigItem().setType(LeatherChest.INSTANCE).setSalvagable(false));
+		MineAndSlashAPI.addCompatibleItem("betteranimalsplus:bear_cape_brown", new ConfigItem().setType(LeatherChest.INSTANCE));
+		MineAndSlashAPI.addCompatibleItem("betteranimalsplus:bear_cape_black", new ConfigItem().setType(LeatherChest.INSTANCE));
+		MineAndSlashAPI.addCompatibleItem("betteranimalsplus:bear_cape_kermode", new ConfigItem().setType(LeatherChest.INSTANCE));
 		LOGGER.debug("Registered Better Animals Plus Gear");
 	}
 

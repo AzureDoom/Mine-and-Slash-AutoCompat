@@ -12,7 +12,7 @@ public class RestrictionsCompat {
 	private static final Logger LOGGER = LogManager.getLogger();
 
 	public RestrictionsCompat() {
-		MineAndSlashAPI.addCompatibleItem("restrictions:glassboots", new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(false));
+		MineAndSlashAPI.addCompatibleItem("restrictions:glassboots", new ConfigItem().setType(PlateBoots.INSTANCE));
 		LOGGER.debug("Registered Long Fall Boots Gear");
 	}
 

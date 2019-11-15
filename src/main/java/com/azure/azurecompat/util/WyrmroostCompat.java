@@ -16,17 +16,17 @@ public class WyrmroostCompat {
 	private static final Logger LOGGER = LogManager.getLogger();
 
 	public WyrmroostCompat() {
-		MineAndSlashAPI.addCompatibleItem("wyrmroost:geode_sword", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(false));
-		MineAndSlashAPI.addCompatibleItem("wyrmroost:geode_helmet", new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(false));
-		MineAndSlashAPI.addCompatibleItem("wyrmroost:geode_chestplate", new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(false));
-		MineAndSlashAPI.addCompatibleItem("wyrmroost:geode_leggings", new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(false));
-		MineAndSlashAPI.addCompatibleItem("wyrmroost:geode_boots", new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(false));
+		MineAndSlashAPI.addCompatibleItem("wyrmroost:geode_sword", new ConfigItem().setType(Sword.INSTANCE));
+		MineAndSlashAPI.addCompatibleItem("wyrmroost:geode_helmet", new ConfigItem().setType(PlateHelmet.INSTANCE));
+		MineAndSlashAPI.addCompatibleItem("wyrmroost:geode_chestplate", new ConfigItem().setType(PlateChest.INSTANCE));
+		MineAndSlashAPI.addCompatibleItem("wyrmroost:geode_leggings", new ConfigItem().setType(PlatePants.INSTANCE));
+		MineAndSlashAPI.addCompatibleItem("wyrmroost:geode_boots", new ConfigItem().setType(PlateBoots.INSTANCE));
 		LOGGER.debug("Registered Geode Gear");
-		MineAndSlashAPI.addCompatibleItem("wyrmroost:platinum_sword", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(false));
-		MineAndSlashAPI.addCompatibleItem("wyrmroost:platinum_helmet", new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(false));
-		MineAndSlashAPI.addCompatibleItem("wyrmroost:platinum_chestplate", new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(false));
-		MineAndSlashAPI.addCompatibleItem("wyrmroost:platinum_leggings", new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(false));
-		MineAndSlashAPI.addCompatibleItem("wyrmroost:platinum_boots", new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(false));
+		MineAndSlashAPI.addCompatibleItem("wyrmroost:platinum_sword", new ConfigItem().setType(Sword.INSTANCE));
+		MineAndSlashAPI.addCompatibleItem("wyrmroost:platinum_helmet", new ConfigItem().setType(PlateHelmet.INSTANCE));
+		MineAndSlashAPI.addCompatibleItem("wyrmroost:platinum_chestplate", new ConfigItem().setType(PlateChest.INSTANCE));
+		MineAndSlashAPI.addCompatibleItem("wyrmroost:platinum_leggings", new ConfigItem().setType(PlatePants.INSTANCE));
+		MineAndSlashAPI.addCompatibleItem("wyrmroost:platinum_boots", new ConfigItem().setType(PlateBoots.INSTANCE));
 		LOGGER.debug("Registered Platinum Gear");
 	}
 

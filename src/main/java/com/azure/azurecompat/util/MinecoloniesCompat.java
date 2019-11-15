@@ -15,13 +15,13 @@ public class MinecoloniesCompat {
 	private static final Logger LOGGER = LogManager.getLogger();
 
 	public MinecoloniesCompat() {
-		MineAndSlashAPI.addCompatibleItem("minecolonies:chiefsword", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(false));
-		MineAndSlashAPI.addCompatibleItem("minecolonies:iron_scimitar", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(false));
-		MineAndSlashAPI.addCompatibleItem("minecolonies:santa_hat", new ConfigItem().setType(ClothHelmet.INSTANCE).setSalvagable(false));
-		MineAndSlashAPI.addCompatibleItem("minecolonies:pirate_leggins", new ConfigItem().setType(ClothPants.INSTANCE).setSalvagable(false));
-		MineAndSlashAPI.addCompatibleItem("minecolonies:pirate_boots", new ConfigItem().setType(ClothBoots.INSTANCE).setSalvagable(false));
-		MineAndSlashAPI.addCompatibleItem("minecolonies:pirate_legs", new ConfigItem().setType(ClothPants.INSTANCE).setSalvagable(false));
-		MineAndSlashAPI.addCompatibleItem("minecolonies:pirate_shoes", new ConfigItem().setType(ClothBoots.INSTANCE).setSalvagable(false));
+		MineAndSlashAPI.addCompatibleItem("minecolonies:chiefsword", new ConfigItem().setType(Sword.INSTANCE));
+		MineAndSlashAPI.addCompatibleItem("minecolonies:iron_scimitar", new ConfigItem().setType(Sword.INSTANCE));
+		MineAndSlashAPI.addCompatibleItem("minecolonies:santa_hat", new ConfigItem().setType(ClothHelmet.INSTANCE));
+		MineAndSlashAPI.addCompatibleItem("minecolonies:pirate_leggins", new ConfigItem().setType(ClothPants.INSTANCE));
+		MineAndSlashAPI.addCompatibleItem("minecolonies:pirate_boots", new ConfigItem().setType(ClothBoots.INSTANCE));
+		MineAndSlashAPI.addCompatibleItem("minecolonies:pirate_legs", new ConfigItem().setType(ClothPants.INSTANCE));
+		MineAndSlashAPI.addCompatibleItem("minecolonies:pirate_shoes", new ConfigItem().setType(ClothBoots.INSTANCE));
 		LOGGER.debug("Registered Minecolonies Gear");
 	}
 		
