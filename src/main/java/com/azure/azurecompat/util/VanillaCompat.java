@@ -14,6 +14,7 @@ import com.robertx22.mine_and_slash.database.gearitemslots.plate.PlateChest;
 import com.robertx22.mine_and_slash.database.gearitemslots.plate.PlateHelmet;
 import com.robertx22.mine_and_slash.database.gearitemslots.plate.PlatePants;
 import com.robertx22.mine_and_slash.database.gearitemslots.weapons.Bow;
+import com.robertx22.mine_and_slash.database.gearitemslots.weapons.CrossBow;
 
 public class VanillaCompat {
 
@@ -22,7 +23,8 @@ public class VanillaCompat {
 	public VanillaCompat() {
 
 		MineAndSlashAPI.addCompatibleItem(MODID + "bow", new ConfigItem().setType(Bow.INSTANCE));
-		AzureCompat.LOGGER.info("Registered Bow");
+		MineAndSlashAPI.addCompatibleItem(MODID + "crossbow", new ConfigItem().setType(CrossBow.INSTANCE));
+		AzureCompat.LOGGER.info("Registered Bows");
 		MineAndSlashAPI.addCompatibleItem(MODID + "wooden_sword",
 				new ConfigItem().setType(Sword.INSTANCE).setMaxRarity(0).setAlwaysNormal());
 		MineAndSlashAPI.addCompatibleItem(MODID + "stone_sword",
