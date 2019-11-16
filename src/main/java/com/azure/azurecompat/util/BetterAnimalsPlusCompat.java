@@ -1,22 +1,23 @@
 package com.azure.azurecompat.util;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
+import com.azure.azurecompat.AzureCompat;
 import com.robertx22.mine_and_slash.api.MineAndSlashAPI;
 import com.robertx22.mine_and_slash.config.compatible_items.ConfigItem;
 import com.robertx22.mine_and_slash.database.gearitemslots.leather.LeatherChest;
 
 public class BetterAnimalsPlusCompat {
 	
-private static final Logger LOGGER = LogManager.getLogger();
-	
+	public String MODID = "betteranimalsplus:";
+
 	public BetterAnimalsPlusCompat() {
-		
-		MineAndSlashAPI.addCompatibleItem("betteranimalsplus:bear_cape_brown", new ConfigItem().setType(LeatherChest.INSTANCE));
-		MineAndSlashAPI.addCompatibleItem("betteranimalsplus:bear_cape_black", new ConfigItem().setType(LeatherChest.INSTANCE));
-		MineAndSlashAPI.addCompatibleItem("betteranimalsplus:bear_cape_kermode", new ConfigItem().setType(LeatherChest.INSTANCE));
-		LOGGER.debug("Registered Better Animals Plus Gear");
+
+		MineAndSlashAPI.addCompatibleItem(MODID + "bear_cape_brown",
+				new ConfigItem().setType(LeatherChest.INSTANCE));
+		MineAndSlashAPI.addCompatibleItem(MODID + "bear_cape_black",
+				new ConfigItem().setType(LeatherChest.INSTANCE));
+		MineAndSlashAPI.addCompatibleItem(MODID + "bear_cape_kermode",
+				new ConfigItem().setType(LeatherChest.INSTANCE));
+		AzureCompat.LOGGER.info("Registered Better Animals Plus Gear");
 	}
 
 }
