@@ -41,6 +41,8 @@ public class Config {
     public BooleanValue USE_COMPATIBILITY_ON_BETTERANIMALSPLUS_ITEMS;
     public BooleanValue USE_COMPATIBILITY_ON_COMPACTED_ITEMS;
     public BooleanValue USE_COMPATIBILITY_ON_GEMSPLUSPLUS_ITEMS;
+    public BooleanValue USE_COMPATIBILITY_ON_ORESABOVEDIAMONDS_ITEMS;
+    public BooleanValue USE_COMPATIBILITY_ON_COMBAT_ITEMS;
     
     Config(ForgeConfigSpec.Builder builder) {
         builder.comment("Client Settings").push(NAME);
@@ -108,6 +110,14 @@ public class Config {
         USE_COMPATIBILITY_ON_GEMSPLUSPLUS_ITEMS = builder.comment("Turns on Auto Compatibility for GemsPlusPlus to get Mine and Slash stats. Turn off to configure yourself")
                 .translation("azurecompat.config.use_compatibility_on_gemsplusplus_items")
                 .define("USE_COMPATIBILITY_ON_GEMSPLUSPLUS_ITEMS", true);
+        
+        USE_COMPATIBILITY_ON_ORESABOVEDIAMONDS_ITEMS = builder.comment("Turns on Auto Compatibility for Ores Above Diamonds to get Mine and Slash stats. Turn off to configure yourself")
+                .translation("azurecompat.config.use_compatibility_on_oresabovediamond_items")
+                .define("USE_COMPATIBILITY_ON_ORESABOVEDIAMONDS_ITEMS", true);
+        
+        USE_COMPATIBILITY_ON_COMBAT_ITEMS = builder.comment("Turns on Auto Compatibility for C.O.M.B.A.T to get Mine and Slash stats. Turn off to configure yourself")
+                .translation("azurecompat.config.use_compatibility_on_combat_items")
+                .define("USE_COMPATIBILITY_ON_COMBAT_ITEMS", true);
 
         builder.pop();
     }

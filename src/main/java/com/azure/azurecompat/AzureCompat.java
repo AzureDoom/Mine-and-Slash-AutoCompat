@@ -12,6 +12,7 @@ import net.minecraftforge.fml.loading.FMLPaths;
 import com.azure.azurecompat.config.Config;
 import com.azure.azurecompat.util.BetterAnimalsPlusCompat;
 import com.azure.azurecompat.util.BluePowerCompat;
+import com.azure.azurecompat.util.CombatCompat;
 import com.azure.azurecompat.util.CompactedCompat;
 import com.azure.azurecompat.util.EnigmaticLegacyCompat;
 import com.azure.azurecompat.util.ForbiddenandArcanusCompat;
@@ -19,6 +20,7 @@ import com.azure.azurecompat.util.GemsPlusPlusCompat;
 import com.azure.azurecompat.util.LongFallBootsCompat;
 import com.azure.azurecompat.util.MinecoloniesCompat;
 import com.azure.azurecompat.util.NethercraftCompat;
+import com.azure.azurecompat.util.OresAboveDiamondsCompat;
 import com.azure.azurecompat.util.PlantTech2Compat;
 import com.azure.azurecompat.util.RestrictionsCompat;
 import com.azure.azurecompat.util.SimpleDiveGearCompat;
@@ -100,6 +102,13 @@ public class AzureCompat {
 		}
 		if (ModList.get().isLoaded("gemsplusplus") && Config.INSTANCE.USE_COMPATIBILITY_ON_GEMSPLUSPLUS_ITEMS.get()) {
 			MinecraftForge.EVENT_BUS.register(new GemsPlusPlusCompat());
+		}
+		if (ModList.get().isLoaded("oresabovediamonds")
+				&& Config.INSTANCE.USE_COMPATIBILITY_ON_ORESABOVEDIAMONDS_ITEMS.get()) {
+			MinecraftForge.EVENT_BUS.register(new OresAboveDiamondsCompat());
+		}
+		if (ModList.get().isLoaded("combat") && Config.INSTANCE.USE_COMPATIBILITY_ON_COMBAT_ITEMS.get()) {
+			MinecraftForge.EVENT_BUS.register(new CombatCompat());
 		}
 	}
 }
