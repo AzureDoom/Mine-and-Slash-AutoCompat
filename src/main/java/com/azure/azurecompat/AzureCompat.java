@@ -19,6 +19,7 @@ import com.azure.azurecompat.util.ForbiddenandArcanusCompat;
 import com.azure.azurecompat.util.GemsPlusPlusCompat;
 import com.azure.azurecompat.util.LongFallBootsCompat;
 import com.azure.azurecompat.util.MinecoloniesCompat;
+import com.azure.azurecompat.util.MysticalWorldCompat;
 import com.azure.azurecompat.util.NethercraftCompat;
 import com.azure.azurecompat.util.OresAboveDiamondsCompat;
 import com.azure.azurecompat.util.PlantTech2Compat;
@@ -109,6 +110,9 @@ public class AzureCompat {
 		}
 		if (ModList.get().isLoaded("combat") && Config.INSTANCE.USE_COMPATIBILITY_ON_COMBAT_ITEMS.get()) {
 			MinecraftForge.EVENT_BUS.register(new CombatCompat());
+		}
+		if (ModList.get().isLoaded("mysticalworld") && Config.INSTANCE.USE_COMPATIBILITY_ON_MYSTICALWORLD_ITEMS.get()) {
+			MinecraftForge.EVENT_BUS.register(new MysticalWorldCompat());
 		}
 	}
 }
