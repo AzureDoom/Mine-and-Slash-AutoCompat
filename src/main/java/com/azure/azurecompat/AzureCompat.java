@@ -23,6 +23,7 @@ import com.azure.azurecompat.util.MysticalWorldCompat;
 import com.azure.azurecompat.util.NethercraftCompat;
 import com.azure.azurecompat.util.OresAboveDiamondsCompat;
 import com.azure.azurecompat.util.PlantTech2Compat;
+import com.azure.azurecompat.util.QuarkCompat;
 import com.azure.azurecompat.util.RestrictionsCompat;
 import com.azure.azurecompat.util.SimpleDiveGearCompat;
 import com.azure.azurecompat.util.SolarGenerationCompat;
@@ -113,6 +114,9 @@ public class AzureCompat {
 		}
 		if (ModList.get().isLoaded("mysticalworld") && Config.INSTANCE.USE_COMPATIBILITY_ON_MYSTICALWORLD_ITEMS.get()) {
 			MinecraftForge.EVENT_BUS.register(new MysticalWorldCompat());
+		}
+		if (ModList.get().isLoaded("quark") && Config.INSTANCE.USE_COMPATIBILITY_ON_QUARK_ITEMS.get()) {
+			MinecraftForge.EVENT_BUS.register(new QuarkCompat());
 		}
 	}
 }
