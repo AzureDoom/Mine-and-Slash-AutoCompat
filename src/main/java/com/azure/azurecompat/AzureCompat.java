@@ -17,6 +17,7 @@ import com.azure.azurecompat.util.CompactedCompat;
 import com.azure.azurecompat.util.EnigmaticLegacyCompat;
 import com.azure.azurecompat.util.ForbiddenandArcanusCompat;
 import com.azure.azurecompat.util.GemsPlusPlusCompat;
+import com.azure.azurecompat.util.GobberCompat;
 import com.azure.azurecompat.util.LongFallBootsCompat;
 import com.azure.azurecompat.util.MinecoloniesCompat;
 import com.azure.azurecompat.util.MysticalWorldCompat;
@@ -117,6 +118,9 @@ public class AzureCompat {
 		}
 		if (ModList.get().isLoaded("quark") && Config.INSTANCE.USE_COMPATIBILITY_ON_QUARK_ITEMS.get()) {
 			MinecraftForge.EVENT_BUS.register(new QuarkCompat());
+		}
+		if (ModList.get().isLoaded("gobber2") && Config.INSTANCE.USE_COMPATIBILITY_ON_GOBBER_ITEMS.get()) {
+			MinecraftForge.EVENT_BUS.register(new GobberCompat());
 		}
 	}
 }

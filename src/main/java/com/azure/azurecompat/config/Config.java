@@ -44,6 +44,7 @@ public class Config {
 	public BooleanValue USE_COMPATIBILITY_ON_COMBAT_ITEMS;
 	public BooleanValue USE_COMPATIBILITY_ON_MYSTICALWORLD_ITEMS;
 	public BooleanValue USE_COMPATIBILITY_ON_QUARK_ITEMS;
+	public BooleanValue USE_COMPATIBILITY_ON_GOBBER_ITEMS;
 
 	Config(ForgeConfigSpec.Builder builder) {
 		builder.comment("Client Settings").push(NAME);
@@ -57,6 +58,11 @@ public class Config {
 				"Turns on Auto Compatibility for Mystical World to get Mine and Slash stats. Turn off to configure yourself")
 				.translation("azurecompat.config.use_compatibility_on_mysticalworld_items")
 				.define("USE_COMPATIBILITY_ON_MYSTICALWORLD_ITEMS", true);
+
+		USE_COMPATIBILITY_ON_GOBBER_ITEMS = builder.comment(
+				"Turns on Auto Compatibility for Gobber to get Mine and Slash stats. Turn off to configure yourself")
+				.translation("azurecompat.config.use_compatibility_on_gobber_items")
+				.define("USE_COMPATIBILITY_ON_GOBBER_ITEMS", true);
 
 		USE_COMPATIBILITY_ON_QUARK_ITEMS = builder.comment(
 				"Turns on Auto Compatibility for Quark to get Mine and Slash stats. Turn off to configure yourself")
