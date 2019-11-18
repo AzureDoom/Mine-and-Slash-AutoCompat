@@ -10,24 +10,29 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.loading.FMLPaths;
 
 import com.azure.azurecompat.config.Config;
+import com.azure.azurecompat.util.AquacultureCompat;
 import com.azure.azurecompat.util.BetterAnimalsPlusCompat;
 import com.azure.azurecompat.util.BluePowerCompat;
+import com.azure.azurecompat.util.CloudBootsCompat;
 import com.azure.azurecompat.util.CombatCompat;
 import com.azure.azurecompat.util.CompactedCompat;
 import com.azure.azurecompat.util.EnigmaticLegacyCompat;
 import com.azure.azurecompat.util.ForbiddenandArcanusCompat;
 import com.azure.azurecompat.util.GemsPlusPlusCompat;
 import com.azure.azurecompat.util.GobberCompat;
+import com.azure.azurecompat.util.GoodNightSleepCompat;
 import com.azure.azurecompat.util.LongFallBootsCompat;
 import com.azure.azurecompat.util.MinecoloniesCompat;
 import com.azure.azurecompat.util.MysticalWorldCompat;
 import com.azure.azurecompat.util.NethercraftCompat;
 import com.azure.azurecompat.util.OresAboveDiamondsCompat;
 import com.azure.azurecompat.util.PlantTech2Compat;
+import com.azure.azurecompat.util.PolyOresCompat;
 import com.azure.azurecompat.util.QuarkCompat;
 import com.azure.azurecompat.util.RestrictionsCompat;
 import com.azure.azurecompat.util.SimpleDiveGearCompat;
 import com.azure.azurecompat.util.SolarGenerationCompat;
+import com.azure.azurecompat.util.SpartanShieldsCompat;
 import com.azure.azurecompat.util.TheOneProbeCompat;
 import com.azure.azurecompat.util.TofuCraftCompat;
 import com.azure.azurecompat.util.VanillaCompat;
@@ -125,6 +130,23 @@ public class AzureCompat {
 		}
 		if (ModList.get().isLoaded("tofucraft") && Config.INSTANCE.USE_COMPATIBILITY_ON_TOFUCRAFT_ITEMS.get()) {
 			MinecraftForge.EVENT_BUS.register(new TofuCraftCompat());
+		}
+		if (ModList.get().isLoaded("polyores") && Config.INSTANCE.USE_COMPATIBILITY_ON_POLYORES_ITEMS.get()) {
+			MinecraftForge.EVENT_BUS.register(new PolyOresCompat());
+		}
+		if (ModList.get().isLoaded("aquaculture") && Config.INSTANCE.USE_COMPATIBILITY_ON_AQUACULTURE_ITEMS.get()) {
+			MinecraftForge.EVENT_BUS.register(new AquacultureCompat());
+		}
+		if (ModList.get().isLoaded("spartanshields")
+				&& Config.INSTANCE.USE_COMPATIBILITY_ON_SPARTANSHIELDS_ITEMS.get()) {
+			MinecraftForge.EVENT_BUS.register(new SpartanShieldsCompat());
+		}
+		if (ModList.get().isLoaded("goodnightsleep")
+				&& Config.INSTANCE.USE_COMPATIBILITY_ON_GOODNIGHTSLEEP_ITEMS.get()) {
+			MinecraftForge.EVENT_BUS.register(new GoodNightSleepCompat());
+		}
+		if (ModList.get().isLoaded("cloudboots") && Config.INSTANCE.USE_COMPATIBILITY_ON_CLOUDBOOTS_ITEMS.get()) {
+			MinecraftForge.EVENT_BUS.register(new CloudBootsCompat());
 		}
 	}
 }

@@ -45,7 +45,7 @@ public class GobberCompat {
 				new ConfigItem().setType(PlateBoots.INSTANCE));
 		MineAndSlashAPI.addCompatibleItem(MODID + "gobber_ring" + TYPE, new ConfigItem().setType(Ring.INSTANCE));
 		MineAndSlashAPI.addCompatibleItem(MODID + "gobber_ring_" + TYPE2, new ConfigItem().setType(Ring.INSTANCE));
-		AzureCompat.LOGGER.info("Registered Gems Plus Plus Gear");
+		AzureCompat.LOGGER.info("Registered Gobber Gear");
 	}
 
 }

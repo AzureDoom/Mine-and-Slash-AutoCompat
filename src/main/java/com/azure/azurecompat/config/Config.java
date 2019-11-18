@@ -46,6 +46,12 @@ public class Config {
 	public BooleanValue USE_COMPATIBILITY_ON_QUARK_ITEMS;
 	public BooleanValue USE_COMPATIBILITY_ON_GOBBER_ITEMS;
 	public BooleanValue USE_COMPATIBILITY_ON_TOFUCRAFT_ITEMS;
+	
+	public BooleanValue USE_COMPATIBILITY_ON_POLYORES_ITEMS;
+	public BooleanValue USE_COMPATIBILITY_ON_AQUACULTURE_ITEMS;
+	public BooleanValue USE_COMPATIBILITY_ON_SPARTANSHIELDS_ITEMS;
+	public BooleanValue USE_COMPATIBILITY_ON_GOODNIGHTSLEEP_ITEMS;
+	public BooleanValue USE_COMPATIBILITY_ON_CLOUDBOOTS_ITEMS;
 
 	Config(ForgeConfigSpec.Builder builder) {
 		builder.comment("Client Settings").push(NAME);
@@ -59,6 +65,31 @@ public class Config {
 				"Turns on Auto Compatibility for TofuCraft to get Mine and Slash stats. Turn off to configure yourself")
 				.translation("azurecompat.config.use_compatibility_on_tofucraft_items")
 				.define("USE_COMPATIBILITY_ON_TOFUCRAFT_ITEMS", true);
+		
+		USE_COMPATIBILITY_ON_GOODNIGHTSLEEP_ITEMS = builder.comment(
+				"Turns on Auto Compatibility for Good Night Sleep to get Mine and Slash stats. Turn off to configure yourself")
+				.translation("azurecompat.config.use_compatibility_on_goodnightsleep_items")
+				.define("USE_COMPATIBILITY_ON_GOODNIGHTSLEEP_ITEMS", true);
+		
+		USE_COMPATIBILITY_ON_CLOUDBOOTS_ITEMS = builder.comment(
+				"Turns on Auto Compatibility for Cloud Boots to get Mine and Slash stats. Turn off to configure yourself")
+				.translation("azurecompat.config.use_compatibility_on_cloudboots_items")
+				.define("USE_COMPATIBILITY_ON_CLOUDBOOTS_ITEMS", true);
+		
+		USE_COMPATIBILITY_ON_POLYORES_ITEMS = builder.comment(
+				"Turns on Auto Compatibility for Poly Ores to get Mine and Slash stats. Turn off to configure yourself")
+				.translation("azurecompat.config.use_compatibility_on_polyores_items")
+				.define("USE_COMPATIBILITY_ON_POLYORES_ITEMS", true);
+		
+		USE_COMPATIBILITY_ON_AQUACULTURE_ITEMS = builder.comment(
+				"Turns on Auto Compatibility for Aquaculture to get Mine and Slash stats. Turn off to configure yourself")
+				.translation("azurecompat.config.use_compatibility_on_aquaculture_items")
+				.define("USE_COMPATIBILITY_ON_AQUACULTURE_ITEMS", true);
+		
+		USE_COMPATIBILITY_ON_SPARTANSHIELDS_ITEMS = builder.comment(
+				"Turns on Auto Compatibility for Spartan Shields to get Mine and Slash stats. Turn off to configure yourself")
+				.translation("azurecompat.config.use_compatibility_on_spartanshields_items")
+				.define("USE_COMPATIBILITY_ON_SPARTANSHIELDS_ITEMS", true);
 
 		USE_COMPATIBILITY_ON_MYSTICALWORLD_ITEMS = builder.comment(
 				"Turns on Auto Compatibility for Mystical World to get Mine and Slash stats. Turn off to configure yourself")

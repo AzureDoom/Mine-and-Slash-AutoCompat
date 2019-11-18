@@ -31,7 +31,7 @@ public class TofuCraftCompat {
 				new ConfigItem().setType(PlatePants.INSTANCE));
 		MineAndSlashAPI.addCompatibleItem(MODID + "armor" + TYPE + "boots",
 				new ConfigItem().setType(PlateBoots.INSTANCE));
-		AzureCompat.LOGGER.info("Registered Gems Plus Plus Gear");
+		AzureCompat.LOGGER.info("Registered TofuCraft Gear");
 	}
 
 }
