@@ -34,21 +34,21 @@ public class CombatCompat {
 
 	public CombatCompat() {
 
-		MineAndSlashAPI.addCompatibleItem(MODID + TYPE + "_sword", new ConfigItem().setType(Sword.INSTANCE));
-		MineAndSlashAPI.addCompatibleItem(MODID + TYPE2 + "_dagger", new ConfigItem().setType(Sword.INSTANCE));
-		MineAndSlashAPI.addCompatibleItem(MODID + "katana", new ConfigItem().setType(Sword.INSTANCE));
-		MineAndSlashAPI.addCompatibleItem(MODID + "shield", new ConfigItem().setType(Shield.INSTANCE));
-		MineAndSlashAPI.addCompatibleItem(MODID + "wooden_hammer", new ConfigItem().setType(Hammer.INSTANCE));
-		MineAndSlashAPI.addCompatibleItem(MODID + "iron_hammer", new ConfigItem().setType(Hammer.INSTANCE));
-		MineAndSlashAPI.addCompatibleItem(MODID + "spear", new ConfigItem().setType(Axe.INSTANCE));
-		MineAndSlashAPI.addCompatibleItem(MODID + TYPE_GUN, new ConfigItem().setType(Bow.INSTANCE));
-		MineAndSlashAPI.addCompatibleItem(MODID + TYPE_MAGIC + "_wand", new ConfigItem().setType(Wand.INSTANCE));
-		MineAndSlashAPI.addCompatibleItem(MODID + "basic_staff", new ConfigItem().setType(Staff.INSTANCE));
-		MineAndSlashAPI.addCompatibleItem(MODID + TYPE + "_helmet", new ConfigItem().setType(PlateHelmet.INSTANCE));
-		MineAndSlashAPI.addCompatibleItem(MODID + "wool_hat", new ConfigItem().setType(ClothHelmet.INSTANCE));
-		MineAndSlashAPI.addCompatibleItem(MODID + TYPE + "_chestplate", new ConfigItem().setType(PlateChest.INSTANCE));
-		MineAndSlashAPI.addCompatibleItem(MODID + TYPE + "_leggings", new ConfigItem().setType(PlatePants.INSTANCE));
-		MineAndSlashAPI.addCompatibleItem(MODID + TYPE + "_boots", new ConfigItem().setType(PlateBoots.INSTANCE));
+		MineAndSlashAPI.addCompatibleItem(MODID + TYPE + "_sword", new ConfigItem().setType(Sword.INSTANCE).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + TYPE2 + "_dagger", new ConfigItem().setType(Sword.INSTANCE).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "katana", new ConfigItem().setType(Sword.INSTANCE).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "shield", new ConfigItem().setType(Shield.INSTANCE).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "wooden_hammer", new ConfigItem().setType(Hammer.INSTANCE).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "iron_hammer", new ConfigItem().setType(Hammer.INSTANCE).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "spear", new ConfigItem().setType(Axe.INSTANCE).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + TYPE_GUN, new ConfigItem().setType(Bow.INSTANCE).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + TYPE_MAGIC + "_wand", new ConfigItem().setType(Wand.INSTANCE).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "basic_staff", new ConfigItem().setType(Staff.INSTANCE).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + TYPE + "_helmet", new ConfigItem().setType(PlateHelmet.INSTANCE).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "wool_hat", new ConfigItem().setType(ClothHelmet.INSTANCE).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + TYPE + "_chestplate", new ConfigItem().setType(PlateChest.INSTANCE).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + TYPE + "_leggings", new ConfigItem().setType(PlatePants.INSTANCE).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + TYPE + "_boots", new ConfigItem().setType(PlateBoots.INSTANCE).setdropsAsLoot(false));
 		AzureCompat.LOGGER.info("Registered Combat Gear");
 	}
 

@@ -21,7 +21,7 @@ public class SpartanShieldsCompat {
 
 	public SpartanShieldsCompat() {
 
-		MineAndSlashAPI.addCompatibleItem(MODID + TYPE, new ConfigItem().setType(Shield.INSTANCE));
+		MineAndSlashAPI.addCompatibleItem(MODID + TYPE, new ConfigItem().setType(Shield.INSTANCE).setdropsAsLoot(false));
 		AzureCompat.LOGGER.info("Registered Spartan Shields Gear");
 	}
 

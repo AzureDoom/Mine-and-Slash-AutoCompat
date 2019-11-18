@@ -21,16 +21,16 @@ public class TofuCraftCompat {
 
 	public TofuCraftCompat() {
 
-		MineAndSlashAPI.addCompatibleItem(MODID + "sword" + TYPE, new ConfigItem().setType(Sword.INSTANCE));
-		MineAndSlashAPI.addCompatibleItem(MODID + "tofustick", new ConfigItem().setType(Wand.INSTANCE));
+		MineAndSlashAPI.addCompatibleItem(MODID + "sword" + TYPE, new ConfigItem().setType(Sword.INSTANCE).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "tofustick", new ConfigItem().setType(Wand.INSTANCE).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(MODID + "armor" + TYPE + "helmet",
-				new ConfigItem().setType(PlateHelmet.INSTANCE));
+				new ConfigItem().setType(PlateHelmet.INSTANCE).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(MODID + "armor" + TYPE + "chestplate",
-				new ConfigItem().setType(PlateChest.INSTANCE));
+				new ConfigItem().setType(PlateChest.INSTANCE).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(MODID + "armor" + TYPE + "leggins",
-				new ConfigItem().setType(PlatePants.INSTANCE));
+				new ConfigItem().setType(PlatePants.INSTANCE).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(MODID + "armor" + TYPE + "boots",
-				new ConfigItem().setType(PlateBoots.INSTANCE));
+				new ConfigItem().setType(PlateBoots.INSTANCE).setdropsAsLoot(false));
 		AzureCompat.LOGGER.info("Registered TofuCraft Gear");
 	}
 

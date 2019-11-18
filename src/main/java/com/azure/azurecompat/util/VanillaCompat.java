@@ -22,57 +22,57 @@ public class VanillaCompat {
 
 	public VanillaCompat() {
 
-		MineAndSlashAPI.addCompatibleItem(MODID + "bow", new ConfigItem().setType(Bow.INSTANCE));
-		MineAndSlashAPI.addCompatibleItem(MODID + "crossbow", new ConfigItem().setType(CrossBow.INSTANCE));
+		MineAndSlashAPI.addCompatibleItem(MODID + "bow", new ConfigItem().setType(Bow.INSTANCE).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "crossbow", new ConfigItem().setType(CrossBow.INSTANCE).setdropsAsLoot(false));
 		AzureCompat.LOGGER.info("Registered Bows");
 		MineAndSlashAPI.addCompatibleItem(MODID + "wooden_sword",
-				new ConfigItem().setType(Sword.INSTANCE).setMaxRarity(0).setAlwaysNormal());
+				new ConfigItem().setType(Sword.INSTANCE).setMaxRarity(0).setAlwaysNormal().setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(MODID + "stone_sword",
-				new ConfigItem().setType(Sword.INSTANCE).setMaxRarity(1).setAlwaysNormal());
+				new ConfigItem().setType(Sword.INSTANCE).setMaxRarity(1).setAlwaysNormal().setdropsAsLoot(false));
 
 		MineAndSlashAPI.addCompatibleItem(MODID + "iron_sword",
-				new ConfigItem().setType(Sword.INSTANCE).setMaxRarity(2).setAlwaysNormal());
+				new ConfigItem().setType(Sword.INSTANCE).setMaxRarity(2).setAlwaysNormal().setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(MODID + "golden_sword",
-				new ConfigItem().setType(Sword.INSTANCE).setMaxRarity(2).setAlwaysNormal());
-		MineAndSlashAPI.addCompatibleItem(MODID + "diamond_sword", new ConfigItem().setType(Sword.INSTANCE));
+				new ConfigItem().setType(Sword.INSTANCE).setMaxRarity(2).setAlwaysNormal().setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "diamond_sword", new ConfigItem().setType(Sword.INSTANCE).setdropsAsLoot(false));
 		AzureCompat.LOGGER.info("Registered Swords");
-		MineAndSlashAPI.addCompatibleItem(MODID + "shield", new ConfigItem().setType(Shield.INSTANCE));
+		MineAndSlashAPI.addCompatibleItem(MODID + "shield", new ConfigItem().setType(Shield.INSTANCE).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(MODID + "leather_helmet",
-				new ConfigItem().setType(LeatherHelmet.INSTANCE).setMaxRarity(0).setAlwaysNormal());
-		MineAndSlashAPI.addCompatibleItem(MODID + "chainmail_helmet", new ConfigItem().setType(PlateHelmet.INSTANCE));
+				new ConfigItem().setType(LeatherHelmet.INSTANCE).setMaxRarity(0).setAlwaysNormal().setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "chainmail_helmet", new ConfigItem().setType(PlateHelmet.INSTANCE).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(MODID + "iron_helmet",
-				new ConfigItem().setType(PlateHelmet.INSTANCE).setMaxRarity(2).setAlwaysNormal());
+				new ConfigItem().setType(PlateHelmet.INSTANCE).setMaxRarity(2).setAlwaysNormal().setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(MODID + "golden_helmet",
-				new ConfigItem().setType(PlateHelmet.INSTANCE).setMaxRarity(2).setAlwaysNormal());
-		MineAndSlashAPI.addCompatibleItem(MODID + "diamond_helmet", new ConfigItem().setType(PlateHelmet.INSTANCE));
+				new ConfigItem().setType(PlateHelmet.INSTANCE).setMaxRarity(2).setAlwaysNormal().setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "diamond_helmet", new ConfigItem().setType(PlateHelmet.INSTANCE).setdropsAsLoot(false));
 		AzureCompat.LOGGER.info("Registered Helmet");
 		MineAndSlashAPI.addCompatibleItem(MODID + "leather_chestplate",
-				new ConfigItem().setType(LeatherChest.INSTANCE).setMaxRarity(0).setAlwaysNormal());
+				new ConfigItem().setType(LeatherChest.INSTANCE).setMaxRarity(0).setAlwaysNormal().setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(MODID + "chainmail_chestplate",
-				new ConfigItem().setType(PlateChest.INSTANCE));
+				new ConfigItem().setType(PlateChest.INSTANCE).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(MODID + "iron_chestplate",
-				new ConfigItem().setType(PlateChest.INSTANCE).setMaxRarity(2).setAlwaysNormal());
+				new ConfigItem().setType(PlateChest.INSTANCE).setMaxRarity(2).setAlwaysNormal().setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(MODID + "golden_chestplate",
-				new ConfigItem().setType(PlateChest.INSTANCE).setMaxRarity(2).setAlwaysNormal());
-		MineAndSlashAPI.addCompatibleItem(MODID + "diamond_chestplate", new ConfigItem().setType(PlateChest.INSTANCE));
+				new ConfigItem().setType(PlateChest.INSTANCE).setMaxRarity(2).setAlwaysNormal().setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "diamond_chestplate", new ConfigItem().setType(PlateChest.INSTANCE).setdropsAsLoot(false));
 		AzureCompat.LOGGER.info("Registered Chestplate");
 		MineAndSlashAPI.addCompatibleItem(MODID + "leather_leggings",
-				new ConfigItem().setType(LeatherPants.INSTANCE).setMaxRarity(0).setAlwaysNormal());
-		MineAndSlashAPI.addCompatibleItem(MODID + "chainmail_leggings", new ConfigItem().setType(PlatePants.INSTANCE));
+				new ConfigItem().setType(LeatherPants.INSTANCE).setMaxRarity(0).setAlwaysNormal().setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "chainmail_leggings", new ConfigItem().setType(PlatePants.INSTANCE).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(MODID + "iron_leggings",
-				new ConfigItem().setType(PlatePants.INSTANCE).setMaxRarity(2).setAlwaysNormal());
+				new ConfigItem().setType(PlatePants.INSTANCE).setMaxRarity(2).setAlwaysNormal().setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(MODID + "golden_leggings",
-				new ConfigItem().setType(PlatePants.INSTANCE).setMaxRarity(2).setAlwaysNormal());
-		MineAndSlashAPI.addCompatibleItem(MODID + "diamond_leggings", new ConfigItem().setType(PlatePants.INSTANCE));
+				new ConfigItem().setType(PlatePants.INSTANCE).setMaxRarity(2).setAlwaysNormal().setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "diamond_leggings", new ConfigItem().setType(PlatePants.INSTANCE).setdropsAsLoot(false));
 		AzureCompat.LOGGER.info("Registered Leggings");
 		MineAndSlashAPI.addCompatibleItem(MODID + "leather_boots",
-				new ConfigItem().setType(LeatherBoots.INSTANCE).setMaxRarity(0).setAlwaysNormal());
-		MineAndSlashAPI.addCompatibleItem(MODID + "chainmail_boots", new ConfigItem().setType(PlateBoots.INSTANCE));
+				new ConfigItem().setType(LeatherBoots.INSTANCE).setMaxRarity(0).setAlwaysNormal().setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "chainmail_boots", new ConfigItem().setType(PlateBoots.INSTANCE).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(MODID + "iron_boots",
-				new ConfigItem().setType(PlateBoots.INSTANCE).setMaxRarity(2).setAlwaysNormal());
+				new ConfigItem().setType(PlateBoots.INSTANCE).setMaxRarity(2).setAlwaysNormal().setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(MODID + "golden_boots",
-				new ConfigItem().setType(PlateBoots.INSTANCE).setMaxRarity(2).setAlwaysNormal());
-		MineAndSlashAPI.addCompatibleItem(MODID + "diamond_boots", new ConfigItem().setType(PlateBoots.INSTANCE));
+				new ConfigItem().setType(PlateBoots.INSTANCE).setMaxRarity(2).setAlwaysNormal().setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "diamond_boots", new ConfigItem().setType(PlateBoots.INSTANCE).setdropsAsLoot(false));
 		AzureCompat.LOGGER.info("Registered Boots");
 	}
 

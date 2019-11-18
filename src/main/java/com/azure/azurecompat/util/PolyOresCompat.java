@@ -14,7 +14,7 @@ public class PolyOresCompat {
 	public String MODID = "polyores:";
 	
 	public PolyOresCompat() {
-		MineAndSlashAPI.addCompatibleItem(MODID + TYPE + "_sword", new ConfigItem().setType(Sword.INSTANCE));
-		MineAndSlashAPI.addCompatibleItem(MODID + TYPE + "_largesword", new ConfigItem().setType(Sword.INSTANCE));
+		MineAndSlashAPI.addCompatibleItem(MODID + TYPE + "_sword", new ConfigItem().setType(Sword.INSTANCE).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + TYPE + "_largesword", new ConfigItem().setType(Sword.INSTANCE).setdropsAsLoot(false));
 	}
 }

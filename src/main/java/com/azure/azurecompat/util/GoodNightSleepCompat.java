@@ -21,12 +21,12 @@ public class GoodNightSleepCompat {
 
 	public GoodNightSleepCompat() {
 
-		MineAndSlashAPI.addCompatibleItem(MODID + TYPE + "sword", new ConfigItem().setType(Sword.INSTANCE));
-		MineAndSlashAPI.addCompatibleItem(MODID + "necrum_sword", new ConfigItem().setType(Sword.INSTANCE));
-		MineAndSlashAPI.addCompatibleItem(MODID + TYPE + "helmet", new ConfigItem().setType(PlateHelmet.INSTANCE));
-		MineAndSlashAPI.addCompatibleItem(MODID + TYPE + "chestplate", new ConfigItem().setType(PlateChest.INSTANCE));
-		MineAndSlashAPI.addCompatibleItem(MODID + TYPE + "leggings", new ConfigItem().setType(PlatePants.INSTANCE));
-		MineAndSlashAPI.addCompatibleItem(MODID + TYPE + "boots", new ConfigItem().setType(PlateBoots.INSTANCE));
+		MineAndSlashAPI.addCompatibleItem(MODID + TYPE + "sword", new ConfigItem().setType(Sword.INSTANCE).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "necrum_sword", new ConfigItem().setType(Sword.INSTANCE).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + TYPE + "helmet", new ConfigItem().setType(PlateHelmet.INSTANCE).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + TYPE + "chestplate", new ConfigItem().setType(PlateChest.INSTANCE).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + TYPE + "leggings", new ConfigItem().setType(PlatePants.INSTANCE).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + TYPE + "boots", new ConfigItem().setType(PlateBoots.INSTANCE).setdropsAsLoot(false));
 		AzureCompat.LOGGER.info("Registered Good Night Sleep Gear");
 	}
 

@@ -10,6 +10,6 @@ public class QuarkCompat {
 
 	public QuarkCompat() {
 
-		MineAndSlashAPI.addCompatibleItem(MODID + "pickarang", new ConfigItem().setType(Bow.INSTANCE));
+		MineAndSlashAPI.addCompatibleItem(MODID + "pickarang", new ConfigItem().setType(Bow.INSTANCE).setdropsAsLoot(false));
 	}
 }

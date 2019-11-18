@@ -22,11 +22,11 @@ public class GemsPlusPlusCompat {
 
 	public GemsPlusPlusCompat() {
 
-		MineAndSlashAPI.addCompatibleItem(MODID + "sword" + TYPE, new ConfigItem().setType(Sword.INSTANCE));
-		MineAndSlashAPI.addCompatibleItem(MODID + "helmet" + TYPE, new ConfigItem().setType(PlateHelmet.INSTANCE));
-		MineAndSlashAPI.addCompatibleItem(MODID + "chestplate" + TYPE, new ConfigItem().setType(PlateChest.INSTANCE));
-		MineAndSlashAPI.addCompatibleItem(MODID + "leggings" + TYPE, new ConfigItem().setType(PlatePants.INSTANCE));
-		MineAndSlashAPI.addCompatibleItem(MODID + "boots" + TYPE, new ConfigItem().setType(PlateBoots.INSTANCE));
+		MineAndSlashAPI.addCompatibleItem(MODID + "sword" + TYPE, new ConfigItem().setType(Sword.INSTANCE).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "helmet" + TYPE, new ConfigItem().setType(PlateHelmet.INSTANCE).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "chestplate" + TYPE, new ConfigItem().setType(PlateChest.INSTANCE).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "leggings" + TYPE, new ConfigItem().setType(PlatePants.INSTANCE).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "boots" + TYPE, new ConfigItem().setType(PlateBoots.INSTANCE).setdropsAsLoot(false));
 		AzureCompat.LOGGER.info("Registered Gems Plus Plus Gear");
 	}
 

@@ -27,24 +27,24 @@ public class GobberCompat {
 
 	public GobberCompat() {
 
-		MineAndSlashAPI.addCompatibleItem(MODID + "gobber2_sword", new ConfigItem().setType(Sword.INSTANCE));
-		MineAndSlashAPI.addCompatibleItem(MODID + "gobber2_sword_traveler", new ConfigItem().setType(Sword.INSTANCE));
-		MineAndSlashAPI.addCompatibleItem(MODID + "gobber2_sword_" + TYPE, new ConfigItem().setType(Sword.INSTANCE));
-		MineAndSlashAPI.addCompatibleItem(MODID + "gobber2_sword_sniper", new ConfigItem().setType(Bow.INSTANCE));
-		MineAndSlashAPI.addCompatibleItem(MODID + "gobber2_helmet", new ConfigItem().setType(PlateHelmet.INSTANCE));
+		MineAndSlashAPI.addCompatibleItem(MODID + "gobber2_sword", new ConfigItem().setType(Sword.INSTANCE).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "gobber2_sword_traveler", new ConfigItem().setType(Sword.INSTANCE).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "gobber2_sword_" + TYPE, new ConfigItem().setType(Sword.INSTANCE).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "gobber2_sword_sniper", new ConfigItem().setType(Bow.INSTANCE).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "gobber2_helmet", new ConfigItem().setType(PlateHelmet.INSTANCE).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(MODID + "gobber2_helmet_" + TYPE,
-				new ConfigItem().setType(PlateHelmet.INSTANCE));
-		MineAndSlashAPI.addCompatibleItem(MODID + "gobber2_chestplate", new ConfigItem().setType(PlateChest.INSTANCE));
+				new ConfigItem().setType(PlateHelmet.INSTANCE).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "gobber2_chestplate", new ConfigItem().setType(PlateChest.INSTANCE).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(MODID + "gobber2_chestplate_" + TYPE,
-				new ConfigItem().setType(PlateChest.INSTANCE));
-		MineAndSlashAPI.addCompatibleItem(MODID + "gobber2_leggings", new ConfigItem().setType(PlatePants.INSTANCE));
+				new ConfigItem().setType(PlateChest.INSTANCE).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "gobber2_leggings", new ConfigItem().setType(PlatePants.INSTANCE).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(MODID + "gobber2_leggings_" + TYPE,
-				new ConfigItem().setType(PlatePants.INSTANCE));
-		MineAndSlashAPI.addCompatibleItem(MODID + "gobber2_boots", new ConfigItem().setType(PlateBoots.INSTANCE));
+				new ConfigItem().setType(PlatePants.INSTANCE).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "gobber2_boots", new ConfigItem().setType(PlateBoots.INSTANCE).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(MODID + "gobber2_boots_" + TYPE,
-				new ConfigItem().setType(PlateBoots.INSTANCE));
-		MineAndSlashAPI.addCompatibleItem(MODID + "gobber_ring" + TYPE, new ConfigItem().setType(Ring.INSTANCE));
-		MineAndSlashAPI.addCompatibleItem(MODID + "gobber_ring_" + TYPE2, new ConfigItem().setType(Ring.INSTANCE));
+				new ConfigItem().setType(PlateBoots.INSTANCE).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "gobber_ring" + TYPE, new ConfigItem().setType(Ring.INSTANCE).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "gobber_ring_" + TYPE2, new ConfigItem().setType(Ring.INSTANCE).setdropsAsLoot(false));
 		AzureCompat.LOGGER.info("Registered Gobber Gear");
 	}
 

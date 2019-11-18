@@ -12,11 +12,11 @@ public class BetterAnimalsPlusCompat {
 	public BetterAnimalsPlusCompat() {
 
 		MineAndSlashAPI.addCompatibleItem(MODID + "bear_cape_brown",
-				new ConfigItem().setType(LeatherChest.INSTANCE));
+				new ConfigItem().setType(LeatherChest.INSTANCE).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(MODID + "bear_cape_black",
-				new ConfigItem().setType(LeatherChest.INSTANCE));
+				new ConfigItem().setType(LeatherChest.INSTANCE).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(MODID + "bear_cape_kermode",
-				new ConfigItem().setType(LeatherChest.INSTANCE));
+				new ConfigItem().setType(LeatherChest.INSTANCE).setdropsAsLoot(false));
 		AzureCompat.LOGGER.info("Registered Better Animals Plus Gear");
 	}
 
