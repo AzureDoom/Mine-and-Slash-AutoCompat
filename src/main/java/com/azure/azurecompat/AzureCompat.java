@@ -29,6 +29,7 @@ import com.azure.azurecompat.util.RestrictionsCompat;
 import com.azure.azurecompat.util.SimpleDiveGearCompat;
 import com.azure.azurecompat.util.SolarGenerationCompat;
 import com.azure.azurecompat.util.TheOneProbeCompat;
+import com.azure.azurecompat.util.TofuCraftCompat;
 import com.azure.azurecompat.util.VanillaCompat;
 import com.azure.azurecompat.util.WyrmroostCompat;
 
@@ -121,6 +122,9 @@ public class AzureCompat {
 		}
 		if (ModList.get().isLoaded("gobber2") && Config.INSTANCE.USE_COMPATIBILITY_ON_GOBBER_ITEMS.get()) {
 			MinecraftForge.EVENT_BUS.register(new GobberCompat());
+		}
+		if (ModList.get().isLoaded("tofucraft") && Config.INSTANCE.USE_COMPATIBILITY_ON_TOFUCRAFT_ITEMS.get()) {
+			MinecraftForge.EVENT_BUS.register(new TofuCraftCompat());
 		}
 	}
 }
