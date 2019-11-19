@@ -18,6 +18,7 @@ import com.azure.azurecompat.util.CombatCompat;
 import com.azure.azurecompat.util.CompactedCompat;
 import com.azure.azurecompat.util.EnigmaticLegacyCompat;
 import com.azure.azurecompat.util.ForbiddenandArcanusCompat;
+import com.azure.azurecompat.util.FunItemsModCompat;
 import com.azure.azurecompat.util.GemsPlusPlusCompat;
 import com.azure.azurecompat.util.GobberCompat;
 import com.azure.azurecompat.util.GoodNightSleepCompat;
@@ -147,6 +148,9 @@ public class AzureCompat {
 		}
 		if (ModList.get().isLoaded("cloudboots") && Config.INSTANCE.USE_COMPATIBILITY_ON_CLOUDBOOTS_ITEMS.get()) {
 			MinecraftForge.EVENT_BUS.register(new CloudBootsCompat());
+		}
+		if (ModList.get().isLoaded("funmod") && Config.INSTANCE.USE_COMPATIBILITY_ON_FUNITEMSMOD_ITEMS.get()) {
+			MinecraftForge.EVENT_BUS.register(new FunItemsModCompat());
 		}
 	}
 }
