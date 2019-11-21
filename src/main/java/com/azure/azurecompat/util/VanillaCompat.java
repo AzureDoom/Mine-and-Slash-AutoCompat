@@ -46,6 +46,7 @@ public class VanillaCompat {
 		MineAndSlashAPI.addCompatibleItem(MODID + "golden_helmet",
 				new ConfigItem().setType(PlateHelmet.INSTANCE).setMaxRarity(2).setAlwaysNormal().setSalvagable(true));
 		MineAndSlashAPI.addCompatibleItem(MODID + "diamond_helmet", new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "turtle_helmet", new ConfigItem().setType(LeatherHelmet.INSTANCE).setSalvagable(true));
 		AzureCompat.LOGGER.info("Registered Helmet");
 		MineAndSlashAPI.addCompatibleItem(MODID + "leather_chestplate",
 				new ConfigItem().setType(LeatherChest.INSTANCE).setMaxRarity(0).setAlwaysNormal().setSalvagable(true));
