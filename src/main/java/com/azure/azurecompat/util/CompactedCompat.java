@@ -9,10 +9,10 @@ public class CompactedCompat {
 
 	public CompactedCompat() {
 
-		MineAndSlashAPI.addCompatibleItem("compacted:stone_hammer", new ConfigItem().setType(Hammer.INSTANCE).setdropsAsLoot(false));
-		MineAndSlashAPI.addCompatibleItem("compacted:compacted_hammer", new ConfigItem().setType(Hammer.INSTANCE).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem("compacted:stone_hammer", new ConfigItem().setType(Hammer.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem("compacted:compacted_hammer", new ConfigItem().setType(Hammer.INSTANCE).setSalvagable(true));
 		MineAndSlashAPI.addCompatibleItem("compacted:double_compacted_hammer",
-				new ConfigItem().setType(Hammer.INSTANCE).setdropsAsLoot(false));
+				new ConfigItem().setType(Hammer.INSTANCE).setSalvagable(true));
 		AzureCompat.LOGGER.info("Registered Better Animals Plus Gear");
 	}
 

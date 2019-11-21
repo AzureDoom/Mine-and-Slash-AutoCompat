@@ -13,16 +13,16 @@ import com.robertx22.mine_and_slash.database.gearitemslots.weapons.Sword;
 public class PlantTech2Compat {
 
 	public PlantTech2Compat() {
-		MineAndSlashAPI.addCompatibleItem("planttech2:cyberrapier", new ConfigItem().setType(Sword.INSTANCE).setdropsAsLoot(false));
-		MineAndSlashAPI.addCompatibleItem("planttech2:cyberdagger", new ConfigItem().setType(Sword.INSTANCE).setdropsAsLoot(false));
-		MineAndSlashAPI.addCompatibleItem("planttech2:cyberkatana", new ConfigItem().setType(Sword.INSTANCE).setdropsAsLoot(false));
-		MineAndSlashAPI.addCompatibleItem("planttech2:cyberbow", new ConfigItem().setType(Bow.INSTANCE).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem("planttech2:cyberrapier", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem("planttech2:cyberdagger", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem("planttech2:cyberkatana", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem("planttech2:cyberbow", new ConfigItem().setType(Bow.INSTANCE).setSalvagable(true));
 		MineAndSlashAPI.addCompatibleItem("planttech2:cyberarmor_helmet",
-				new ConfigItem().setType(PlateHelmet.INSTANCE).setdropsAsLoot(false));
-		MineAndSlashAPI.addCompatibleItem("planttech2:cyberarmor_chest", new ConfigItem().setType(PlateChest.INSTANCE).setdropsAsLoot(false));
+				new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem("planttech2:cyberarmor_chest", new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true));
 		MineAndSlashAPI.addCompatibleItem("planttech2:cyberarmor_leggings",
-				new ConfigItem().setType(PlatePants.INSTANCE).setdropsAsLoot(false));
-		MineAndSlashAPI.addCompatibleItem("planttech2:cyberarmor_boots", new ConfigItem().setType(PlateBoots.INSTANCE).setdropsAsLoot(false));
+				new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem("planttech2:cyberarmor_boots", new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true));
 		AzureCompat.LOGGER.info("Registered PlantTech2 Gear");
 	}
 }

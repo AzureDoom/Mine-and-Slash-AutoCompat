@@ -10,18 +10,24 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.loading.FMLPaths;
 
 import com.azure.azurecompat.config.Config;
+import com.azure.azurecompat.util.AlikeToolsCompact;
 import com.azure.azurecompat.util.AquacultureCompat;
 import com.azure.azurecompat.util.BetterAnimalsPlusCompat;
 import com.azure.azurecompat.util.BluePowerCompat;
+import com.azure.azurecompat.util.BountifulBaublesCompact;
 import com.azure.azurecompat.util.CloudBootsCompat;
 import com.azure.azurecompat.util.CombatCompat;
 import com.azure.azurecompat.util.CompactedCompat;
+import com.azure.azurecompat.util.CraftHuntCompat;
+import com.azure.azurecompat.util.DruidcraftCompact;
 import com.azure.azurecompat.util.EnigmaticLegacyCompat;
+import com.azure.azurecompat.util.ExplorercraftCompat;
 import com.azure.azurecompat.util.ForbiddenandArcanusCompat;
 import com.azure.azurecompat.util.FunItemsModCompat;
 import com.azure.azurecompat.util.GemsPlusPlusCompat;
 import com.azure.azurecompat.util.GobberCompat;
 import com.azure.azurecompat.util.GoodNightSleepCompat;
+import com.azure.azurecompat.util.IlikewoodCompact;
 import com.azure.azurecompat.util.LongFallBootsCompat;
 import com.azure.azurecompat.util.MinecoloniesCompat;
 import com.azure.azurecompat.util.MysticalWorldCompat;
@@ -34,10 +40,13 @@ import com.azure.azurecompat.util.RestrictionsCompat;
 import com.azure.azurecompat.util.SimpleDiveGearCompat;
 import com.azure.azurecompat.util.SolarGenerationCompat;
 import com.azure.azurecompat.util.SpartanShieldsCompat;
+import com.azure.azurecompat.util.TetraCompat;
 import com.azure.azurecompat.util.TheOneProbeCompat;
 import com.azure.azurecompat.util.TofuCraftCompat;
 import com.azure.azurecompat.util.VanillaCompat;
+import com.azure.azurecompat.util.WitherSkeletonTweaksCompact;
 import com.azure.azurecompat.util.WyrmroostCompat;
+import com.azure.azurecompat.util.XercaCompact;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -151,6 +160,35 @@ public class AzureCompat {
 		}
 		if (ModList.get().isLoaded("funmod") && Config.INSTANCE.USE_COMPATIBILITY_ON_FUNITEMSMOD_ITEMS.get()) {
 			MinecraftForge.EVENT_BUS.register(new FunItemsModCompat());
+		}
+		if (ModList.get().isLoaded("tetra") && Config.INSTANCE.USE_COMPATIBILITY_ON_TETRA_ITEMS.get()) {
+			MinecraftForge.EVENT_BUS.register(new TetraCompat());
+		}
+		if (ModList.get().isLoaded("explorercraft") && Config.INSTANCE.USE_COMPATIBILITY_ON_EXPLORERCRAFT_ITEMS.get()) {
+			MinecraftForge.EVENT_BUS.register(new ExplorercraftCompat());
+		}
+		if (ModList.get().isLoaded("craftandhunt") && Config.INSTANCE.USE_COMPATIBILITY_ON_CRAFTHUNT_ITEMS.get()) {
+			MinecraftForge.EVENT_BUS.register(new CraftHuntCompat());
+		}
+		if (ModList.get().isLoaded("aliketools") && Config.INSTANCE.USE_COMPATIBILITY_ON_ALIKETOOLS_ITEMS.get()) {
+			MinecraftForge.EVENT_BUS.register(new AlikeToolsCompact());
+		}
+		if (ModList.get().isLoaded("ilikewood") && Config.INSTANCE.USE_COMPATIBILITY_ON_ILIKEWOOD_ITEMS.get()) {
+			MinecraftForge.EVENT_BUS.register(new IlikewoodCompact());
+		}
+		if (ModList.get().isLoaded("bountifulbaubles")
+				&& Config.INSTANCE.USE_COMPATIBILITY_ON_BOUNTIFULBAUBLES_ITEMS.get()) {
+			MinecraftForge.EVENT_BUS.register(new BountifulBaublesCompact());
+		}
+		if (ModList.get().isLoaded("druidcraft") && Config.INSTANCE.USE_COMPATIBILITY_ON_DRUIDCRAFT_ITEMS.get()) {
+			MinecraftForge.EVENT_BUS.register(new DruidcraftCompact());
+		}
+		if (ModList.get().isLoaded("wstweaks")
+				&& Config.INSTANCE.USE_COMPATIBILITY_ON_WITHERSKELETONTWEAKS_ITEMS.get()) {
+			MinecraftForge.EVENT_BUS.register(new WitherSkeletonTweaksCompact());
+		}
+		if (ModList.get().isLoaded("xercamod") && Config.INSTANCE.USE_COMPATIBILITY_ON_XERCA_ITEMS.get()) {
+			MinecraftForge.EVENT_BUS.register(new XercaCompact());
 		}
 	}
 }

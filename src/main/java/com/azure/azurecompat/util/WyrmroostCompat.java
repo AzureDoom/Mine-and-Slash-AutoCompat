@@ -11,21 +11,30 @@ import com.robertx22.mine_and_slash.database.gearitemslots.weapons.Sword;
 
 public class WyrmroostCompat {
 
-	public String MODID = "gemsplusplus:";
-	
+	public String MODID = "wyrmroost:";
+
 	public WyrmroostCompat() {
-		MineAndSlashAPI.addCompatibleItem(MODID + "geode_sword", new ConfigItem().setType(Sword.INSTANCE).setdropsAsLoot(false));
-		MineAndSlashAPI.addCompatibleItem(MODID + "geode_helmet", new ConfigItem().setType(PlateHelmet.INSTANCE).setdropsAsLoot(false));
-		MineAndSlashAPI.addCompatibleItem(MODID + "geode_chestplate", new ConfigItem().setType(PlateChest.INSTANCE).setdropsAsLoot(false));
-		MineAndSlashAPI.addCompatibleItem(MODID + "geode_leggings", new ConfigItem().setType(PlatePants.INSTANCE).setdropsAsLoot(false));
-		MineAndSlashAPI.addCompatibleItem(MODID + "geode_boots", new ConfigItem().setType(PlateBoots.INSTANCE).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "geode_sword",
+				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "geode_helmet",
+				new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "geode_chestplate",
+				new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "geode_leggings",
+				new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "geode_boots",
+				new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true));
 		AzureCompat.LOGGER.info("Registered Geode Gear");
-		MineAndSlashAPI.addCompatibleItem(MODID + "platinum_sword", new ConfigItem().setType(Sword.INSTANCE).setdropsAsLoot(false));
-		MineAndSlashAPI.addCompatibleItem(MODID + "platinum_helmet", new ConfigItem().setType(PlateHelmet.INSTANCE).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "platinum_sword",
+				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "platinum_helmet",
+				new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true));
 		MineAndSlashAPI.addCompatibleItem(MODID + "platinum_chestplate",
-				new ConfigItem().setType(PlateChest.INSTANCE).setdropsAsLoot(false));
-		MineAndSlashAPI.addCompatibleItem(MODID + "platinum_leggings", new ConfigItem().setType(PlatePants.INSTANCE).setdropsAsLoot(false));
-		MineAndSlashAPI.addCompatibleItem(MODID + "platinum_boots", new ConfigItem().setType(PlateBoots.INSTANCE).setdropsAsLoot(false));
+				new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "platinum_leggings",
+				new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "platinum_boots",
+				new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true));
 		AzureCompat.LOGGER.info("Registered Platinum Gear");
 	}
 

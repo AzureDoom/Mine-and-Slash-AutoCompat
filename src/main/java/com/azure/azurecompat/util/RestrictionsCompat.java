@@ -8,7 +8,7 @@ import com.robertx22.mine_and_slash.database.gearitemslots.plate.PlateBoots;
 public class RestrictionsCompat {
 
 	public RestrictionsCompat() {
-		MineAndSlashAPI.addCompatibleItem("restrictions:glassboots", new ConfigItem().setType(PlateBoots.INSTANCE).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem("restrictions:glassboots", new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true));
 		AzureCompat.LOGGER.info("Registered Long Fall Boots Gear");
 	}
 

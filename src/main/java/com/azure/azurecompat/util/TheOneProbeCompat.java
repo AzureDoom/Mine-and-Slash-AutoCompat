@@ -10,11 +10,11 @@ public class TheOneProbeCompat {
 	public TheOneProbeCompat() {
 
 		MineAndSlashAPI.addCompatibleItem("theoneprobe:iron_helmet_probe",
-				new ConfigItem().setType(PlateHelmet.INSTANCE).setdropsAsLoot(false));
+				new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true));
 		MineAndSlashAPI.addCompatibleItem("theoneprobe:gold_helmet_probe",
-				new ConfigItem().setType(PlateHelmet.INSTANCE).setdropsAsLoot(false));
+				new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true));
 		MineAndSlashAPI.addCompatibleItem("theoneprobe:diamond_helmet_probe",
-				new ConfigItem().setType(PlateHelmet.INSTANCE).setdropsAsLoot(false));
+				new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true));
 		AzureCompat.LOGGER.info("Registered The One Probe Gear");
 	}
 

@@ -1,8 +1,5 @@
 package com.azure.azurecompat.util;
 
-import java.util.List;
-
-import com.google.common.collect.ImmutableList;
 import com.robertx22.mine_and_slash.api.MineAndSlashAPI;
 import com.robertx22.mine_and_slash.config.compatible_items.ConfigItem;
 import com.robertx22.mine_and_slash.database.gearitemslots.plate.PlateBoots;
@@ -15,38 +12,175 @@ import com.robertx22.mine_and_slash.database.gearitemslots.weapons.Hammer;
 import com.robertx22.mine_and_slash.database.gearitemslots.weapons.Sword;
 
 public class FunItemsModCompat {
-	private static final List<String> SWORD = ImmutableList.of("sword_of_insanity", "cloaked_wrath", "sword_of_joy",
-			"energy_blade", "dark_sword", "essence_shrieker", "planet_eater", "voidf", "sword_of_hell",
-			"energy_blade_c", "god_of_rs", "laser_sword", "blaze_sword", "dragon_blade", "starf", "glutton_sword",
-			"sword_of_unending_fire", "emerald_sword", "divine_sword", "obsidian_sword", "lead_sword", "cyanite_sword",
-			"sapphire_sword", "tin_sword", "amethyst_sword", "uranium_sword", "ruby_sword", "crimsonite_sword",
-			"hellsteel_sword", "onyx_sword", "mithril_sword", "leafium_sword", "demonite_sword", "silver_sword",
-			"aluminum_sword", "quartz_sword", "copper_sword", "topaz_sword", "adamantium_sword");
-
-	private static final List<String> AXE = ImmutableList.of("battle_axe", "powered_battle_axe");
-
-	private static final List<String> BOW = ImmutableList.of("divine_bow", "predator", "bow_of_unendingfire",
-			"dragon_bow");
-
-	private static final List<String> SCYTHE = ImmutableList.of("battle_scythe", "powered_battle_scythe",
-			"death_scythe", "great_sword", "soul_eater");
-
-	private static final List<String> TYPE = ImmutableList.of("emerald", "glutton", "divine", "obsidian", "lead",
-			"voidf", "cyanite", "sapphire", "tin", "amethyst", "uranium", "ruby", "crimsonite", "ghost", "hellsteel",
-			"onyx", "starf", "mithril", "leafium", "demonite", "dark", "silver", "aluminum", "quartz", "copper",
-			"death", "topaz", "adamantium");
 
 	public String MODID = "funmod:";
 
 	public FunItemsModCompat() {
-		MineAndSlashAPI.addCompatibleItem(MODID + SWORD, new ConfigItem().setType(Sword.INSTANCE));
-		MineAndSlashAPI.addCompatibleItem(MODID + AXE, new ConfigItem().setType(Axe.INSTANCE));
-		MineAndSlashAPI.addCompatibleItem(MODID + BOW, new ConfigItem().setType(Bow.INSTANCE));
-		MineAndSlashAPI.addCompatibleItem(MODID + SCYTHE, new ConfigItem().setType(Hammer.INSTANCE));
-		MineAndSlashAPI.addCompatibleItem(MODID + TYPE + "_helmet", new ConfigItem().setType(PlateHelmet.INSTANCE));
-		MineAndSlashAPI.addCompatibleItem(MODID + TYPE + "_chestplate", new ConfigItem().setType(PlateChest.INSTANCE));
-		MineAndSlashAPI.addCompatibleItem(MODID + TYPE + "_leggings", new ConfigItem().setType(PlatePants.INSTANCE));
-		MineAndSlashAPI.addCompatibleItem(MODID + TYPE + "_boots", new ConfigItem().setType(PlateBoots.INSTANCE));
+		MineAndSlashAPI.addCompatibleItem(MODID + "hellsteel_sword", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "onyx_sword", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "mithril_sword", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "leafium_sword", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "demonite_sword", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "silver_sword", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "aluminum_sword", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "quartz_sword", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "copper_sword", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "topaz_sword", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "adamantium_sword", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "starf", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "glutton_sword", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "sword_of_unending_fire", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "emerald_sword", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "divine_sword", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "obsidian_sword", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "lead_sword", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "cyanite_sword", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "sapphire_sword", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "tin_sword", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "amethyst_sword", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "uranium_sword", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "ruby_sword", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "crimsonite_sword", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "dragon_blade", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "sword_of_insanity", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "cloaked_wrath", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "sword_of_joy", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "energy_blade", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "energy_blade_c", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "dark_sword", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "essence_shrieker", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "planet_eater", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "voidf", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "sword_of_hell", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "god_of_rs", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "laser_sword", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "blaze_sword", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "battle_axe", new ConfigItem().setType(Axe.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "powered_battle_axe", new ConfigItem().setType(Axe.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "divine_bow", new ConfigItem().setType(Bow.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "predator", new ConfigItem().setType(Bow.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "bow_of_unendingfire", new ConfigItem().setType(Bow.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "dragon_bow", new ConfigItem().setType(Bow.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "battle_scythe", new ConfigItem().setType(Hammer.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "powered_battle_scythe", new ConfigItem().setType(Hammer.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "death_scythe", new ConfigItem().setType(Hammer.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "great_sword", new ConfigItem().setType(Hammer.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "soul_eater", new ConfigItem().setType(Hammer.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "emerald_helmet", new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "glutton_helmet", new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "divine_helmet", new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "obsidian_helmet", new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "lead_helmet", new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "voidf_helmet", new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "cyanite_helmet", new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "sapphire_helmet", new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "tin_helmet", new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "amethyst_helmet", new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "uranium_helmet", new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "ruby_helmet", new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "crimsonite_helmet", new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "ghost_helmet", new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "hellsteel_helmet", new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "onyx_helmet", new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "starf_helmet", new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "mithril_helmet", new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "leafium_helmet", new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "demonite_helmet", new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "dark_helmet", new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "silver_helmet", new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "aluminum_helmet", new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "quartz_helmet", new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "copper_helmet", new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "death_helmet", new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "topaz_helmet", new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "adamantium_helmet", new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "emerald_chestplate", new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "glutton_chestplate", new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "divine_chestplate", new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "obsidian_chestplate", new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "lead_chestplate", new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "voidf_chestplate", new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "cyanite_chestplate", new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "sapphire_chestplate", new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "tin_chestplate", new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "amethyst_chestplate", new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "uranium_chestplate", new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "ruby_chestplate", new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "crimsonite_chestplate", new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "ghost_chestplate", new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "hellsteel_chestplate", new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "onyx_chestplate", new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "starf_chestplate", new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "mithril_chestplate", new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "leafium_chestplate", new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "demonite_chestplate", new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "dark_chestplate", new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "silver_chestplate", new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "aluminum_chestplate", new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "quartz_chestplate", new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "copper_chestplate", new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "death_chestplate", new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "topaz_chestplate", new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "adamantium_chestplate", new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "emerald_leggings", new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "glutton_leggings", new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "divine_leggings", new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "obsidian_leggings", new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "lead_leggings", new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "voidf_leggings", new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "cyanite_leggings", new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "sapphire_leggings", new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "tin_leggings", new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "amethyst_leggings", new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "uranium_leggings", new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "ruby_leggings", new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "crimsonite_leggings", new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "ghost_leggings", new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "hellsteel_leggings", new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "onyx_leggings", new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "starf_leggings", new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "mithril_leggings", new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "leafium_leggings", new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "demonite_leggings", new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "dark_leggings", new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "silver_leggings", new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "aluminum_leggings", new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "quartz_leggings", new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "copper_leggings", new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "death_leggings", new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "topaz_leggings", new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "adamantium_leggings", new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "emerald_boots", new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "glutton_boots", new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "divine_boots", new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "obsidian_boots", new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "lead_boots", new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "voidf_boots", new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "cyanite_boots", new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "sapphire_boots", new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "tin_boots", new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "amethyst_boots", new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "uranium_boots", new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "ruby_boots", new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "crimsonite_boots", new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "ghost_boots", new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "hellsteel_boots", new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "onyx_boots", new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "starf_boots", new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "mithril_boots", new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "leafium_boots", new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "demonite_boots", new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "dark_boots", new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "silver_boots", new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "aluminum_boots", new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "quartz_boots", new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "copper_boots", new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "death_boots", new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "topaz_boots", new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "adamantium_boots", new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "_chestplate", new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "_leggings", new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "_boots", new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true));
 	}
 
 }

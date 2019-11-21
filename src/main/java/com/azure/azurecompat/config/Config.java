@@ -52,6 +52,16 @@ public class Config {
 	public BooleanValue USE_COMPATIBILITY_ON_GOODNIGHTSLEEP_ITEMS;
 	public BooleanValue USE_COMPATIBILITY_ON_CLOUDBOOTS_ITEMS;
 	public BooleanValue USE_COMPATIBILITY_ON_FUNITEMSMOD_ITEMS;
+	public BooleanValue USE_COMPATIBILITY_ON_TETRA_ITEMS;
+	public BooleanValue USE_COMPATIBILITY_ON_EXPLORERCRAFT_ITEMS;
+	public BooleanValue USE_COMPATIBILITY_ON_CRAFTHUNT_ITEMS;
+	public BooleanValue USE_COMPATIBILITY_ON_ALIKETOOLS_ITEMS;
+	public BooleanValue USE_COMPATIBILITY_ON_ILIKEWOOD_ITEMS;
+	public BooleanValue USE_COMPATIBILITY_ON_BOUNTIFULBAUBLES_ITEMS;
+	public BooleanValue USE_COMPATIBILITY_ON_DRUIDCRAFT_ITEMS;
+	
+	public BooleanValue USE_COMPATIBILITY_ON_WITHERSKELETONTWEAKS_ITEMS;
+	public BooleanValue USE_COMPATIBILITY_ON_XERCA_ITEMS;
 
 	Config(ForgeConfigSpec.Builder builder) {
 		builder.comment("Client Settings").push(NAME);
@@ -61,10 +71,55 @@ public class Config {
 				.translation("azurecompat.config.use_compatibility_on_wyrmroost_items")
 				.define("USE_COMPATIBILITY_ON_WYRMROOST_ITEMS", true);
 
+		USE_COMPATIBILITY_ON_ILIKEWOOD_ITEMS = builder.comment(
+				"Turns on Auto Compatibility for ILikeWood Mod to get Mine and Slash stats. Turn off to configure yourself")
+				.translation("azurecompat.config.use_compatibility_on_ilikewood_items")
+				.define("USE_COMPATIBILITY_ON_ILIKEWOOD_ITEMS", true);
+		
+		USE_COMPATIBILITY_ON_WITHERSKELETONTWEAKS_ITEMS = builder.comment(
+				"Turns on Auto Compatibility for Wither Skelton Tweaks to get Mine and Slash stats. Turn off to configure yourself")
+				.translation("azurecompat.config.use_compatibility_on_witherskeletontweaks_items")
+				.define("USE_COMPATIBILITY_ON_WITHERSKELETONTWEAKS_ITEMS", true);
+
+		USE_COMPATIBILITY_ON_XERCA_ITEMS = builder.comment(
+				"Turns on Auto Compatibility for XercaMod to get Mine and Slash stats. Turn off to configure yourself")
+				.translation("azurecompat.config.use_compatibility_on_xercamod_items")
+				.define("USE_COMPATIBILITY_ON_XERCA_ITEMS", true);
+
+		USE_COMPATIBILITY_ON_BOUNTIFULBAUBLES_ITEMS = builder.comment(
+				"Turns on Auto Compatibility for Bountiful Baubles Mod to get Mine and Slash stats. Turn off to configure yourself")
+				.translation("azurecompat.config.use_compatibility_on_bountifulbaubles_items")
+				.define("USE_COMPATIBILITY_ON_BOUNTIFULBAUBLES_ITEMS", true);
+
+		USE_COMPATIBILITY_ON_DRUIDCRAFT_ITEMS = builder.comment(
+				"Turns on Auto Compatibility for Druidcraft Mod to get Mine and Slash stats. Turn off to configure yourself")
+				.translation("azurecompat.config.use_compatibility_on_druidcraft_items")
+				.define("USE_COMPATIBILITY_ON_DRUIDCRAFT_ITEMS", true);
+
 		USE_COMPATIBILITY_ON_FUNITEMSMOD_ITEMS = builder.comment(
 				"Turns on Auto Compatibility for FunItems Mod to get Mine and Slash stats. Turn off to configure yourself")
 				.translation("azurecompat.config.use_compatibility_on_funitemsmod_items")
 				.define("USE_COMPATIBILITY_ON_FUNITEMSMOD_ITEMS", true);
+
+		USE_COMPATIBILITY_ON_ALIKETOOLS_ITEMS = builder.comment(
+				"Turns on Auto Compatibility for AlikeTools Mod to get Mine and Slash stats. Turn off to configure yourself")
+				.translation("azurecompat.config.use_compatibility_on_aliketools_items")
+				.define("USE_COMPATIBILITY_ON_ALIKETOOLS_ITEMS", true);
+
+		USE_COMPATIBILITY_ON_CRAFTHUNT_ITEMS = builder.comment(
+				"Turns on Auto Compatibility for Craft and Hunt Mod to get Mine and Slash stats. Turn off to configure yourself")
+				.translation("azurecompat.config.use_compatibility_on_craftandhunt_items")
+				.define("USE_COMPATIBILITY_ON_CRAFTHUNT_ITEMS", true);
+
+		USE_COMPATIBILITY_ON_TETRA_ITEMS = builder.comment(
+				"Turns on Auto Compatibility for Tetra Mod to get Mine and Slash stats. Turn off to configure yourself")
+				.translation("azurecompat.config.use_compatibility_on_tetra_items")
+				.define("USE_COMPATIBILITY_ON_TETRA_ITEMS", true);
+
+		USE_COMPATIBILITY_ON_EXPLORERCRAFT_ITEMS = builder.comment(
+				"Turns on Auto Explorercraft for FunItems Mod to get Mine and Slash stats. Turn off to configure yourself")
+				.translation("azurecompat.config.use_compatibility_on_explorercraft_items")
+				.define("USE_COMPATIBILITY_ON_EXPLORERCRAFT_ITEMS", true);
 
 		USE_COMPATIBILITY_ON_TOFUCRAFT_ITEMS = builder.comment(
 				"Turns on Auto Compatibility for TofuCraft to get Mine and Slash stats. Turn off to configure yourself")
