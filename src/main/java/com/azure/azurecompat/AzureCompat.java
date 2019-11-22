@@ -19,9 +19,13 @@ import com.azure.azurecompat.util.CloudBootsCompat;
 import com.azure.azurecompat.util.CombatCompat;
 import com.azure.azurecompat.util.CompactedCompat;
 import com.azure.azurecompat.util.CraftHuntCompat;
+import com.azure.azurecompat.util.CyclicCompat;
 import com.azure.azurecompat.util.DruidcraftCompact;
 import com.azure.azurecompat.util.EnigmaticLegacyCompat;
+import com.azure.azurecompat.util.EssentialFeaturesCompat;
 import com.azure.azurecompat.util.ExplorercraftCompat;
+import com.azure.azurecompat.util.ExtraBowsCompat;
+import com.azure.azurecompat.util.FarlandersCompat;
 import com.azure.azurecompat.util.ForbiddenandArcanusCompat;
 import com.azure.azurecompat.util.FunItemsModCompat;
 import com.azure.azurecompat.util.GemsPlusPlusCompat;
@@ -29,6 +33,7 @@ import com.azure.azurecompat.util.GobberCompat;
 import com.azure.azurecompat.util.GoodNightSleepCompat;
 import com.azure.azurecompat.util.IlikewoodCompact;
 import com.azure.azurecompat.util.LongFallBootsCompat;
+import com.azure.azurecompat.util.MidnightCompat;
 import com.azure.azurecompat.util.MinecoloniesCompat;
 import com.azure.azurecompat.util.MysticalWorldCompat;
 import com.azure.azurecompat.util.NethercraftCompat;
@@ -40,9 +45,11 @@ import com.azure.azurecompat.util.RestrictionsCompat;
 import com.azure.azurecompat.util.SimpleDiveGearCompat;
 import com.azure.azurecompat.util.SolarGenerationCompat;
 import com.azure.azurecompat.util.SpartanShieldsCompat;
+import com.azure.azurecompat.util.SwitchBowCompat;
 import com.azure.azurecompat.util.TetraCompat;
 import com.azure.azurecompat.util.TheOneProbeCompat;
 import com.azure.azurecompat.util.TofuCraftCompat;
+import com.azure.azurecompat.util.UnstabletoolsCompat;
 import com.azure.azurecompat.util.VanillaCompat;
 import com.azure.azurecompat.util.WitherSkeletonTweaksCompact;
 import com.azure.azurecompat.util.WyrmroostCompat;
@@ -189,6 +196,28 @@ public class AzureCompat {
 		}
 		if (ModList.get().isLoaded("xercamod") && Config.INSTANCE.USE_COMPATIBILITY_ON_XERCA_ITEMS.get()) {
 			MinecraftForge.EVENT_BUS.register(new XercaCompact());
+		}
+		if (ModList.get().isLoaded("switchbow") && Config.INSTANCE.USE_COMPATIBILITY_ON_SWITCHBOW_ITEMS.get()) {
+			MinecraftForge.EVENT_BUS.register(new SwitchBowCompat());
+		}
+		if (ModList.get().isLoaded("extrabows") && Config.INSTANCE.USE_COMPATIBILITY_ON_EXTRABOWS_ITEMS.get()) {
+			MinecraftForge.EVENT_BUS.register(new ExtraBowsCompat());
+		}
+		if (ModList.get().isLoaded("cyclic") && Config.INSTANCE.USE_COMPATIBILITY_ON_CYCLIC_ITEMS.get()) {
+			MinecraftForge.EVENT_BUS.register(new CyclicCompat());
+		}
+		if (ModList.get().isLoaded("essentialfeatures")
+				&& Config.INSTANCE.USE_COMPATIBILITY_ON_ESSENTIALFEATURES_ITEMS.get()) {
+			MinecraftForge.EVENT_BUS.register(new EssentialFeaturesCompat());
+		}
+		if (ModList.get().isLoaded("unstabletools") && Config.INSTANCE.USE_COMPATIBILITY_ON_UNSTABLETOOLS_ITEMS.get()) {
+			MinecraftForge.EVENT_BUS.register(new UnstabletoolsCompat());
+		}
+		if (ModList.get().isLoaded("midnight") && Config.INSTANCE.USE_COMPATIBILITY_ON_MIDNIGHT_ITEMS.get()) {
+			MinecraftForge.EVENT_BUS.register(new MidnightCompat());
+		}
+		if (ModList.get().isLoaded("farlanders") && Config.INSTANCE.USE_COMPATIBILITY_ON_FARLANDERS_ITEMS.get()) {
+			MinecraftForge.EVENT_BUS.register(new FarlandersCompat());
 		}
 	}
 }

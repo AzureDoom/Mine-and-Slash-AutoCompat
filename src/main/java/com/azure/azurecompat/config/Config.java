@@ -59,9 +59,15 @@ public class Config {
 	public BooleanValue USE_COMPATIBILITY_ON_ILIKEWOOD_ITEMS;
 	public BooleanValue USE_COMPATIBILITY_ON_BOUNTIFULBAUBLES_ITEMS;
 	public BooleanValue USE_COMPATIBILITY_ON_DRUIDCRAFT_ITEMS;
-	
 	public BooleanValue USE_COMPATIBILITY_ON_WITHERSKELETONTWEAKS_ITEMS;
 	public BooleanValue USE_COMPATIBILITY_ON_XERCA_ITEMS;
+	public BooleanValue USE_COMPATIBILITY_ON_SWITCHBOW_ITEMS;
+	public BooleanValue USE_COMPATIBILITY_ON_EXTRABOWS_ITEMS;
+	public BooleanValue USE_COMPATIBILITY_ON_CYCLIC_ITEMS;
+	public BooleanValue USE_COMPATIBILITY_ON_ESSENTIALFEATURES_ITEMS;
+	public BooleanValue USE_COMPATIBILITY_ON_UNSTABLETOOLS_ITEMS;
+	public BooleanValue USE_COMPATIBILITY_ON_MIDNIGHT_ITEMS;
+	public BooleanValue USE_COMPATIBILITY_ON_FARLANDERS_ITEMS;
 
 	Config(ForgeConfigSpec.Builder builder) {
 		builder.comment("Client Settings").push(NAME);
@@ -71,11 +77,46 @@ public class Config {
 				.translation("azurecompat.config.use_compatibility_on_wyrmroost_items")
 				.define("USE_COMPATIBILITY_ON_WYRMROOST_ITEMS", true);
 
+		USE_COMPATIBILITY_ON_FARLANDERS_ITEMS = builder.comment(
+				"Turns on Auto Compatibility for Farlanders to get Mine and Slash stats. Turn off to configure yourself")
+				.translation("azurecompat.config.use_compatibility_on_farlanders_items")
+				.define("USE_COMPATIBILITY_ON_FARLANDERS_ITEMS", true);
+
+		USE_COMPATIBILITY_ON_SWITCHBOW_ITEMS = builder.comment(
+				"Turns on Auto Compatibility for Switch Bow to get Mine and Slash stats. Turn off to configure yourself")
+				.translation("azurecompat.config.use_compatibility_on_switchbow_items")
+				.define("USE_COMPATIBILITY_ON_SWITCHBOW_ITEMS", true);
+
+		USE_COMPATIBILITY_ON_EXTRABOWS_ITEMS = builder.comment(
+				"Turns on Auto Compatibility for Extra Bows to get Mine and Slash stats. Turn off to configure yourself")
+				.translation("azurecompat.config.use_compatibility_on_extrabows_items")
+				.define("USE_COMPATIBILITY_ON_EXTRABOWS_ITEMS", true);
+
+		USE_COMPATIBILITY_ON_CYCLIC_ITEMS = builder.comment(
+				"Turns on Auto Compatibility for Cyclic to get Mine and Slash stats. Turn off to configure yourself")
+				.translation("azurecompat.config.use_compatibility_on_wyrmroost_items")
+				.define("USE_COMPATIBILITY_ON_CYCLIC_ITEMS", true);
+
+		USE_COMPATIBILITY_ON_ESSENTIALFEATURES_ITEMS = builder.comment(
+				"Turns on Auto Compatibility for Essential Features to get Mine and Slash stats. Turn off to configure yourself")
+				.translation("azurecompat.config.use_compatibility_on_essentialfeatures_items")
+				.define("USE_COMPATIBILITY_ON_ESSENTIALFEATURES_ITEMS", true);
+
+		USE_COMPATIBILITY_ON_UNSTABLETOOLS_ITEMS = builder.comment(
+				"Turns on Auto Compatibility for Unstable Tools to get Mine and Slash stats. Turn off to configure yourself")
+				.translation("azurecompat.config.use_compatibility_on_unstabletools_items")
+				.define("USE_COMPATIBILITY_ON_UNSTABLETOOLS_ITEMS", true);
+
+		USE_COMPATIBILITY_ON_MIDNIGHT_ITEMS = builder.comment(
+				"Turns on Auto Compatibility for Midnight items to get Mine and Slash stats. Turn off to configure yourself")
+				.translation("azurecompat.config.use_compatibility_on_midnight_items")
+				.define("USE_COMPATIBILITY_ON_MIDNIGHT_ITEMS", true);
+
 		USE_COMPATIBILITY_ON_ILIKEWOOD_ITEMS = builder.comment(
 				"Turns on Auto Compatibility for ILikeWood Mod to get Mine and Slash stats. Turn off to configure yourself")
 				.translation("azurecompat.config.use_compatibility_on_ilikewood_items")
 				.define("USE_COMPATIBILITY_ON_ILIKEWOOD_ITEMS", true);
-		
+
 		USE_COMPATIBILITY_ON_WITHERSKELETONTWEAKS_ITEMS = builder.comment(
 				"Turns on Auto Compatibility for Wither Skelton Tweaks to get Mine and Slash stats. Turn off to configure yourself")
 				.translation("azurecompat.config.use_compatibility_on_witherskeletontweaks_items")

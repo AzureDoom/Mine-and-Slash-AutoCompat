@@ -3,6 +3,7 @@ package com.azure.azurecompat.util;
 import com.azure.azurecompat.AzureCompat;
 import com.robertx22.mine_and_slash.api.MineAndSlashAPI;
 import com.robertx22.mine_and_slash.config.compatible_items.ConfigItem;
+import com.robertx22.mine_and_slash.database.gearitemslots.offhand.Shield;
 import com.robertx22.mine_and_slash.database.gearitemslots.plate.PlateBoots;
 import com.robertx22.mine_and_slash.database.gearitemslots.plate.PlateChest;
 import com.robertx22.mine_and_slash.database.gearitemslots.plate.PlateHelmet;
@@ -22,6 +23,8 @@ public class TofuCraftCompat {
 		MineAndSlashAPI.addCompatibleItem(MODID + "swordmetal", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
 		MineAndSlashAPI.addCompatibleItem(MODID + "sworddiamond", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
 		MineAndSlashAPI.addCompatibleItem(MODID + "tofustick", new ConfigItem().setType(Wand.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "tofuishi_shield", new ConfigItem().setType(Shield.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "tofumetal_shield", new ConfigItem().setType(Shield.INSTANCE).setSalvagable(true));
 		MineAndSlashAPI.addCompatibleItem(MODID + "armorkinuhelmet", new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true));
 		MineAndSlashAPI.addCompatibleItem(MODID + "armormomenhelmet", new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true));
 		MineAndSlashAPI.addCompatibleItem(MODID + "armorsolidhelmet", new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true));
