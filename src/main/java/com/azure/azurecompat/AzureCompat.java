@@ -35,6 +35,7 @@ import com.azure.azurecompat.util.IlikewoodCompact;
 import com.azure.azurecompat.util.LongFallBootsCompat;
 import com.azure.azurecompat.util.MidnightCompat;
 import com.azure.azurecompat.util.MinecoloniesCompat;
+import com.azure.azurecompat.util.MubbleCompat;
 import com.azure.azurecompat.util.MysticalWorldCompat;
 import com.azure.azurecompat.util.NethercraftCompat;
 import com.azure.azurecompat.util.OresAboveDiamondsCompat;
@@ -218,6 +219,9 @@ public class AzureCompat {
 		}
 		if (ModList.get().isLoaded("farlanders") && Config.INSTANCE.USE_COMPATIBILITY_ON_FARLANDERS_ITEMS.get()) {
 			MinecraftForge.EVENT_BUS.register(new FarlandersCompat());
+		}
+		if (ModList.get().isLoaded("mubble") && Config.INSTANCE.USE_COMPATIBILITY_ON_MUBBLE_ITEMS.get()) {
+			MinecraftForge.EVENT_BUS.register(new MubbleCompat());
 		}
 	}
 }

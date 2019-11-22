@@ -68,6 +68,7 @@ public class Config {
 	public BooleanValue USE_COMPATIBILITY_ON_UNSTABLETOOLS_ITEMS;
 	public BooleanValue USE_COMPATIBILITY_ON_MIDNIGHT_ITEMS;
 	public BooleanValue USE_COMPATIBILITY_ON_FARLANDERS_ITEMS;
+	public BooleanValue USE_COMPATIBILITY_ON_MUBBLE_ITEMS;
 
 	Config(ForgeConfigSpec.Builder builder) {
 		builder.comment("Client Settings").push(NAME);
@@ -76,6 +77,11 @@ public class Config {
 				"Turns on Auto Compatibility for Wyrmroost to get Mine and Slash stats. Turn off to configure yourself")
 				.translation("azurecompat.config.use_compatibility_on_wyrmroost_items")
 				.define("USE_COMPATIBILITY_ON_WYRMROOST_ITEMS", true);
+
+		USE_COMPATIBILITY_ON_MUBBLE_ITEMS = builder.comment(
+				"Turns on Auto Compatibility for Mubble to get Mine and Slash stats. Turn off to configure yourself")
+				.translation("azurecompat.config.use_compatibility_on_mubble_items")
+				.define("USE_COMPATIBILITY_ON_MUBBLE_ITEMS", true);
 
 		USE_COMPATIBILITY_ON_FARLANDERS_ITEMS = builder.comment(
 				"Turns on Auto Compatibility for Farlanders to get Mine and Slash stats. Turn off to configure yourself")
