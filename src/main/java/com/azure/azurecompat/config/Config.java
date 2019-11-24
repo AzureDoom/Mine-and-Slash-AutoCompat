@@ -69,6 +69,10 @@ public class Config {
 	public BooleanValue USE_COMPATIBILITY_ON_MIDNIGHT_ITEMS;
 	public BooleanValue USE_COMPATIBILITY_ON_FARLANDERS_ITEMS;
 	public BooleanValue USE_COMPATIBILITY_ON_MUBBLE_ITEMS;
+	public BooleanValue USE_COMPATIBILITY_ON_LUCKYORES_ITEMS;
+	public BooleanValue USE_COMPATIBILITY_ON_REDISCOVERED_ITEMS;
+	public BooleanValue USE_COMPATIBILITY_ON_EASYSTEEL_ITEMS;
+	public BooleanValue USE_COMPATIBILITY_ON_USELESSSWORD_ITEMS;
 
 	Config(ForgeConfigSpec.Builder builder) {
 		builder.comment("Client Settings").push(NAME);
@@ -77,6 +81,26 @@ public class Config {
 				"Turns on Auto Compatibility for Wyrmroost to get Mine and Slash stats. Turn off to configure yourself")
 				.translation("azurecompat.config.use_compatibility_on_wyrmroost_items")
 				.define("USE_COMPATIBILITY_ON_WYRMROOST_ITEMS", true);
+
+		USE_COMPATIBILITY_ON_LUCKYORES_ITEMS = builder.comment(
+				"Turns on Auto Compatibility for LuckyOres to get Mine and Slash stats. Turn off to configure yourself")
+				.translation("azurecompat.config.use_compatibility_on_luckyores_items")
+				.define("USE_COMPATIBILITY_ON_LUCKYORES_ITEMS", true);
+
+		USE_COMPATIBILITY_ON_EASYSTEEL_ITEMS = builder.comment(
+				"Turns on Auto Compatibility for Easy Steel to get Mine and Slash stats. Turn off to configure yourself")
+				.translation("azurecompat.config.use_compatibility_on_easysteel_items")
+				.define("USE_COMPATIBILITY_ON_EASYSTEEL_ITEMS", true);
+
+		USE_COMPATIBILITY_ON_USELESSSWORD_ITEMS = builder.comment(
+				"Turns on Auto Compatibility for Useless Sword to get Mine and Slash stats. Turn off to configure yourself")
+				.translation("azurecompat.config.use_compatibility_on_uselesssword_items")
+				.define("USE_COMPATIBILITY_ON_USELESSSWORD_ITEMS", true);
+
+		USE_COMPATIBILITY_ON_REDISCOVERED_ITEMS = builder.comment(
+				"Turns on Auto Compatibility for Rediscovered to get Mine and Slash stats. Turn off to configure yourself")
+				.translation("azurecompat.config.use_compatibility_on_rediscovered_items")
+				.define("USE_COMPATIBILITY_ON_REDISCOVERED_ITEMS", true);
 
 		USE_COMPATIBILITY_ON_MUBBLE_ITEMS = builder.comment(
 				"Turns on Auto Compatibility for Mubble to get Mine and Slash stats. Turn off to configure yourself")

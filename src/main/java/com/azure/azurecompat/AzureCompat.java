@@ -21,6 +21,7 @@ import com.azure.azurecompat.util.CompactedCompat;
 import com.azure.azurecompat.util.CraftHuntCompat;
 import com.azure.azurecompat.util.CyclicCompat;
 import com.azure.azurecompat.util.DruidcraftCompact;
+import com.azure.azurecompat.util.EasySteelCompat;
 import com.azure.azurecompat.util.EnigmaticLegacyCompat;
 import com.azure.azurecompat.util.EssentialFeaturesCompat;
 import com.azure.azurecompat.util.ExplorercraftCompat;
@@ -33,6 +34,7 @@ import com.azure.azurecompat.util.GobberCompat;
 import com.azure.azurecompat.util.GoodNightSleepCompat;
 import com.azure.azurecompat.util.IlikewoodCompact;
 import com.azure.azurecompat.util.LongFallBootsCompat;
+import com.azure.azurecompat.util.LuckyOresCompat;
 import com.azure.azurecompat.util.MidnightCompat;
 import com.azure.azurecompat.util.MinecoloniesCompat;
 import com.azure.azurecompat.util.MubbleCompat;
@@ -42,6 +44,7 @@ import com.azure.azurecompat.util.OresAboveDiamondsCompat;
 import com.azure.azurecompat.util.PlantTech2Compat;
 import com.azure.azurecompat.util.PolyOresCompat;
 import com.azure.azurecompat.util.QuarkCompat;
+import com.azure.azurecompat.util.RediscoveredCompat;
 import com.azure.azurecompat.util.RestrictionsCompat;
 import com.azure.azurecompat.util.SimpleDiveGearCompat;
 import com.azure.azurecompat.util.SolarGenerationCompat;
@@ -51,6 +54,7 @@ import com.azure.azurecompat.util.TetraCompat;
 import com.azure.azurecompat.util.TheOneProbeCompat;
 import com.azure.azurecompat.util.TofuCraftCompat;
 import com.azure.azurecompat.util.UnstabletoolsCompat;
+import com.azure.azurecompat.util.UselessSwordCompat;
 import com.azure.azurecompat.util.VanillaCompat;
 import com.azure.azurecompat.util.WitherSkeletonTweaksCompact;
 import com.azure.azurecompat.util.WyrmroostCompat;
@@ -222,6 +226,18 @@ public class AzureCompat {
 		}
 		if (ModList.get().isLoaded("mubble") && Config.INSTANCE.USE_COMPATIBILITY_ON_MUBBLE_ITEMS.get()) {
 			MinecraftForge.EVENT_BUS.register(new MubbleCompat());
+		}
+		if (ModList.get().isLoaded("luckyores") && Config.INSTANCE.USE_COMPATIBILITY_ON_LUCKYORES_ITEMS.get()) {
+			MinecraftForge.EVENT_BUS.register(new LuckyOresCompat());
+		}
+		if (ModList.get().isLoaded("rediscovered") && Config.INSTANCE.USE_COMPATIBILITY_ON_REDISCOVERED_ITEMS.get()) {
+			MinecraftForge.EVENT_BUS.register(new RediscoveredCompat());
+		}
+		if (ModList.get().isLoaded("easy_steel") && Config.INSTANCE.USE_COMPATIBILITY_ON_EASYSTEEL_ITEMS.get()) {
+			MinecraftForge.EVENT_BUS.register(new EasySteelCompat());
+		}
+		if (ModList.get().isLoaded("useless_sword") && Config.INSTANCE.USE_COMPATIBILITY_ON_USELESSSWORD_ITEMS.get()) {
+			MinecraftForge.EVENT_BUS.register(new UselessSwordCompat());
 		}
 	}
 }
