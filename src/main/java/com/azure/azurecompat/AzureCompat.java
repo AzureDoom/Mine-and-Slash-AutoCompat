@@ -59,6 +59,7 @@ import com.azure.azurecompat.util.VanillaCompat;
 import com.azure.azurecompat.util.WitherSkeletonTweaksCompact;
 import com.azure.azurecompat.util.WyrmroostCompat;
 import com.azure.azurecompat.util.XercaCompact;
+import com.azure.azurecompat.util.YoyosCompat;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -238,6 +239,9 @@ public class AzureCompat {
 		}
 		if (ModList.get().isLoaded("useless_sword") && Config.INSTANCE.USE_COMPATIBILITY_ON_USELESSSWORD_ITEMS.get()) {
 			MinecraftForge.EVENT_BUS.register(new UselessSwordCompat());
+		}
+		if (ModList.get().isLoaded("yoyos") && Config.INSTANCE.USE_COMPATIBILITY_ON_YOYOS_ITEMS.get()) {
+			MinecraftForge.EVENT_BUS.register(new YoyosCompat());
 		}
 	}
 }
