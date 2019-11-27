@@ -30,5 +30,7 @@ public class RediscoveredCompat {
 				new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true));
 		MineAndSlashAPI.addCompatibleItem(MODID + "iron_quiver",
 				new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "diamond_quiver",
+				new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true));
 	}
 }
