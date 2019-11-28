@@ -14,7 +14,7 @@ apply plugin: 'maven-publish'
 
 version = '1.4.0'
 group = 'com.azure.azurecompat'
-archivesBaseName = 'Mine and Slash Auto Compatibility'
+archivesBaseName = 'Mine and Slash Auto Compatibility 1.14.4'
 
 sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
 
