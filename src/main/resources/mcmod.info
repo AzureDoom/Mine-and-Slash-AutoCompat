@@ -1,16 +1,19 @@
 [
 {
-  "modid": "examplemod",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
+  "modid": "azurecompat",
+  "name": "ine and Slash AutoCompat 1.12.22",
+  "description": "This mods adds autocompat for linking various to Mine and Slash systems.",
   "version": "${version}",
   "mcversion": "${mcversion}",
-  "url": "",
+  "url": "https://www.curseforge.com/minecraft/mc-mods/mine-and-slash-auto-compatibility",
   "updateUrl": "",
-  "authorList": ["ExampleDude"],
-  "credits": "The Forge and FML guys, for making this example",
-  "logoFile": "",
+  "authorList": ["AzureDoomC"],
+  "credits": "AzureDoomC",
+  "logoFile": "logo.png",
   "screenshots": [],
-  "dependencies": []
+  "requiredMods": [ "mmorpg", "baubles" ],
+  "dependencies": [ "forge", "mmorpg", "baubles" ],
+  "useDependencyInformation": "true",
+  "acceptedMinecraftVersions": "1.12.2"
 }
 ]
