@@ -1,7 +1,7 @@
 [
 {
   "modid": "azurecompat",
-  "name": "ine and Slash AutoCompat 1.12.22",
+  "name": "Mine and Slash AutoCompat 1.12.22",
   "description": "This mods adds autocompat for linking various to Mine and Slash systems.",
   "version": "${version}",
   "mcversion": "${mcversion}",

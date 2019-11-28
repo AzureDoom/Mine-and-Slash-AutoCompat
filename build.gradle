@@ -10,8 +10,8 @@ buildscript {
 apply plugin: 'net.minecraftforge.gradle.forge'
 
 version = "1.0.0"
-group = "com.azure.c"
-archivesBaseName = "azurecompat"
+group = "com.azure.azurecompat"
+archivesBaseName = "Mine and Slash Auto Compatibility 1.12.2"
 
 sourceCompatibility = targetCompatibility = '1.8'
 compileJava {
