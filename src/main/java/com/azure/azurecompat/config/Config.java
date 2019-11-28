@@ -74,6 +74,12 @@ public class Config {
 	public BooleanValue USE_COMPATIBILITY_ON_EASYSTEEL_ITEMS;
 	public BooleanValue USE_COMPATIBILITY_ON_USELESSSWORD_ITEMS;
 	public BooleanValue USE_COMPATIBILITY_ON_YOYOS_ITEMS;
+	public BooleanValue USE_COMPATIBILITY_ON_UNDERWATERBIOME_ITEMS;
+	public BooleanValue USE_COMPATIBILITY_ON_PATTYSMORETOOLS_ITEMS;
+	public BooleanValue USE_COMPATIBILITY_ON_PATTYSMORESTUFF_ITEMS;
+	public BooleanValue USE_COMPATIBILITY_ON_PATTYSMOREARMOR_ITEMS;
+	public BooleanValue USE_COMPATIBILITY_ON_RAYSDONGLES_ITEMS;
+	public BooleanValue USE_COMPATIBILITY_ON_MOREPROGRESSION_ITEMS;
 
 	Config(ForgeConfigSpec.Builder builder) {
 		builder.comment("Client Settings").push(NAME);
@@ -82,6 +88,36 @@ public class Config {
 				"Turns on Auto Compatibility for Wyrmroost to get Mine and Slash stats. Turn off to configure yourself")
 				.translation("azurecompat.config.use_compatibility_on_wyrmroost_items")
 				.define("USE_COMPATIBILITY_ON_WYRMROOST_ITEMS", true);
+
+		USE_COMPATIBILITY_ON_UNDERWATERBIOME_ITEMS = builder.comment(
+				"Turns on Auto Compatibility for Underwater Biome to get Mine and Slash stats. Turn off to configure yourself")
+				.translation("azurecompat.config.use_compatibility_on_yoyos_items")
+				.define("USE_COMPATIBILITY_ON_UNDERWATERBIOME_ITEMS", true);
+
+		USE_COMPATIBILITY_ON_PATTYSMORETOOLS_ITEMS = builder.comment(
+				"Turns on Auto Compatibility for Patty's More Tools to get Mine and Slash stats. Turn off to configure yourself")
+				.translation("azurecompat.config.use_compatibility_on_pattysmoretools_items")
+				.define("USE_COMPATIBILITY_ON_PATTYSMORETOOLS_ITEMS", true);
+
+		USE_COMPATIBILITY_ON_PATTYSMORESTUFF_ITEMS = builder.comment(
+				"Turns on Auto Compatibility for Patty's More Stuff to get Mine and Slash stats. Turn off to configure yourself")
+				.translation("azurecompat.config.use_compatibility_on_pattysmorestuff_items")
+				.define("USE_COMPATIBILITY_ON_PATTYSMORESTUFF_ITEMS", true);
+
+		USE_COMPATIBILITY_ON_PATTYSMOREARMOR_ITEMS = builder.comment(
+				"Turns on Auto Compatibility for Patty's More Armor to get Mine and Slash stats. Turn off to configure yourself")
+				.translation("azurecompat.config.use_compatibility_on_pattysmorearmor_items")
+				.define("USE_COMPATIBILITY_ON_PATTYSMOREARMOR_ITEMS", true);
+
+		USE_COMPATIBILITY_ON_RAYSDONGLES_ITEMS = builder.comment(
+				"Turns on Auto Compatibility for Ray's Dongles to get Mine and Slash stats. Turn off to configure yourself")
+				.translation("azurecompat.config.use_compatibility_on_raysdongles_items")
+				.define("USE_COMPATIBILITY_ON_RAYSDONGLES_ITEMS", true);
+
+		USE_COMPATIBILITY_ON_MOREPROGRESSION_ITEMS = builder.comment(
+				"Turns on Auto Compatibility for More Progression to get Mine and Slash stats. Turn off to configure yourself")
+				.translation("azurecompat.config.use_compatibility_on_moreprogression_items")
+				.define("USE_COMPATIBILITY_ON_MOREPROGRESSION_ITEMS", true);
 
 		USE_COMPATIBILITY_ON_YOYOS_ITEMS = builder.comment(
 				"Turns on Auto Compatibility for Yoyos to get Mine and Slash stats. Turn off to configure yourself")

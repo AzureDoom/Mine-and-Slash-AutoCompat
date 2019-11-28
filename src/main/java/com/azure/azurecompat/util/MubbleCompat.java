@@ -63,5 +63,41 @@ public class MubbleCompat {
 				new ConfigItem().setType(ClothHelmet.INSTANCE).setSalvagable(true));
 		MineAndSlashAPI.addCompatibleItem(MODID + "king_round_mask",
 				new ConfigItem().setType(ClothHelmet.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "pikachu_ears",
+				new ConfigItem().setType(ClothHelmet.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "kid_hat",
+				new ConfigItem().setType(ClothHelmet.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "brown_virtual_googles",
+				new ConfigItem().setType(ClothHelmet.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "white_virtual_googles",
+				new ConfigItem().setType(ClothHelmet.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "light_gray_virtual_googles",
+				new ConfigItem().setType(ClothHelmet.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "yellow_virtual_googles",
+				new ConfigItem().setType(ClothHelmet.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "gray_virtual_googles",
+				new ConfigItem().setType(ClothHelmet.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "black_virtual_googles",
+				new ConfigItem().setType(ClothHelmet.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "red_virtual_googles",
+				new ConfigItem().setType(ClothHelmet.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "orange_virtual_googles",
+				new ConfigItem().setType(ClothHelmet.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "lime_virtual_googles",
+				new ConfigItem().setType(ClothHelmet.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "green_virtual_googles",
+				new ConfigItem().setType(ClothHelmet.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "cyan_virtual_googles",
+				new ConfigItem().setType(ClothHelmet.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "light_blue_virtual_googles",
+				new ConfigItem().setType(ClothHelmet.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "blue_virtual_googles",
+				new ConfigItem().setType(ClothHelmet.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "purple_virtual_googles",
+				new ConfigItem().setType(ClothHelmet.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "magenta_virtual_googles",
+				new ConfigItem().setType(ClothHelmet.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "pink_virtual_googles",
+				new ConfigItem().setType(ClothHelmet.INSTANCE).setSalvagable(true));
 	}
 }

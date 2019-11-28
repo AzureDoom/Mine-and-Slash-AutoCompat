@@ -37,13 +37,18 @@ import com.azure.azurecompat.util.LongFallBootsCompat;
 import com.azure.azurecompat.util.LuckyOresCompat;
 import com.azure.azurecompat.util.MidnightCompat;
 import com.azure.azurecompat.util.MinecoloniesCompat;
+import com.azure.azurecompat.util.MoreProgressionCompat;
 import com.azure.azurecompat.util.MubbleCompat;
 import com.azure.azurecompat.util.MysticalWorldCompat;
 import com.azure.azurecompat.util.NethercraftCompat;
 import com.azure.azurecompat.util.OresAboveDiamondsCompat;
+import com.azure.azurecompat.util.PattysMoreArmorCompat;
+import com.azure.azurecompat.util.PattysMoreStuffCompat;
+import com.azure.azurecompat.util.PattysMoreToolsCompat;
 import com.azure.azurecompat.util.PlantTech2Compat;
 import com.azure.azurecompat.util.PolyOresCompat;
 import com.azure.azurecompat.util.QuarkCompat;
+import com.azure.azurecompat.util.RaysDonglesCompat;
 import com.azure.azurecompat.util.RediscoveredCompat;
 import com.azure.azurecompat.util.RestrictionsCompat;
 import com.azure.azurecompat.util.SimpleDiveGearCompat;
@@ -53,6 +58,7 @@ import com.azure.azurecompat.util.SwitchBowCompat;
 import com.azure.azurecompat.util.TetraCompat;
 import com.azure.azurecompat.util.TheOneProbeCompat;
 import com.azure.azurecompat.util.TofuCraftCompat;
+import com.azure.azurecompat.util.UnderwaterBiomeCompat;
 import com.azure.azurecompat.util.UnstabletoolsCompat;
 import com.azure.azurecompat.util.UselessSwordCompat;
 import com.azure.azurecompat.util.VanillaCompat;
@@ -242,6 +248,29 @@ public class AzureCompat {
 		}
 		if (ModList.get().isLoaded("yoyos") && Config.INSTANCE.USE_COMPATIBILITY_ON_YOYOS_ITEMS.get()) {
 			MinecraftForge.EVENT_BUS.register(new YoyosCompat());
+		}
+		if (ModList.get().isLoaded("underwaterbiome")
+				&& Config.INSTANCE.USE_COMPATIBILITY_ON_UNDERWATERBIOME_ITEMS.get()) {
+			MinecraftForge.EVENT_BUS.register(new UnderwaterBiomeCompat());
+		}
+		if (ModList.get().isLoaded("pattysmoretools")
+				&& Config.INSTANCE.USE_COMPATIBILITY_ON_PATTYSMORETOOLS_ITEMS.get()) {
+			MinecraftForge.EVENT_BUS.register(new PattysMoreToolsCompat());
+		}
+		if (ModList.get().isLoaded("pattysmorestuff")
+				&& Config.INSTANCE.USE_COMPATIBILITY_ON_PATTYSMORESTUFF_ITEMS.get()) {
+			MinecraftForge.EVENT_BUS.register(new PattysMoreStuffCompat());
+		}
+		if (ModList.get().isLoaded("pattysmorearmor")
+				&& Config.INSTANCE.USE_COMPATIBILITY_ON_PATTYSMOREARMOR_ITEMS.get()) {
+			MinecraftForge.EVENT_BUS.register(new PattysMoreArmorCompat());
+		}
+		if (ModList.get().isLoaded("slurpiesdongles") && Config.INSTANCE.USE_COMPATIBILITY_ON_RAYSDONGLES_ITEMS.get()) {
+			MinecraftForge.EVENT_BUS.register(new RaysDonglesCompat());
+		}
+		if (ModList.get().isLoaded("moreprogression")
+				&& Config.INSTANCE.USE_COMPATIBILITY_ON_MOREPROGRESSION_ITEMS.get()) {
+			MinecraftForge.EVENT_BUS.register(new MoreProgressionCompat());
 		}
 	}
 }
