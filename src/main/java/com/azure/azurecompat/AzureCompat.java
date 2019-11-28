@@ -22,6 +22,7 @@ import com.azure.azurecompat.util.CraftHuntCompat;
 import com.azure.azurecompat.util.CyclicCompat;
 import com.azure.azurecompat.util.DruidcraftCompact;
 import com.azure.azurecompat.util.EasySteelCompat;
+import com.azure.azurecompat.util.EndergeticCompat;
 import com.azure.azurecompat.util.EnigmaticLegacyCompat;
 import com.azure.azurecompat.util.EssentialFeaturesCompat;
 import com.azure.azurecompat.util.ExplorercraftCompat;
@@ -39,6 +40,7 @@ import com.azure.azurecompat.util.MidnightCompat;
 import com.azure.azurecompat.util.MinecoloniesCompat;
 import com.azure.azurecompat.util.MoreProgressionCompat;
 import com.azure.azurecompat.util.MubbleCompat;
+import com.azure.azurecompat.util.MutantBeastsCompat;
 import com.azure.azurecompat.util.MysticalWorldCompat;
 import com.azure.azurecompat.util.NethercraftCompat;
 import com.azure.azurecompat.util.OresAboveDiamondsCompat;
@@ -271,6 +273,12 @@ public class AzureCompat {
 		if (ModList.get().isLoaded("moreprogression")
 				&& Config.INSTANCE.USE_COMPATIBILITY_ON_MOREPROGRESSION_ITEMS.get()) {
 			MinecraftForge.EVENT_BUS.register(new MoreProgressionCompat());
+		}
+		if (ModList.get().isLoaded("mutantbeasts") && Config.INSTANCE.USE_COMPATIBILITY_ON_MUTANTBEASTS_ITEMS.get()) {
+			MinecraftForge.EVENT_BUS.register(new MutantBeastsCompat());
+		}
+		if (ModList.get().isLoaded("endergetic") && Config.INSTANCE.USE_COMPATIBILITY_ON_ENDERGETIC_ITEMS.get()) {
+			MinecraftForge.EVENT_BUS.register(new EndergeticCompat());
 		}
 	}
 }

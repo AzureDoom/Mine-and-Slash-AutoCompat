@@ -80,6 +80,8 @@ public class Config {
 	public BooleanValue USE_COMPATIBILITY_ON_PATTYSMOREARMOR_ITEMS;
 	public BooleanValue USE_COMPATIBILITY_ON_RAYSDONGLES_ITEMS;
 	public BooleanValue USE_COMPATIBILITY_ON_MOREPROGRESSION_ITEMS;
+	public BooleanValue USE_COMPATIBILITY_ON_MUTANTBEASTS_ITEMS;
+	public BooleanValue USE_COMPATIBILITY_ON_ENDERGETIC_ITEMS;
 
 	Config(ForgeConfigSpec.Builder builder) {
 		builder.comment("Client Settings").push(NAME);
@@ -93,6 +95,16 @@ public class Config {
 				"Turns on Auto Compatibility for Underwater Biome to get Mine and Slash stats. Turn off to configure yourself")
 				.translation("azurecompat.config.use_compatibility_on_yoyos_items")
 				.define("USE_COMPATIBILITY_ON_UNDERWATERBIOME_ITEMS", true);
+
+		USE_COMPATIBILITY_ON_MUTANTBEASTS_ITEMS = builder.comment(
+				"Turns on Auto Compatibility for Mutant Beasts to get Mine and Slash stats. Turn off to configure yourself")
+				.translation("azurecompat.config.use_compatibility_on_mutantbeasts_items")
+				.define("USE_COMPATIBILITY_ON_MUTANTBEASTS_ITEMS", true);
+
+		USE_COMPATIBILITY_ON_ENDERGETIC_ITEMS = builder.comment(
+				"Turns on Auto Compatibility for Endergetic to get Mine and Slash stats. Turn off to configure yourself")
+				.translation("azurecompat.config.use_compatibility_on_endergetic_items")
+				.define("USE_COMPATIBILITY_ON_ENDERGETIC_ITEMS", true);
 
 		USE_COMPATIBILITY_ON_PATTYSMORETOOLS_ITEMS = builder.comment(
 				"Turns on Auto Compatibility for Patty's More Tools to get Mine and Slash stats. Turn off to configure yourself")
