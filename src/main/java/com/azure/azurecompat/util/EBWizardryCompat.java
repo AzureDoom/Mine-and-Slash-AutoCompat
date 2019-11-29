@@ -18,7 +18,7 @@ import com.robertx22.database.gearitemslots.Charm;
 import com.robertx22.database.gearitemslots.Ring;
 import com.robertx22.database.gearitemslots.Necklace;
 
-public class ebwizardry {
+public class EBWizardryCompat {
 
 	private static final List<String> TYPE = ImmutableList.of("fire", "ice", "lightning", "necromancy", "earth",
 			"sorcery", "healing");
@@ -42,62 +42,54 @@ public class ebwizardry {
 			"charm_light", "charm_minion_health", "charm_minion_variants", "charm_silk_touch", "charm_stop_time",
 			"charm_storm");
 
-	public ebwizardry() {
+	public EBWizardryCompat() {
 
 		String modID = "ebwizardry:";
 
 		for (String w : TYPE) {
 			MineAndSlashAPI.addCompatibleItem(modID + "novice_" + w + "_wand",
-					new ConfigItem().setType(new Staff()).setMaxLevel(10));
+					new ConfigItem().setType(new Staff()).setMaxLevel(10).setdropsAsLoot(false));
 			MineAndSlashAPI.addCompatibleItem(modID + "magic_wand",
-					new ConfigItem().setType(new Staff()).setMaxLevel(10));
+					new ConfigItem().setType(new Staff()).setMaxLevel(10).setdropsAsLoot(false));
 			MineAndSlashAPI.addCompatibleItem(modID + "apprentice_" + w + "_wand",
-					new ConfigItem().setType(new Staff()).setMinLevel(30));
+					new ConfigItem().setType(new Staff()).setMinLevel(30).setdropsAsLoot(false));
 			MineAndSlashAPI.addCompatibleItem(modID + "apprentice_wand",
-					new ConfigItem().setType(new Staff()).setMinLevel(30));
+					new ConfigItem().setType(new Staff()).setMinLevel(30).setdropsAsLoot(false));
 			MineAndSlashAPI.addCompatibleItem(modID + "advanced_" + w + "_wand",
-					new ConfigItem().setType(new Staff()).setMinLevel(50));
+					new ConfigItem().setType(new Staff()).setMinLevel(50).setdropsAsLoot(false));
 			MineAndSlashAPI.addCompatibleItem(modID + "advanced_wand",
-					new ConfigItem().setType(new Staff()).setMinLevel(50));
+					new ConfigItem().setType(new Staff()).setMinLevel(50).setdropsAsLoot(false));
 			MineAndSlashAPI.addCompatibleItem(modID + "master_" + w + "_wand",
-					new ConfigItem().setType(new Staff()).setMinLevel(70));
+					new ConfigItem().setType(new Staff()).setMinLevel(70).setdropsAsLoot(false));
 			MineAndSlashAPI.addCompatibleItem(modID + "master_wand",
-					new ConfigItem().setType(new Staff()).setMinLevel(70));
+					new ConfigItem().setType(new Staff()).setMinLevel(70).setdropsAsLoot(false));
 		}
-		AzureCompat.LOGGER.info("Registered Staffs");
 		for (String s : TYPE) {
 			MineAndSlashAPI.addCompatibleItem(modID + "wizard_hat",
-					new ConfigItem().setType(new Helmet()).setMaxRarity(2).setAlwaysNormal().setMaxLevel(10));
+					new ConfigItem().setType(new Helmet()).setMaxRarity(2).setAlwaysNormal().setMaxLevel(10).setdropsAsLoot(false));
 			MineAndSlashAPI.addCompatibleItem(modID + "wizard_hat_" + s,
-					new ConfigItem().setType(new Helmet()).setMaxRarity(2).setAlwaysNormal().setMinLevel(30));
-			AzureCompat.LOGGER.info("Registered Helmet");
+					new ConfigItem().setType(new Helmet()).setMaxRarity(2).setAlwaysNormal().setMinLevel(30).setdropsAsLoot(false));
 			MineAndSlashAPI.addCompatibleItem(modID + "wizard_robe",
-					new ConfigItem().setType(new Chest()).setMaxRarity(2).setAlwaysNormal().setMaxLevel(10));
+					new ConfigItem().setType(new Chest()).setMaxRarity(2).setAlwaysNormal().setMaxLevel(10).setdropsAsLoot(false));
 			MineAndSlashAPI.addCompatibleItem(modID + "wizard_robe_" + s,
-					new ConfigItem().setType(new Chest()).setMaxRarity(2).setAlwaysNormal().setMinLevel(30));
-			AzureCompat.LOGGER.info("Registered Chestplate");
+					new ConfigItem().setType(new Chest()).setMaxRarity(2).setAlwaysNormal().setMinLevel(30).setdropsAsLoot(false));
 			MineAndSlashAPI.addCompatibleItem(modID + "wizard_leggings",
-					new ConfigItem().setType(new Pants()).setMaxRarity(2).setAlwaysNormal().setMaxLevel(10));
+					new ConfigItem().setType(new Pants()).setMaxRarity(2).setAlwaysNormal().setMaxLevel(10).setdropsAsLoot(false));
 			MineAndSlashAPI.addCompatibleItem(modID + "wizard_leggings_" + s,
-					new ConfigItem().setType(new Pants()).setMaxRarity(2).setAlwaysNormal().setMinLevel(30));
-			AzureCompat.LOGGER.info("Registered Leggings");
+					new ConfigItem().setType(new Pants()).setMaxRarity(2).setAlwaysNormal().setMinLevel(30).setdropsAsLoot(false));
 			MineAndSlashAPI.addCompatibleItem(modID + "wizard_boots",
-					new ConfigItem().setType(new Boots()).setMaxRarity(2).setAlwaysNormal().setMaxLevel(10));
+					new ConfigItem().setType(new Boots()).setMaxRarity(2).setAlwaysNormal().setMaxLevel(10).setdropsAsLoot(false));
 			MineAndSlashAPI.addCompatibleItem(modID + "wizard_boots" + s,
-					new ConfigItem().setType(new Boots()).setMaxRarity(2).setAlwaysNormal().setMinLevel(30));
-			AzureCompat.LOGGER.info("Registered Boots");
+					new ConfigItem().setType(new Boots()).setMaxRarity(2).setAlwaysNormal().setMinLevel(30).setdropsAsLoot(false));
 		}
 		for (String s : Ring) {
-			MineAndSlashAPI.addCompatibleItem(modID + s, new ConfigItem().setType(new Ring()));
-			AzureCompat.LOGGER.info("Registered Rings");
+			MineAndSlashAPI.addCompatibleItem(modID + s, new ConfigItem().setType(new Ring()).setdropsAsLoot(false));
 		}
 		for (String s : Amulet) {
-			MineAndSlashAPI.addCompatibleItem(modID + s, new ConfigItem().setType(new Necklace()));
-			AzureCompat.LOGGER.info("Registered Amulets");
+			MineAndSlashAPI.addCompatibleItem(modID + s, new ConfigItem().setType(new Necklace()).setdropsAsLoot(false));
 		}
 		for (String s : Charm) {
-			MineAndSlashAPI.addCompatibleItem(modID + s, new ConfigItem().setType(new Charm()));
-			AzureCompat.LOGGER.info("Registered Charms");
+			MineAndSlashAPI.addCompatibleItem(modID + s, new ConfigItem().setType(new Charm()).setdropsAsLoot(false));
 		}
 	}
 

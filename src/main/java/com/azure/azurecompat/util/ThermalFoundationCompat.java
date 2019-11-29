@@ -2,9 +2,6 @@ package com.azure.azurecompat.util;
 
 import java.util.List;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
 import com.google.common.collect.ImmutableList;
 import com.robertx22.api.MineAndSlashAPI;
 import com.robertx22.config.non_mine_items.ConfigItem;
@@ -18,8 +15,7 @@ import com.robertx22.database.gearitemslots.Pants;
 import com.robertx22.database.gearitemslots.Staff;
 import com.robertx22.database.gearitemslots.Sword;
 
-public class thermalfoundation {
-	private static final Logger LOGGER = LogManager.getLogger();
+public class ThermalFoundationCompat {
 
 	private static final List<String> BOW = ImmutableList.of("", "tool.bow_constantan", "tool.bow_copper",
 			"tool.bow_nickel", "tool.bow_tin", "tool.bow_iron", "tool.bow_gold", "tool.bow_aluminum", "tool.bow_bronze",
@@ -49,89 +45,82 @@ public class thermalfoundation {
 			"armor.boots_copper", "armor.boots_constantan", "armor.boots_aluminum", "armor.boots_nickel",
 			"armor.boots_bronze", "armor.boots_electrum");
 
-	public thermalfoundation() {
+	public ThermalFoundationCompat() {
 		String modID = "thermalfoundation:";
 
 		MineAndSlashAPI.addCompatibleItem(modID + "tool.bow_silver", new ConfigItem().setType(new Bow()).setMaxRarity(1)
-				.setSalvagable(false).setAlwaysNormal().setMinLevel(20).setMaxLevel(30));
+				.setAlwaysNormal().setMinLevel(20).setMaxLevel(30).setdropsAsLoot(false));
 		for (String b : BOW) {
 			MineAndSlashAPI.addCompatibleItem(modID + b, new ConfigItem().setType(new Bow()).setMaxRarity(2)
-					.setSalvagable(false).setAlwaysNormal().setMinLevel(30).setMaxLevel(50));
+					.setAlwaysNormal().setMinLevel(30).setMaxLevel(50).setdropsAsLoot(false));
 		}
 		MineAndSlashAPI.addCompatibleItem(modID + "tool.bow_diamond",
-				new ConfigItem().setType(new Bow()).setSalvagable(false).setMinLevel(50));
+				new ConfigItem().setType(new Bow()).setMinLevel(50).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(modID + "tool.bow_platinum",
-				new ConfigItem().setType(new Bow()).setSalvagable(false).setMinLevel(50));
+				new ConfigItem().setType(new Bow()).setMinLevel(50).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(modID + "tool.bow_invar",
-				new ConfigItem().setType(new Bow()).setSalvagable(false).setMinLevel(50));
-		LOGGER.debug("Registered Bows");
+				new ConfigItem().setType(new Bow()).setMinLevel(50).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(modID + "tool.hammer_silver", new ConfigItem().setType(new Hammer())
-				.setMaxRarity(1).setSalvagable(false).setAlwaysNormal().setMaxLevel(20));
+				.setMaxRarity(1).setAlwaysNormal().setMaxLevel(20).setdropsAsLoot(false));
 		for (String h : HAMMER) {
 			MineAndSlashAPI.addCompatibleItem(modID + h, new ConfigItem().setType(new Hammer()).setMaxRarity(2)
-					.setSalvagable(false).setAlwaysNormal().setMaxLevel(30));
+					.setAlwaysNormal().setMaxLevel(30).setdropsAsLoot(false));
 		}
 		MineAndSlashAPI.addCompatibleItem(modID + "tool.hammer_diamond",
-				new ConfigItem().setType(new Hammer()).setSalvagable(false).setMinLevel(50));
+				new ConfigItem().setType(new Hammer()).setMinLevel(50).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(modID + "tool.hammer_platinum",
-				new ConfigItem().setType(new Hammer()).setSalvagable(false).setMinLevel(50));
+				new ConfigItem().setType(new Hammer()).setMinLevel(50).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(modID + "tool.hammer_invar",
-				new ConfigItem().setType(new Hammer()).setSalvagable(false).setMinLevel(50));
-		LOGGER.debug("Registered Hammers");
+				new ConfigItem().setType(new Hammer()).setMinLevel(50).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(modID + "tool.sword_silver", new ConfigItem().setType(new Sword())
-				.setMaxRarity(1).setSalvagable(false).setAlwaysNormal().setMaxLevel(20));
+				.setMaxRarity(1).setAlwaysNormal().setMaxLevel(20).setdropsAsLoot(false));
 		for (String s : SWORD) {
 			MineAndSlashAPI.addCompatibleItem(modID + s, new ConfigItem().setType(new Sword()).setMaxRarity(2)
-					.setSalvagable(false).setAlwaysNormal().setMaxLevel(30));
+					.setAlwaysNormal().setMaxLevel(30).setdropsAsLoot(false));
 		}
 		MineAndSlashAPI.addCompatibleItem(modID + "tool.sword_platinum",
-				new ConfigItem().setType(new Sword()).setSalvagable(false).setMinLevel(50));
+				new ConfigItem().setType(new Sword()).setMinLevel(50).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(modID + "tool.sword_invar",
-				new ConfigItem().setType(new Sword()).setSalvagable(false).setMinLevel(50));
-		LOGGER.debug("Registered Swords");
+				new ConfigItem().setType(new Sword()).setMinLevel(50).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(modID + "armor.helmet_silver", new ConfigItem().setType(new Helmet())
-				.setMaxRarity(1).setSalvagable(false).setAlwaysNormal().setMaxLevel(20));
+				.setMaxRarity(1).setAlwaysNormal().setMaxLevel(20).setdropsAsLoot(false));
 		for (String ah : Helmet) {
 			MineAndSlashAPI.addCompatibleItem(modID + ah, new ConfigItem().setType(new Helmet()).setMaxRarity(2)
-					.setSalvagable(false).setAlwaysNormal().setMaxLevel(30));
+					.setAlwaysNormal().setMaxLevel(30).setdropsAsLoot(false));
 		}
 		MineAndSlashAPI.addCompatibleItem(modID + "armor.helmet_platinum",
-				new ConfigItem().setType(new Helmet()).setSalvagable(false).setMinLevel(50));
+				new ConfigItem().setType(new Helmet()).setMinLevel(50).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(modID + "armor.helmet_invar",
-				new ConfigItem().setType(new Helmet()).setSalvagable(false).setMinLevel(50));
-		LOGGER.debug("Registered Helmet");
+				new ConfigItem().setType(new Helmet()).setMinLevel(50).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(modID + "armor.plate_silver", new ConfigItem().setType(new Chest())
-				.setMaxRarity(1).setSalvagable(false).setAlwaysNormal().setMaxLevel(20));
+				.setMaxRarity(1).setAlwaysNormal().setMaxLevel(20).setdropsAsLoot(false));
 		for (String c : Chestplate) {
 			MineAndSlashAPI.addCompatibleItem(modID + c, new ConfigItem().setType(new Chest()).setMaxRarity(2)
-					.setSalvagable(false).setAlwaysNormal().setMaxLevel(30));
+					.setAlwaysNormal().setMaxLevel(30).setdropsAsLoot(false));
 		}
 		MineAndSlashAPI.addCompatibleItem(modID + "armor.plate_platinum",
-				new ConfigItem().setType(new Chest()).setSalvagable(false).setMinLevel(50));
+				new ConfigItem().setType(new Chest()).setMinLevel(50).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(modID + "armor.plate_invar",
-				new ConfigItem().setType(new Chest()).setSalvagable(false).setMinLevel(50));
-		LOGGER.debug("Registered Chestplate");
+				new ConfigItem().setType(new Chest()).setMinLevel(50).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(modID + "armor.legs_silver", new ConfigItem().setType(new Pants())
-				.setMaxRarity(1).setSalvagable(false).setAlwaysNormal().setMaxLevel(20));
+				.setMaxRarity(1).setAlwaysNormal().setMaxLevel(20).setdropsAsLoot(false));
 		for (String l : Leggings) {
 			MineAndSlashAPI.addCompatibleItem(modID + l, new ConfigItem().setType(new Pants()).setMaxRarity(2)
-					.setSalvagable(false).setAlwaysNormal().setMaxLevel(30));
+					.setAlwaysNormal().setMaxLevel(30).setdropsAsLoot(false));
 		}
 		MineAndSlashAPI.addCompatibleItem(modID + "armor.legs_platinum",
-				new ConfigItem().setType(new Pants()).setSalvagable(false).setMinLevel(50));
+				new ConfigItem().setType(new Pants()).setMinLevel(50).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(modID + "armor.legs_invar",
-				new ConfigItem().setType(new Pants()).setSalvagable(false).setMinLevel(50));
-		LOGGER.debug("Registered Leggings");
+				new ConfigItem().setType(new Pants()).setMinLevel(50).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(modID + "armor.boots_silver", new ConfigItem().setType(new Boots())
-				.setMaxRarity(1).setSalvagable(false).setAlwaysNormal().setMaxLevel(20));
+				.setMaxRarity(1).setAlwaysNormal().setMaxLevel(20).setdropsAsLoot(false));
 		for (String ab : Boots) {
 			MineAndSlashAPI.addCompatibleItem(modID + ab, new ConfigItem().setType(new Boots()).setMaxRarity(2)
-					.setSalvagable(false).setAlwaysNormal().setMaxLevel(30));
+					.setAlwaysNormal().setMaxLevel(30).setdropsAsLoot(false));
 		}
 		MineAndSlashAPI.addCompatibleItem(modID + "armor.boots_platinum",
-				new ConfigItem().setType(new Boots()).setSalvagable(false).setMinLevel(50));
+				new ConfigItem().setType(new Boots()).setMinLevel(50).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(modID + "armor.boots_invar",
-				new ConfigItem().setType(new Boots()).setSalvagable(false).setMinLevel(50));
-		LOGGER.debug("Registered Boots");
+				new ConfigItem().setType(new Boots()).setMinLevel(50).setdropsAsLoot(false));
 	}
 }
