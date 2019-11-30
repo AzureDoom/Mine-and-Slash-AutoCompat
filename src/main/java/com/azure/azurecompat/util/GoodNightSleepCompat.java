@@ -1,6 +1,5 @@
 package com.azure.azurecompat.util;
 
-import com.azure.azurecompat.AzureCompat;
 import com.robertx22.mine_and_slash.api.MineAndSlashAPI;
 import com.robertx22.mine_and_slash.config.compatible_items.ConfigItem;
 import com.robertx22.mine_and_slash.database.gearitemslots.plate.PlateBoots;
@@ -15,33 +14,58 @@ public class GoodNightSleepCompat {
 
 	public GoodNightSleepCompat() {
 
-		MineAndSlashAPI.addCompatibleItem(MODID + "candy_sword", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
-		MineAndSlashAPI.addCompatibleItem(MODID + "positite_sword", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
-		MineAndSlashAPI.addCompatibleItem(MODID + "negatite_sword", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
-		MineAndSlashAPI.addCompatibleItem(MODID + "rainbow_sword", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
-		MineAndSlashAPI.addCompatibleItem(MODID + "zitrite_sword", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
-		MineAndSlashAPI.addCompatibleItem(MODID + "necrum_sword", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
-		MineAndSlashAPI.addCompatibleItem(MODID + "candy_helmet", new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true));
-		MineAndSlashAPI.addCompatibleItem(MODID + "positite_helmet", new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true));
-		MineAndSlashAPI.addCompatibleItem(MODID + "negatite_helmet", new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true));
-		MineAndSlashAPI.addCompatibleItem(MODID + "zitrite_helmet", new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true));
-		MineAndSlashAPI.addCompatibleItem(MODID + "rainbow_helmet", new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true));
-		MineAndSlashAPI.addCompatibleItem(MODID + "candy_chestplate", new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true));
-		MineAndSlashAPI.addCompatibleItem(MODID + "positite_chestplate", new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true));
-		MineAndSlashAPI.addCompatibleItem(MODID + "negatite_chestplate", new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true));
-		MineAndSlashAPI.addCompatibleItem(MODID + "rainbow_chestplate", new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true));
-		MineAndSlashAPI.addCompatibleItem(MODID + "zitrite_chestplate", new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true));
-		MineAndSlashAPI.addCompatibleItem(MODID + "candy_leggings", new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true));
-		MineAndSlashAPI.addCompatibleItem(MODID + "positite_leggings", new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true));
-		MineAndSlashAPI.addCompatibleItem(MODID + "negatite_leggings", new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true));
-		MineAndSlashAPI.addCompatibleItem(MODID + "rainbow_leggings", new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true));
-		MineAndSlashAPI.addCompatibleItem(MODID + "zitrite_leggings", new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true));
-		MineAndSlashAPI.addCompatibleItem(MODID + "candy_boots", new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true));
-		MineAndSlashAPI.addCompatibleItem(MODID + "positite_boots", new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true));
-		MineAndSlashAPI.addCompatibleItem(MODID + "negatite_boots", new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true));
-		MineAndSlashAPI.addCompatibleItem(MODID + "rainbow_boots", new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true));
-		MineAndSlashAPI.addCompatibleItem(MODID + "zitrite_boots", new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true));
-		AzureCompat.LOGGER.info("Registered Good Night Sleep Gear");
+		MineAndSlashAPI.addCompatibleItem(MODID + "candy_sword",
+				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "positite_sword",
+				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "negatite_sword",
+				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "rainbow_sword",
+				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "zitrite_sword",
+				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "necrum_sword",
+				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "candy_helmet",
+				new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "positite_helmet",
+				new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "negatite_helmet",
+				new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "zitrite_helmet",
+				new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "rainbow_helmet",
+				new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "candy_chestplate",
+				new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "positite_chestplate",
+				new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "negatite_chestplate",
+				new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "rainbow_chestplate",
+				new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "zitrite_chestplate",
+				new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "candy_leggings",
+				new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "positite_leggings",
+				new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "negatite_leggings",
+				new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "rainbow_leggings",
+				new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "zitrite_leggings",
+				new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "candy_boots",
+				new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "positite_boots",
+				new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "negatite_boots",
+				new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "rainbow_boots",
+				new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "zitrite_boots",
+				new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 	}
 
 }

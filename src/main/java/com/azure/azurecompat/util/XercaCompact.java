@@ -11,14 +11,14 @@ public class XercaCompact {
 
 	public XercaCompact() {
 		MineAndSlashAPI.addCompatibleItem(MODID + "stone_warhammer",
-				new ConfigItem().setType(Hammer.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(Hammer.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(MODID + "iron_warhammer",
-				new ConfigItem().setType(Hammer.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(Hammer.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(MODID + "gold_warhammer",
-				new ConfigItem().setType(Hammer.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(Hammer.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(MODID + "diamond_warhammer",
-				new ConfigItem().setType(Hammer.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(Hammer.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(MODID + "knife",
-				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 	}
 }

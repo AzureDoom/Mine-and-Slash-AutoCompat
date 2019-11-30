@@ -82,6 +82,8 @@ public class Config {
 	public BooleanValue USE_COMPATIBILITY_ON_MOREPROGRESSION_ITEMS;
 	public BooleanValue USE_COMPATIBILITY_ON_MUTANTBEASTS_ITEMS;
 	public BooleanValue USE_COMPATIBILITY_ON_ENDERGETIC_ITEMS;
+	public BooleanValue USE_COMPATIBILITY_ON_SKELETONLAMPS_ITEMS;
+	public BooleanValue USE_COMPATIBILITY_ON_VANILLATWEAKS_ITEMS;
 
 	Config(ForgeConfigSpec.Builder builder) {
 		builder.comment("Client Settings").push(NAME);
@@ -90,6 +92,16 @@ public class Config {
 				"Turns on Auto Compatibility for Wyrmroost to get Mine and Slash stats. Turn off to configure yourself")
 				.translation("azurecompat.config.use_compatibility_on_wyrmroost_items")
 				.define("USE_COMPATIBILITY_ON_WYRMROOST_ITEMS", true);
+
+		USE_COMPATIBILITY_ON_VANILLATWEAKS_ITEMS = builder.comment(
+				"Turns on Auto Compatibility for Vanilla Tweaks to get Mine and Slash stats. Turn off to configure yourself")
+				.translation("azurecompat.config.use_compatibility_on_vanillatweaks_items")
+				.define("USE_COMPATIBILITY_ON_VANILLATWEAKS_ITEMS", true);
+
+		USE_COMPATIBILITY_ON_SKELETONLAMPS_ITEMS = builder.comment(
+				"Turns on Auto Compatibility for Skeleton Lamps to get Mine and Slash stats. Turn off to configure yourself")
+				.translation("azurecompat.config.use_compatibility_on_skeletonlamps_items")
+				.define("USE_COMPATIBILITY_ON_SKELETONLAMPS_ITEMS", true);
 
 		USE_COMPATIBILITY_ON_UNDERWATERBIOME_ITEMS = builder.comment(
 				"Turns on Auto Compatibility for Underwater Biome to get Mine and Slash stats. Turn off to configure yourself")

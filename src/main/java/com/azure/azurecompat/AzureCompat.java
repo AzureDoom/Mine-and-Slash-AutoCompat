@@ -34,7 +34,6 @@ import com.azure.azurecompat.util.GemsPlusPlusCompat;
 import com.azure.azurecompat.util.GobberCompat;
 import com.azure.azurecompat.util.GoodNightSleepCompat;
 import com.azure.azurecompat.util.IlikewoodCompact;
-import com.azure.azurecompat.util.LongFallBootsCompat;
 import com.azure.azurecompat.util.LuckyOresCompat;
 import com.azure.azurecompat.util.MidnightCompat;
 import com.azure.azurecompat.util.MinecoloniesCompat;
@@ -52,7 +51,6 @@ import com.azure.azurecompat.util.PolyOresCompat;
 import com.azure.azurecompat.util.QuarkCompat;
 import com.azure.azurecompat.util.RaysDonglesCompat;
 import com.azure.azurecompat.util.RediscoveredCompat;
-import com.azure.azurecompat.util.RestrictionsCompat;
 import com.azure.azurecompat.util.SimpleDiveGearCompat;
 import com.azure.azurecompat.util.SolarGenerationCompat;
 import com.azure.azurecompat.util.SpartanShieldsCompat;
@@ -68,6 +66,11 @@ import com.azure.azurecompat.util.WitherSkeletonTweaksCompact;
 import com.azure.azurecompat.util.WyrmroostCompat;
 import com.azure.azurecompat.util.XercaCompact;
 import com.azure.azurecompat.util.YoyosCompat;
+import com.robertx22.mine_and_slash.api.MineAndSlashAPI;
+import com.robertx22.mine_and_slash.config.compatible_items.ConfigItem;
+import com.robertx22.mine_and_slash.database.gearitemslots.cloth.ClothHelmet;
+import com.robertx22.mine_and_slash.database.gearitemslots.plate.PlateBoots;
+import com.robertx22.mine_and_slash.database.gearitemslots.weapons.Sword;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -120,14 +123,16 @@ public class AzureCompat {
 			MinecraftForge.EVENT_BUS.register(new TheOneProbeCompat());
 		}
 		if (ModList.get().isLoaded("restrictions") && Config.INSTANCE.USE_COMPATIBILITY_ON_RESTRICTIONS_ITEMS.get()) {
-			MinecraftForge.EVENT_BUS.register(new RestrictionsCompat());
+			MineAndSlashAPI.addCompatibleItem("restrictions:glassboots",
+					new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		}
 		if (ModList.get().isLoaded("simpledivegear")
 				&& Config.INSTANCE.USE_COMPATIBILITY_ON_SIMPLEDIVEGEAR_ITEMS.get()) {
 			MinecraftForge.EVENT_BUS.register(new SimpleDiveGearCompat());
 		}
 		if (ModList.get().isLoaded("longfallboots") && Config.INSTANCE.USE_COMPATIBILITY_ON_LONGFALLBOOTS_ITEMS.get()) {
-			MinecraftForge.EVENT_BUS.register(new LongFallBootsCompat());
+			MineAndSlashAPI.addCompatibleItem("longfallboots:longfallboots",
+					new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		}
 		if (ModList.get().isLoaded("solargeneration")
 				&& Config.INSTANCE.USE_COMPATIBILITY_ON_SOLARGENERATION_ITEMS.get()) {
@@ -279,6 +284,14 @@ public class AzureCompat {
 		}
 		if (ModList.get().isLoaded("endergetic") && Config.INSTANCE.USE_COMPATIBILITY_ON_ENDERGETIC_ITEMS.get()) {
 			MinecraftForge.EVENT_BUS.register(new EndergeticCompat());
+		}
+		if (ModList.get().isLoaded("vanillatweaks") && Config.INSTANCE.USE_COMPATIBILITY_ON_VANILLATWEAKS_ITEMS.get()) {
+			MineAndSlashAPI.addCompatibleItem("vanillatweaks:binoculars",
+					new ConfigItem().setType(ClothHelmet.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+		}
+		if (ModList.get().isLoaded("skltlamp") && Config.INSTANCE.USE_COMPATIBILITY_ON_SKELETONLAMPS_ITEMS.get()) {
+			MineAndSlashAPI.addCompatibleItem("skltlamp:bambooknife",
+					new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		}
 	}
 }
