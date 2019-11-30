@@ -96,26 +96,36 @@ public class ModConfig {
 	@Config.LangKey("azurecompat.config.")
 	@Config.Comment("This enables adding stats to items from The Last Sword You Will Ever Need Reboot")
 	public static boolean AUTOCOMPATIBILITY_LASTSWORD = true;
-	
+
 	@Config.Name("Mega Loot")
 	@Config.LangKey("azurecompat.config.")
 	@Config.Comment("This enables adding stats to items from Mega Loot")
 	public static boolean AUTOCOMPATIBILITY_MEGALOOT = true;
-	
+
 	@Config.Name("Random Loot Mod")
 	@Config.LangKey("azurecompat.config.")
 	@Config.Comment("This enables adding stats to items from Random Loot Mod")
 	public static boolean AUTOCOMPATIBILITY_RANDOMLOOT = true;
-	
+
 	@Config.Name("Heroic Armory")
 	@Config.LangKey("azurecompat.config.")
 	@Config.Comment("This enables adding stats to items from Heroic Armory")
 	public static boolean AUTOCOMPATIBILITY_HEROICARMORY = true;
-	
+
 	@Config.Name("Skeleton Lamps")
 	@Config.LangKey("azurecompat.config.")
 	@Config.Comment("This enables adding stats to items from Skeleton Lamps")
 	public static boolean AUTOCOMPATIBILITY_SKELETONLAMPS = true;
+
+	@Config.Name("Wings")
+	@Config.LangKey("azurecompat.config.")
+	@Config.Comment("This enables adding stats to items from Wings")
+	public static boolean AUTOCOMPATIBILITY_WINGS = true;
+
+	@Config.Name("Oh The Biomes Youll Go")
+	@Config.LangKey("azurecompat.config.")
+	@Config.Comment("This enables adding stats to items from Oh The Biomes Youll Go")
+	public static boolean AUTOCOMPATIBILITY_BIOMESYOULLGO = true;
 
 	@Mod.EventBusSubscriber(modid = AzureCompat.MODID)
 	private static class EventHandler {

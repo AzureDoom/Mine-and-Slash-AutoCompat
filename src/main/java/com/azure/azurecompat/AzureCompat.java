@@ -4,6 +4,7 @@ import com.azure.azurecompat.config.ModConfig;
 import com.azure.azurecompat.util.Aether2Compat;
 import com.azure.azurecompat.util.AetherLegacyCompat;
 import com.azure.azurecompat.util.AllTheSwordsCompat;
+import com.azure.azurecompat.util.BiomesYoullGoCompat;
 import com.azure.azurecompat.util.DalekModCompat;
 import com.azure.azurecompat.util.EBWizardryCompat;
 import com.azure.azurecompat.util.ExplorercraftCompat;
@@ -22,6 +23,7 @@ import com.azure.azurecompat.util.ThermalFoundationCompat;
 import com.azure.azurecompat.util.TinkersCompat;
 import com.azure.azurecompat.util.TwilightForestCompat;
 import com.azure.azurecompat.util.VanillaCompat;
+import com.azure.azurecompat.util.WingsCompat;
 
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Loader;
@@ -97,6 +99,12 @@ public class AzureCompat {
 		}
 		if (Loader.isModLoaded("skltlamp") && ModConfig.AUTOCOMPATIBILITY_SKELETONLAMPS) {
 			MinecraftForge.EVENT_BUS.register(new SkeletonLampsCompat());
+		}
+		if (Loader.isModLoaded("wings") && ModConfig.AUTOCOMPATIBILITY_WINGS) {
+			MinecraftForge.EVENT_BUS.register(new WingsCompat());
+		}
+		if (Loader.isModLoaded("byg") && ModConfig.AUTOCOMPATIBILITY_BIOMESYOULLGO) {
+			MinecraftForge.EVENT_BUS.register(new BiomesYoullGoCompat());
 		}
 		if (ModConfig.AUTOCOMPATIBILITY_VANILLAITEMS) {
 			MinecraftForge.EVENT_BUS.register(new VanillaCompat());

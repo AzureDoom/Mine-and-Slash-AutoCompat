@@ -9,7 +9,7 @@ buildscript {
 }
 apply plugin: 'net.minecraftforge.gradle.forge'
 
-version = "1.0.1"
+version = "1.0.2"
 group = "com.azure.azurecompat"
 archivesBaseName = "Mine and Slash Auto Compatibility 1.12.2"
 
@@ -27,6 +27,7 @@ minecraft {
 dependencies {
 	compile files("libs/Baubles-1.12-1.5.2.jar") 
 	compile files("libs/Mine+and+Slash-1.12.2-1.8.6.jar") 
+	compile files("libs/Patchouli-1.0-20.jar")
 }
 
 processResources {
