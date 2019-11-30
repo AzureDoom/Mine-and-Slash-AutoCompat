@@ -13,20 +13,20 @@ public class PlantTech2Compat {
 
 	public PlantTech2Compat() {
 		MineAndSlashAPI.addCompatibleItem("planttech2:cyberrapier",
-				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
 		MineAndSlashAPI.addCompatibleItem("planttech2:cyberdagger",
-				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
 		MineAndSlashAPI.addCompatibleItem("planttech2:cyberkatana",
-				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
 		MineAndSlashAPI.addCompatibleItem("planttech2:cyberbow",
-				new ConfigItem().setType(Bow.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+				new ConfigItem().setType(Bow.INSTANCE).setSalvagable(true));
 		MineAndSlashAPI.addCompatibleItem("planttech2:cyberarmor_helmet",
-				new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+				new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true));
 		MineAndSlashAPI.addCompatibleItem("planttech2:cyberarmor_chest",
-				new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+				new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true));
 		MineAndSlashAPI.addCompatibleItem("planttech2:cyberarmor_leggings",
-				new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+				new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true));
 		MineAndSlashAPI.addCompatibleItem("planttech2:cyberarmor_boots",
-				new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+				new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true));
 	}
 }

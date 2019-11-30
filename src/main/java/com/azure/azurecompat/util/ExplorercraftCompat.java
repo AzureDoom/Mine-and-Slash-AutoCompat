@@ -15,23 +15,23 @@ public class ExplorercraftCompat {
 	public String MODID = "explorercraft:";
 
 	public ExplorercraftCompat() {
-		MineAndSlashAPI.addCompatibleItem(MODID + "jade_sword", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
-		MineAndSlashAPI.addCompatibleItem(MODID + "amethyst_sword", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
-		MineAndSlashAPI.addCompatibleItem(MODID + "ruby_sword", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
-		MineAndSlashAPI.addCompatibleItem(MODID + "wizard_staff", new ConfigItem().setType(Staff.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
-		MineAndSlashAPI.addCompatibleItem(MODID + "jade_bow", new ConfigItem().setType(Bow.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
-		MineAndSlashAPI.addCompatibleItem(MODID + "jade_helmet", new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
-		MineAndSlashAPI.addCompatibleItem(MODID + "amethyst_helmet", new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
-		MineAndSlashAPI.addCompatibleItem(MODID + "ruby_helmet", new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
-		MineAndSlashAPI.addCompatibleItem(MODID + "jade_chestplate", new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
-		MineAndSlashAPI.addCompatibleItem(MODID + "amethyst_chestplate", new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
-		MineAndSlashAPI.addCompatibleItem(MODID + "ruby_chestplate", new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
-		MineAndSlashAPI.addCompatibleItem(MODID + "jade_leggings", new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
-		MineAndSlashAPI.addCompatibleItem(MODID + "amethyst_leggings", new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
-		MineAndSlashAPI.addCompatibleItem(MODID + "ruby_leggings", new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
-		MineAndSlashAPI.addCompatibleItem(MODID + "jade_boots", new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
-		MineAndSlashAPI.addCompatibleItem(MODID + "amethyst_boots", new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
-		MineAndSlashAPI.addCompatibleItem(MODID + "ruby_boots", new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "jade_sword", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "amethyst_sword", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "ruby_sword", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "wizard_staff", new ConfigItem().setType(Staff.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "jade_bow", new ConfigItem().setType(Bow.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "jade_helmet", new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "amethyst_helmet", new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "ruby_helmet", new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "jade_chestplate", new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "amethyst_chestplate", new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "ruby_chestplate", new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "jade_leggings", new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "amethyst_leggings", new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "ruby_leggings", new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "jade_boots", new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "amethyst_boots", new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem(MODID + "ruby_boots", new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true));
 	}
 	
 }

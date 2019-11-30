@@ -8,6 +8,6 @@ public class EndergeticCompat {
 
 	public EndergeticCompat() {
 		MineAndSlashAPI.addCompatibleItem("endergetic:booflo_vest",
-				new ConfigItem().setType(ClothChest.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+				new ConfigItem().setType(ClothChest.INSTANCE).setSalvagable(true));
 	}
 }

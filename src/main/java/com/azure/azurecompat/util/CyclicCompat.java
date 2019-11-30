@@ -7,6 +7,6 @@ import com.robertx22.mine_and_slash.database.gearitemslots.weapons.Wand;
 public class CyclicCompat {
 
 	public CyclicCompat() {
-		MineAndSlashAPI.addCompatibleItem("cyclic:evoker_fang", new ConfigItem().setType(Wand.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem("cyclic:evoker_fang", new ConfigItem().setType(Wand.INSTANCE).setSalvagable(true));
 	}
 }

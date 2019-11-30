@@ -8,7 +8,7 @@ import com.robertx22.mine_and_slash.database.gearitemslots.weapons.CrossBow;
 public class SwitchBowCompat {
 
 	public SwitchBowCompat() {
-		MineAndSlashAPI.addCompatibleItem("switchbow:switchbow", new ConfigItem().setType(Bow.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
-		MineAndSlashAPI.addCompatibleItem("switchbow:switchcrossbow", new ConfigItem().setType(CrossBow.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem("switchbow:switchbow", new ConfigItem().setType(Bow.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem("switchbow:switchcrossbow", new ConfigItem().setType(CrossBow.INSTANCE).setSalvagable(true));
 	}
 }

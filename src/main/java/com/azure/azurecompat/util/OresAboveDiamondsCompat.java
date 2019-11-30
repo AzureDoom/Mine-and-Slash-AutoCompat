@@ -15,25 +15,25 @@ public class OresAboveDiamondsCompat {
 	public OresAboveDiamondsCompat() {
 
 		MineAndSlashAPI.addCompatibleItem(MODID + "black_opal_sword",
-				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
 		MineAndSlashAPI.addCompatibleItem(MODID + "amethyst_sword",
-				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
 		MineAndSlashAPI.addCompatibleItem(MODID + "black_opal_helmet",
-				new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+				new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true));
 		MineAndSlashAPI.addCompatibleItem(MODID + "amethyst_helmet",
-				new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+				new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true));
 		MineAndSlashAPI.addCompatibleItem(MODID + "black_opal_chestplate",
-				new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+				new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true));
 		MineAndSlashAPI.addCompatibleItem(MODID + "amethyst_chestplate",
-				new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+				new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true));
 		MineAndSlashAPI.addCompatibleItem(MODID + "black_opal_leggings",
-				new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+				new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true));
 		MineAndSlashAPI.addCompatibleItem(MODID + "amethyst_leggings",
-				new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+				new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true));
 		MineAndSlashAPI.addCompatibleItem(MODID + "black_opal_boots",
-				new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+				new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true));
 		MineAndSlashAPI.addCompatibleItem(MODID + "amethyst_boots",
-				new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+				new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true));
 	}
 
 }

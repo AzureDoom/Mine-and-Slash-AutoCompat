@@ -10,23 +10,23 @@ public class YoyosCompat {
 
 	public YoyosCompat() {
 		MineAndSlashAPI.addCompatibleItem(MODID + "wooden_yoyo",
-				new ConfigItem().setType(Bow.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+				new ConfigItem().setType(Bow.INSTANCE).setSalvagable(true));
 		MineAndSlashAPI.addCompatibleItem(MODID + "stone_yoyo",
-				new ConfigItem().setType(Bow.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+				new ConfigItem().setType(Bow.INSTANCE).setSalvagable(true));
 		MineAndSlashAPI.addCompatibleItem(MODID + "iron_yoyo",
-				new ConfigItem().setType(Bow.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+				new ConfigItem().setType(Bow.INSTANCE).setSalvagable(true));
 		MineAndSlashAPI.addCompatibleItem(MODID + "gold_yoyo",
-				new ConfigItem().setType(Bow.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+				new ConfigItem().setType(Bow.INSTANCE).setSalvagable(true));
 		MineAndSlashAPI.addCompatibleItem(MODID + "diamond_yoyo",
-				new ConfigItem().setType(Bow.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+				new ConfigItem().setType(Bow.INSTANCE).setSalvagable(true));
 		MineAndSlashAPI.addCompatibleItem(MODID + "creative_yoyo",
-				new ConfigItem().setType(Bow.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+				new ConfigItem().setType(Bow.INSTANCE).setSalvagable(true));
 		MineAndSlashAPI.addCompatibleItem(MODID + "sticky_yoyo",
-				new ConfigItem().setType(Bow.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+				new ConfigItem().setType(Bow.INSTANCE).setSalvagable(true));
 		MineAndSlashAPI.addCompatibleItem(MODID + "shear_yoyo",
-				new ConfigItem().setType(Bow.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+				new ConfigItem().setType(Bow.INSTANCE).setSalvagable(true));
 		MineAndSlashAPI.addCompatibleItem(MODID + "hoe_yoyo",
-				new ConfigItem().setType(Bow.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+				new ConfigItem().setType(Bow.INSTANCE).setSalvagable(true));
 	}
 
 }

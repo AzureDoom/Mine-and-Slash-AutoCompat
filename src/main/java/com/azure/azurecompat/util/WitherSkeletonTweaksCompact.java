@@ -7,7 +7,7 @@ import com.robertx22.mine_and_slash.database.gearitemslots.weapons.Sword;
 public class WitherSkeletonTweaksCompact {
 
 	public WitherSkeletonTweaksCompact() {
-		MineAndSlashAPI.addCompatibleItem("wstweaks:lava_blade", new ConfigItem().setType(Sword.INSTANCE).setdropsAsLoot(false));
-		MineAndSlashAPI.addCompatibleItem("wstweaks:blaze_blade", new ConfigItem().setType(Sword.INSTANCE).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem("wstweaks:lava_blade", new ConfigItem().setType(Sword.INSTANCE));
+		MineAndSlashAPI.addCompatibleItem("wstweaks:blaze_blade", new ConfigItem().setType(Sword.INSTANCE));
 	}
 }

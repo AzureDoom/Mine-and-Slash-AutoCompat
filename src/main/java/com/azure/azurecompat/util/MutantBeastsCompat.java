@@ -8,6 +8,6 @@ public class MutantBeastsCompat {
 
 	public MutantBeastsCompat() {
 		MineAndSlashAPI.addCompatibleItem("mutantbeasts:hulk_hammer",
-				new ConfigItem().setType(Hammer.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+				new ConfigItem().setType(Hammer.INSTANCE).setSalvagable(true));
 	}
 }

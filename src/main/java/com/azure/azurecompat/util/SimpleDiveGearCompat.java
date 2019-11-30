@@ -10,11 +10,11 @@ public class SimpleDiveGearCompat {
 
 	public SimpleDiveGearCompat() {
 		MineAndSlashAPI.addCompatibleItem("simpledivegear:divechest",
-				new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+				new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true));
 		MineAndSlashAPI.addCompatibleItem("simpledivegear:divelegs",
-				new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+				new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true));
 		MineAndSlashAPI.addCompatibleItem("simpledivegear:diveboots",
-				new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+				new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true));
 	}
 
 }

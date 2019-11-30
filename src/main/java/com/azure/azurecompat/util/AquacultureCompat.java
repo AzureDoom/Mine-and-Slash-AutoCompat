@@ -16,29 +16,29 @@ public class AquacultureCompat {
 	public AquacultureCompat() {
 
 		MineAndSlashAPI.addCompatibleItem(MODID + "sword",
-				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
 		MineAndSlashAPI.addCompatibleItem(MODID + "fillet_knife",
-				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
 		MineAndSlashAPI.addCompatibleItem("aquaculture:wooden_fillet_knife",
-				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
 		MineAndSlashAPI.addCompatibleItem("aquaculture:stone_fillet_knife",
-				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
 		MineAndSlashAPI.addCompatibleItem("aquaculture:iron_fillet_knife",
-				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
 		MineAndSlashAPI.addCompatibleItem("aquaculture:gold_fillet_knife",
-				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
 		MineAndSlashAPI.addCompatibleItem("aquaculture:diamond_fillet_knife",
-				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
 		MineAndSlashAPI.addCompatibleItem(MODID + "bow",
-				new ConfigItem().setType(Bow.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+				new ConfigItem().setType(Bow.INSTANCE).setSalvagable(true));
 		MineAndSlashAPI.addCompatibleItem(MODID + "helmet",
-				new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+				new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true));
 		MineAndSlashAPI.addCompatibleItem(MODID + "chestplate",
-				new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+				new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true));
 		MineAndSlashAPI.addCompatibleItem(MODID + "leggings",
-				new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+				new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true));
 		MineAndSlashAPI.addCompatibleItem(MODID + "boots",
-				new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+				new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true));
 	}
 
 }

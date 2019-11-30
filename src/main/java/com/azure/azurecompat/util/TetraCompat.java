@@ -7,7 +7,7 @@ import com.robertx22.mine_and_slash.database.gearitemslots.weapons.Sword;
 public class TetraCompat {
 	
 	public TetraCompat() {
-		MineAndSlashAPI.addCompatibleItem("tetra:sword_modular", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem("tetra:sword_modular", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
 	}
 
 }
