@@ -124,7 +124,7 @@ public class AzureCompat {
 		}
 		if (ModList.get().isLoaded("restrictions") && Config.INSTANCE.USE_COMPATIBILITY_ON_RESTRICTIONS_ITEMS.get()) {
 			MineAndSlashAPI.addCompatibleItem("restrictions:glassboots",
-					new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+					new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true));
 		}
 		if (ModList.get().isLoaded("simpledivegear")
 				&& Config.INSTANCE.USE_COMPATIBILITY_ON_SIMPLEDIVEGEAR_ITEMS.get()) {
@@ -132,7 +132,7 @@ public class AzureCompat {
 		}
 		if (ModList.get().isLoaded("longfallboots") && Config.INSTANCE.USE_COMPATIBILITY_ON_LONGFALLBOOTS_ITEMS.get()) {
 			MineAndSlashAPI.addCompatibleItem("longfallboots:longfallboots",
-					new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+					new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true));
 		}
 		if (ModList.get().isLoaded("solargeneration")
 				&& Config.INSTANCE.USE_COMPATIBILITY_ON_SOLARGENERATION_ITEMS.get()) {
@@ -287,11 +287,11 @@ public class AzureCompat {
 		}
 		if (ModList.get().isLoaded("vanillatweaks") && Config.INSTANCE.USE_COMPATIBILITY_ON_VANILLATWEAKS_ITEMS.get()) {
 			MineAndSlashAPI.addCompatibleItem("vanillatweaks:binoculars",
-					new ConfigItem().setType(ClothHelmet.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+					new ConfigItem().setType(ClothHelmet.INSTANCE).setSalvagable(true));
 		}
 		if (ModList.get().isLoaded("skltlamp") && Config.INSTANCE.USE_COMPATIBILITY_ON_SKELETONLAMPS_ITEMS.get()) {
 			MineAndSlashAPI.addCompatibleItem("skltlamp:bambooknife",
-					new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+					new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
 		}
 	}
 }
