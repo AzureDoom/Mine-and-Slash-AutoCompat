@@ -106,6 +106,12 @@ public class AzureCompat {
 		if (Loader.isModLoaded("byg") && ModConfig.AUTOCOMPATIBILITY_BIOMESYOULLGO) {
 			MinecraftForge.EVENT_BUS.register(new BiomesYoullGoCompat());
 		}
+		if (Loader.isModLoaded("spartanshields") && ModConfig.AUTOCOMPATIBILITY_SPARTANSHIELDS) {
+			MinecraftForge.EVENT_BUS.register(new BiomesYoullGoCompat());
+		}
+		if (Loader.isModLoaded("spartanweaponry") && ModConfig.AUTOCOMPATIBILITY_SPARTANWEAPONRY) {
+			MinecraftForge.EVENT_BUS.register(new BiomesYoullGoCompat());
+		}
 		if (ModConfig.AUTOCOMPATIBILITY_VANILLAITEMS) {
 			MinecraftForge.EVENT_BUS.register(new VanillaCompat());
 		}

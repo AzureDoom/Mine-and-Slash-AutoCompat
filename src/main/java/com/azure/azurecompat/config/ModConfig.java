@@ -126,6 +126,16 @@ public class ModConfig {
 	@Config.LangKey("azurecompat.config.")
 	@Config.Comment("This enables adding stats to items from Oh The Biomes Youll Go")
 	public static boolean AUTOCOMPATIBILITY_BIOMESYOULLGO = true;
+	
+	@Config.Name("Spartan Shields")
+	@Config.LangKey("azurecompat.config.")
+	@Config.Comment("This enables adding stats to items from Spartan Shields")
+	public static boolean AUTOCOMPATIBILITY_SPARTANSHIELDS = true;
+	
+	@Config.Name("Spartan Weaponry")
+	@Config.LangKey("azurecompat.config.")
+	@Config.Comment("This enables adding stats to items from Spartan Weaponry")
+	public static boolean AUTOCOMPATIBILITY_SPARTANWEAPONRY = true;
 
 	@Mod.EventBusSubscriber(modid = AzureCompat.MODID)
 	private static class EventHandler {
