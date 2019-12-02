@@ -35,6 +35,7 @@ import com.azure.azurecompat.util.GobberCompat;
 import com.azure.azurecompat.util.GoodNightSleepCompat;
 import com.azure.azurecompat.util.IlikewoodCompact;
 import com.azure.azurecompat.util.LuckyOresCompat;
+import com.azure.azurecompat.util.LycanitesMobsCompat;
 import com.azure.azurecompat.util.MidnightCompat;
 import com.azure.azurecompat.util.MinecoloniesCompat;
 import com.azure.azurecompat.util.MoreProgressionCompat;
@@ -296,6 +297,9 @@ public class AzureCompat {
 		}
 		if (ModList.get().isLoaded("powder_power") && Config.INSTANCE.USE_COMPATIBILITY_ON_POWDERPOWER_ITEMS.get()) {
 			MinecraftForge.EVENT_BUS.register(new PowderPowerCompat());
+		}
+		if (ModList.get().isLoaded("lycanitesmobs") && Config.INSTANCE.USE_COMPATIBILITY_ON_LYCANITESMOBS_ITEMS.get()) {
+			MinecraftForge.EVENT_BUS.register(new LycanitesMobsCompat());
 		}
 	}
 }
