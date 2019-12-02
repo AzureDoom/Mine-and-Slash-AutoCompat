@@ -48,6 +48,7 @@ import com.azure.azurecompat.util.PattysMoreStuffCompat;
 import com.azure.azurecompat.util.PattysMoreToolsCompat;
 import com.azure.azurecompat.util.PlantTech2Compat;
 import com.azure.azurecompat.util.PolyOresCompat;
+import com.azure.azurecompat.util.PowderPowerCompat;
 import com.azure.azurecompat.util.QuarkCompat;
 import com.azure.azurecompat.util.RaysDonglesCompat;
 import com.azure.azurecompat.util.RediscoveredCompat;
@@ -292,6 +293,9 @@ public class AzureCompat {
 		if (ModList.get().isLoaded("skltlamp") && Config.INSTANCE.USE_COMPATIBILITY_ON_SKELETONLAMPS_ITEMS.get()) {
 			MineAndSlashAPI.addCompatibleItem("skltlamp:bambooknife",
 					new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+		}
+		if (ModList.get().isLoaded("powder_power") && Config.INSTANCE.USE_COMPATIBILITY_ON_POWDERPOWER_ITEMS.get()) {
+			MinecraftForge.EVENT_BUS.register(new PowderPowerCompat());
 		}
 	}
 }

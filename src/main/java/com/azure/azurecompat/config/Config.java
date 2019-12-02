@@ -84,6 +84,7 @@ public class Config {
 	public BooleanValue USE_COMPATIBILITY_ON_ENDERGETIC_ITEMS;
 	public BooleanValue USE_COMPATIBILITY_ON_SKELETONLAMPS_ITEMS;
 	public BooleanValue USE_COMPATIBILITY_ON_VANILLATWEAKS_ITEMS;
+	public BooleanValue USE_COMPATIBILITY_ON_POWDERPOWER_ITEMS;
 
 	Config(ForgeConfigSpec.Builder builder) {
 		builder.comment("Client Settings").push(NAME);
@@ -93,6 +94,11 @@ public class Config {
 				.translation("azurecompat.config.use_compatibility_on_wyrmroost_items")
 				.define("USE_COMPATIBILITY_ON_WYRMROOST_ITEMS", true);
 
+		USE_COMPATIBILITY_ON_POWDERPOWER_ITEMS = builder.comment(
+				"Turns on Auto Compatibility for Powder Power to get Mine and Slash stats. Turn off to configure yourself")
+				.translation("azurecompat.config.use_compatibility_on_powderpower_items")
+				.define("USE_COMPATIBILITY_ON_POWDERPOWER_ITEMS", true);
+		
 		USE_COMPATIBILITY_ON_VANILLATWEAKS_ITEMS = builder.comment(
 				"Turns on Auto Compatibility for Vanilla Tweaks to get Mine and Slash stats. Turn off to configure yourself")
 				.translation("azurecompat.config.use_compatibility_on_vanillatweaks_items")
