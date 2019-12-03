@@ -17,6 +17,8 @@ import com.azure.azurecompat.util.MegaLootCompat;
 import com.azure.azurecompat.util.RPGInventoryCompat;
 import com.azure.azurecompat.util.RandomLootCompat;
 import com.azure.azurecompat.util.SkeletonLampsCompat;
+import com.azure.azurecompat.util.SpartanShieldsCompat;
+import com.azure.azurecompat.util.SpartanWeaponsCompat;
 import com.azure.azurecompat.util.TechRebornCompat;
 import com.azure.azurecompat.util.TheBetweenlandsCompat;
 import com.azure.azurecompat.util.TheEightFabledBladesCompat;
@@ -108,10 +110,10 @@ public class AzureCompat {
 			MinecraftForge.EVENT_BUS.register(new BiomesYoullGoCompat());
 		}
 		if (Loader.isModLoaded("spartanshields") && ModConfig.AUTOCOMPATIBILITY_SPARTANSHIELDS) {
-			MinecraftForge.EVENT_BUS.register(new BiomesYoullGoCompat());
+			MinecraftForge.EVENT_BUS.register(new SpartanShieldsCompat());
 		}
 		if (Loader.isModLoaded("spartanweaponry") && ModConfig.AUTOCOMPATIBILITY_SPARTANWEAPONRY) {
-			MinecraftForge.EVENT_BUS.register(new BiomesYoullGoCompat());
+			MinecraftForge.EVENT_BUS.register(new SpartanWeaponsCompat());
 		}
 		if (Loader.isModLoaded("lycanitesmobs") && ModConfig.AUTOCOMPATIBILITY_LYCANITESMOBS) {
 			MinecraftForge.EVENT_BUS.register(new LycanitesMobsCompat());
