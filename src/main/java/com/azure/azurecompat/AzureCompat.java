@@ -12,6 +12,7 @@ import com.azure.azurecompat.util.FarlandersCompat;
 import com.azure.azurecompat.util.HeroicArmoryCompat;
 import com.azure.azurecompat.util.IceAndFireCompat;
 import com.azure.azurecompat.util.LastSwordCompat;
+import com.azure.azurecompat.util.LycanitesMobsCompat;
 import com.azure.azurecompat.util.MegaLootCompat;
 import com.azure.azurecompat.util.RPGInventoryCompat;
 import com.azure.azurecompat.util.RandomLootCompat;
@@ -111,6 +112,9 @@ public class AzureCompat {
 		}
 		if (Loader.isModLoaded("spartanweaponry") && ModConfig.AUTOCOMPATIBILITY_SPARTANWEAPONRY) {
 			MinecraftForge.EVENT_BUS.register(new BiomesYoullGoCompat());
+		}
+		if (Loader.isModLoaded("lycanitesmobs") && ModConfig.AUTOCOMPATIBILITY_LYCANITESMOBS) {
+			MinecraftForge.EVENT_BUS.register(new LycanitesMobsCompat());
 		}
 		if (ModConfig.AUTOCOMPATIBILITY_VANILLAITEMS) {
 			MinecraftForge.EVENT_BUS.register(new VanillaCompat());
