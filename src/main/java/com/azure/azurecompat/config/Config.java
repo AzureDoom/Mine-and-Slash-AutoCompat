@@ -86,9 +86,15 @@ public class Config {
 	public BooleanValue USE_COMPATIBILITY_ON_VANILLATWEAKS_ITEMS;
 	public BooleanValue USE_COMPATIBILITY_ON_POWDERPOWER_ITEMS;
 	public BooleanValue USE_COMPATIBILITY_ON_LYCANITESMOBS_ITEMS;
+	public BooleanValue USE_COMPATIBILITY_ON_PROJECTE_ITEMS;
 
 	Config(ForgeConfigSpec.Builder builder) {
 		builder.comment("Client Settings").push(NAME);
+
+		USE_COMPATIBILITY_ON_PROJECTE_ITEMS = builder.comment(
+				"Turns on Auto Compatibility for Project E to get Mine and Slash stats. Turn off to configure yourself")
+				.translation("azurecompat.config.use_compatibility_on_projecte_items")
+				.define("USE_COMPATIBILITY_ON_PROJECTE_ITEMS", true);
 
 		USE_COMPATIBILITY_ON_WYRMROOST_ITEMS = builder.comment(
 				"Turns on Auto Compatibility for Wyrmroost to get Mine and Slash stats. Turn off to configure yourself")

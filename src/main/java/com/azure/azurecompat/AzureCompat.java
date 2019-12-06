@@ -50,6 +50,7 @@ import com.azure.azurecompat.util.PattysMoreToolsCompat;
 import com.azure.azurecompat.util.PlantTech2Compat;
 import com.azure.azurecompat.util.PolyOresCompat;
 import com.azure.azurecompat.util.PowderPowerCompat;
+import com.azure.azurecompat.util.ProjectECompat;
 import com.azure.azurecompat.util.QuarkCompat;
 import com.azure.azurecompat.util.RaysDonglesCompat;
 import com.azure.azurecompat.util.RediscoveredCompat;
@@ -87,10 +88,8 @@ public class AzureCompat {
 	public AzureCompat() {
 		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::processIMC);
 		instance = this;
-		ModLoadingContext.get().registerConfig(ModConfig.Type.SERVER, Config.spec,
-				"mine-and-slash-autocompat-config.toml");
-		Config.loadConfig(Config.spec,
-				FMLPaths.CONFIGDIR.get().resolve("mine-and-slash-autocompat-config.toml").toString());
+		ModLoadingContext.get().registerConfig(ModConfig.Type.SERVER, Config.spec, "m&s-autocompat-config.toml");
+		Config.loadConfig(Config.spec, FMLPaths.CONFIGDIR.get().resolve("m&s-autocompat-config.toml").toString());
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 
@@ -300,6 +299,9 @@ public class AzureCompat {
 		}
 		if (ModList.get().isLoaded("lycanitesmobs") && Config.INSTANCE.USE_COMPATIBILITY_ON_LYCANITESMOBS_ITEMS.get()) {
 			MinecraftForge.EVENT_BUS.register(new LycanitesMobsCompat());
+		}
+		if (ModList.get().isLoaded("projecte") && Config.INSTANCE.USE_COMPATIBILITY_ON_PROJECTE_ITEMS.get()) {
+			MinecraftForge.EVENT_BUS.register(new ProjectECompat());
 		}
 	}
 }

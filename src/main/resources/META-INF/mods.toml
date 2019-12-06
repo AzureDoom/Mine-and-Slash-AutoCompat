@@ -1,15 +1,13 @@
 modLoader="javafml" 
 loaderVersion="[28,)"
-issueTrackerURL="https://github.com/AzureZhen/Mine-and-Slash-AutoCompat-114/issues" 
-[[mods]] #mandatory
-# The modid of the mod
+issueTrackerURL="https://github.com/AzureZhen/Mine-and-Slash-AutoCompat/issues" 
+[[mods]] 
 modId="azurecompat" 
 version="${file.jarVersion}"
-displayName="Mine and Slash AutoCompat 1.14.4"
+displayName="M&S Auto-Compat 1.14.4"
 authors="AzureDoomC"
-# The description text for the mod (multi line!) (#mandatory)
 description='''
-This mods adds autocompat for linking currently Vanilla and Wyrmroost to Mine and Slash systems.
+This mods adds autocompat for linking various mods to Mine and Slash systems.
 '''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 [[dependencies.azurecompat]]
