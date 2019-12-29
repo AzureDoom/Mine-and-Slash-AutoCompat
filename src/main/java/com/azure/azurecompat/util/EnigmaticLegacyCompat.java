@@ -16,39 +16,39 @@ public class EnigmaticLegacyCompat {
 
 	public EnigmaticLegacyCompat() {
 		MineAndSlashAPI.addCompatibleItem("enigmaticlegacy:etherium_sword",
-				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem("enigmaticlegacy:etherium_axe",
-				new ConfigItem().setType(Axe.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(Axe.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem("enigmaticlegacy:etherium_scythe",
-				new ConfigItem().setType(Hammer.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(Hammer.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem("enigmaticlegacy:forbidden_axe",
-				new ConfigItem().setType(Axe.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(Axe.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem("enigmaticlegacy:astral_breaker",
-				new ConfigItem().setType(Hammer.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(Hammer.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem("enigmaticlegacy:etherium_helmet",
-				new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem("enigmaticlegacy:etherium_chestplate",
-				new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem("enigmaticlegacy:etherium_leggings",
-				new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem("enigmaticlegacy:etherium_boots",
-				new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem("enigmaticlegacy:monster_charm",
-				new ConfigItem().setType(Charm.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(Charm.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem("enigmaticlegacy:mega_sponge",
-				new ConfigItem().setType(Charm.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(Charm.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem("enigmaticlegacy:enigmatic_amulet",
-				new ConfigItem().setType(Charm.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(Charm.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem("enigmaticlegacy:mining_charm",
-				new ConfigItem().setType(Charm.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(Charm.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem("enigmaticlegacy:super_magnet_ring",
-				new ConfigItem().setType(Ring.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(Ring.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem("enigmaticlegacy:iron_ring",
-				new ConfigItem().setType(Ring.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(Ring.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem("enigmaticlegacy:ender_ring",
-				new ConfigItem().setType(Ring.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(Ring.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem("enigmaticlegacy:magnet_ring",
-				new ConfigItem().setType(Ring.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(Ring.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 	}
 
 }

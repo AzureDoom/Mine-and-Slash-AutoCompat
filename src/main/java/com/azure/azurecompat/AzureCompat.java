@@ -1,19 +1,14 @@
 package com.azure.azurecompat;
 
-import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.fml.ModList;
-import net.minecraftforge.fml.ModLoadingContext;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.config.ModConfig;
-import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.fml.loading.FMLPaths;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import com.azure.azurecompat.config.Config;
 import com.azure.azurecompat.util.AlikeToolsCompact;
 import com.azure.azurecompat.util.AquacultureCompat;
 import com.azure.azurecompat.util.BetterAnimalsPlusCompat;
 import com.azure.azurecompat.util.BluePowerCompat;
+import com.azure.azurecompat.util.BotaniaCompat;
 import com.azure.azurecompat.util.BountifulBaublesCompact;
 import com.azure.azurecompat.util.CloudBootsCompat;
 import com.azure.azurecompat.util.CombatCompat;
@@ -27,9 +22,11 @@ import com.azure.azurecompat.util.EnigmaticLegacyCompat;
 import com.azure.azurecompat.util.EssentialFeaturesCompat;
 import com.azure.azurecompat.util.ExplorercraftCompat;
 import com.azure.azurecompat.util.ExtraBowsCompat;
+import com.azure.azurecompat.util.ExtraEnrichmentsCompat;
 import com.azure.azurecompat.util.FarlandersCompat;
 import com.azure.azurecompat.util.ForbiddenandArcanusCompat;
 import com.azure.azurecompat.util.FunItemsModCompat;
+import com.azure.azurecompat.util.GamiModCompat;
 import com.azure.azurecompat.util.GemsPlusPlusCompat;
 import com.azure.azurecompat.util.GobberCompat;
 import com.azure.azurecompat.util.GoodNightSleepCompat;
@@ -38,6 +35,7 @@ import com.azure.azurecompat.util.LuckyOresCompat;
 import com.azure.azurecompat.util.LycanitesMobsCompat;
 import com.azure.azurecompat.util.MidnightCompat;
 import com.azure.azurecompat.util.MinecoloniesCompat;
+import com.azure.azurecompat.util.ModernityCompat;
 import com.azure.azurecompat.util.MoreProgressionCompat;
 import com.azure.azurecompat.util.MubbleCompat;
 import com.azure.azurecompat.util.MutantBeastsCompat;
@@ -73,10 +71,17 @@ import com.robertx22.mine_and_slash.api.MineAndSlashAPI;
 import com.robertx22.mine_and_slash.config.compatible_items.ConfigItem;
 import com.robertx22.mine_and_slash.database.gearitemslots.cloth.ClothHelmet;
 import com.robertx22.mine_and_slash.database.gearitemslots.plate.PlateBoots;
+import com.robertx22.mine_and_slash.database.gearitemslots.weapons.Bow;
 import com.robertx22.mine_and_slash.database.gearitemslots.weapons.Sword;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.fml.ModList;
+import net.minecraftforge.fml.ModLoadingContext;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.config.ModConfig;
+import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.fml.loading.FMLPaths;
 
 @Mod("azurecompat")
 public class AzureCompat {
@@ -125,7 +130,7 @@ public class AzureCompat {
 		}
 		if (ModList.get().isLoaded("restrictions") && Config.INSTANCE.USE_COMPATIBILITY_ON_RESTRICTIONS_ITEMS.get()) {
 			MineAndSlashAPI.addCompatibleItem("restrictions:glassboots",
-					new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true));
+					new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		}
 		if (ModList.get().isLoaded("simpledivegear")
 				&& Config.INSTANCE.USE_COMPATIBILITY_ON_SIMPLEDIVEGEAR_ITEMS.get()) {
@@ -133,7 +138,7 @@ public class AzureCompat {
 		}
 		if (ModList.get().isLoaded("longfallboots") && Config.INSTANCE.USE_COMPATIBILITY_ON_LONGFALLBOOTS_ITEMS.get()) {
 			MineAndSlashAPI.addCompatibleItem("longfallboots:longfallboots",
-					new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true));
+					new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		}
 		if (ModList.get().isLoaded("solargeneration")
 				&& Config.INSTANCE.USE_COMPATIBILITY_ON_SOLARGENERATION_ITEMS.get()) {
@@ -288,11 +293,11 @@ public class AzureCompat {
 		}
 		if (ModList.get().isLoaded("vanillatweaks") && Config.INSTANCE.USE_COMPATIBILITY_ON_VANILLATWEAKS_ITEMS.get()) {
 			MineAndSlashAPI.addCompatibleItem("vanillatweaks:binoculars",
-					new ConfigItem().setType(ClothHelmet.INSTANCE).setSalvagable(true));
+					new ConfigItem().setType(ClothHelmet.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		}
 		if (ModList.get().isLoaded("skltlamp") && Config.INSTANCE.USE_COMPATIBILITY_ON_SKELETONLAMPS_ITEMS.get()) {
 			MineAndSlashAPI.addCompatibleItem("skltlamp:bambooknife",
-					new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+					new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		}
 		if (ModList.get().isLoaded("powder_power") && Config.INSTANCE.USE_COMPATIBILITY_ON_POWDERPOWER_ITEMS.get()) {
 			MinecraftForge.EVENT_BUS.register(new PowderPowerCompat());
@@ -302,6 +307,22 @@ public class AzureCompat {
 		}
 		if (ModList.get().isLoaded("projecte") && Config.INSTANCE.USE_COMPATIBILITY_ON_PROJECTE_ITEMS.get()) {
 			MinecraftForge.EVENT_BUS.register(new ProjectECompat());
+		}
+		if (ModList.get().isLoaded("modernity") && Config.INSTANCE.USE_COMPATIBILITY_ON_MODERNITY_ITEMS.get()) {
+			MinecraftForge.EVENT_BUS.register(new ModernityCompat());
+		}
+		if (ModList.get().isLoaded("extraenrichments") && Config.INSTANCE.USE_COMPATIBILITY_ON_EXTRAENRICHMENTS_ITEMS.get()) {
+			MinecraftForge.EVENT_BUS.register(new ExtraEnrichmentsCompat());
+		}
+		if (ModList.get().isLoaded("musketmod") && Config.INSTANCE.USE_COMPATIBILITY_ON_MUSKETMOD_ITEMS.get()) {
+			MineAndSlashAPI.addCompatibleItem("musketmod:musket",
+					new ConfigItem().setType(Bow.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+		}
+		if (ModList.get().isLoaded("gm") && Config.INSTANCE.USE_COMPATIBILITY_ON_GAMISMOD_ITEMS.get()) {
+			MinecraftForge.EVENT_BUS.register(new GamiModCompat());
+		}
+		if (ModList.get().isLoaded("botania") && Config.INSTANCE.USE_COMPATIBILITY_ON_BOTANIA_ITEMS.get()) {
+			MinecraftForge.EVENT_BUS.register(new BotaniaCompat());
 		}
 	}
 }

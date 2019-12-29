@@ -7,6 +7,6 @@ import com.robertx22.mine_and_slash.database.gearitemslots.weapons.Sword;
 public class EssentialFeaturesCompat {
 
 	public EssentialFeaturesCompat() {
-		MineAndSlashAPI.addCompatibleItem("essentialfeatures:redstone_rod_sword", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem("essentialfeatures:redstone_rod_sword", new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 	}
 }

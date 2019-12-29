@@ -11,20 +11,20 @@ public class UnderwaterBiomeCompat {
 
 	public UnderwaterBiomeCompat() {
 		MineAndSlashAPI.addCompatibleItem(MODID + "wooden_knife",
-				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(MODID + "stone_knife",
-				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(MODID + "iron_knife",
-				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(MODID + "golden_knife",
-				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(MODID + "diamond_knife",
-				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(MODID + "water_sword",
-				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(MODID + "lava_sword",
-				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(MODID + "lava_bow",
-				new ConfigItem().setType(Bow.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(Bow.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 	}
 }

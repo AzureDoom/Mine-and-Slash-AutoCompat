@@ -87,9 +87,39 @@ public class Config {
 	public BooleanValue USE_COMPATIBILITY_ON_POWDERPOWER_ITEMS;
 	public BooleanValue USE_COMPATIBILITY_ON_LYCANITESMOBS_ITEMS;
 	public BooleanValue USE_COMPATIBILITY_ON_PROJECTE_ITEMS;
+	public BooleanValue USE_COMPATIBILITY_ON_MUSKETMOD_ITEMS;
+	public BooleanValue USE_COMPATIBILITY_ON_EXTRAENRICHMENTS_ITEMS;
+	public BooleanValue USE_COMPATIBILITY_ON_MODERNITY_ITEMS;
+	public BooleanValue USE_COMPATIBILITY_ON_GAMISMOD_ITEMS;
+	public BooleanValue USE_COMPATIBILITY_ON_BOTANIA_ITEMS;
 
 	Config(ForgeConfigSpec.Builder builder) {
 		builder.comment("Client Settings").push(NAME);
+
+		USE_COMPATIBILITY_ON_BOTANIA_ITEMS = builder.comment(
+				"Turns on Auto Compatibility for Botania to get Mine and Slash stats. Turn off to configure yourself")
+				.translation("azurecompat.config.use_compatibility_on_botania_items")
+				.define("USE_COMPATIBILITY_ON_BOTANIA_ITEMS", true);
+
+		USE_COMPATIBILITY_ON_GAMISMOD_ITEMS = builder.comment(
+				"Turns on Auto Compatibility for Gami's Mod to get Mine and Slash stats. Turn off to configure yourself")
+				.translation("azurecompat.config.use_compatibility_on_gamismod_items")
+				.define("USE_COMPATIBILITY_ON_GAMISMOD_ITEMS", true);
+
+		USE_COMPATIBILITY_ON_MUSKETMOD_ITEMS = builder.comment(
+				"Turns on Auto Compatibility for Musket Mod to get Mine and Slash stats. Turn off to configure yourself")
+				.translation("azurecompat.config.use_compatibility_on_musketmod_items")
+				.define("USE_COMPATIBILITY_ON_MUSKETMOD_ITEMS", true);
+
+		USE_COMPATIBILITY_ON_EXTRAENRICHMENTS_ITEMS = builder.comment(
+				"Turns on Auto Compatibility for Extra Enrichments to get Mine and Slash stats. Turn off to configure yourself")
+				.translation("azurecompat.config.use_compatibility_on_extraenrichments_items")
+				.define("USE_COMPATIBILITY_ON_EXTRAENRICHMENTS_ITEMS", true);
+
+		USE_COMPATIBILITY_ON_MODERNITY_ITEMS = builder.comment(
+				"Turns on Auto Compatibility for Modernity to get Mine and Slash stats. Turn off to configure yourself")
+				.translation("azurecompat.config.use_compatibility_on_modernity_items")
+				.define("USE_COMPATIBILITY_ON_MODERNITY_ITEMS", true);
 
 		USE_COMPATIBILITY_ON_PROJECTE_ITEMS = builder.comment(
 				"Turns on Auto Compatibility for Project E to get Mine and Slash stats. Turn off to configure yourself")

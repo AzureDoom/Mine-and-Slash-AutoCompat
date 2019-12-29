@@ -11,14 +11,14 @@ public class LycanitesMobsCompat {
 
 	public LycanitesMobsCompat() {
 		MineAndSlashAPI.addCompatibleItem(MODID + "sturdysummoningstaff",
-				new ConfigItem().setType(Staff.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(Staff.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(MODID + "stablesummoningstaff",
-				new ConfigItem().setType(Staff.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(Staff.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(MODID + "savagesummoningstaff",
-				new ConfigItem().setType(Staff.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(Staff.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(MODID + "bloodsummoningstaff",
-				new ConfigItem().setType(Staff.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(Staff.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(MODID + "quillcharge",
-				new ConfigItem().setType(Bow.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(Bow.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 	}
 }

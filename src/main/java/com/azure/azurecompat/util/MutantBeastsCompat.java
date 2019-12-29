@@ -16,18 +16,18 @@ public class MutantBeastsCompat {
 
 	public MutantBeastsCompat() {
 		MineAndSlashAPI.addCompatibleItem(MODID + "hulk_hammer",
-				new ConfigItem().setType(Hammer.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(Hammer.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(MODID + "creeper_shard",
-				new ConfigItem().setType(Bow.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(Bow.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(MODID + "endersoul_hand",
-				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(MODID + "mutant_skeleton_skull",
-				new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(MODID + "mutant_skeleton_chestplate",
-				new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(MODID + "mutant_skeleton_leggings",
-				new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(MODID + "mutant_skeleton_boots",
-				new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 	}
 }

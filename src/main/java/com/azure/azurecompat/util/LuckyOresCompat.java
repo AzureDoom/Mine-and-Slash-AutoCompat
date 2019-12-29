@@ -8,6 +8,6 @@ public class LuckyOresCompat {
 
 	public LuckyOresCompat() {
 		MineAndSlashAPI.addCompatibleItem("luckyores:hatesword",
-				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 	}
 }

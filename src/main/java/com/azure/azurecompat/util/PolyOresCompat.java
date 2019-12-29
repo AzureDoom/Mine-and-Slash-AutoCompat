@@ -10,25 +10,37 @@ public class PolyOresCompat {
 	public String MODID = "polyores:";
 
 	public PolyOresCompat() {
+		MineAndSlashAPI.addCompatibleItem(MODID + "holy_sword",
+				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "holy_largesword",
+				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "obscure_sword",
+				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "obscure_largesword",
+				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "forbidden_sword",
+				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "forbidden_dagger",
+				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(MODID + "frosted_sword",
-				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(MODID + "toxic_sword",
-				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(MODID + "levite_sword",
-				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(MODID + "levite_largesword",
-				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(MODID + "blazing_sword",
-				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(MODID + "frosted_largesword",
-				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(MODID + "toxic_largesword",
-				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(MODID + "blazing_largesword",
-				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(MODID + "gravite_hammer",
-				new ConfigItem().setType(Hammer.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(Hammer.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(MODID + "gravite_largehammer",
-				new ConfigItem().setType(Hammer.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(Hammer.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 	}
 }

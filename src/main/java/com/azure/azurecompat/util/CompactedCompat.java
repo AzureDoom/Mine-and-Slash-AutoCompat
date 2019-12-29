@@ -8,10 +8,10 @@ public class CompactedCompat {
 
 	public CompactedCompat() {
 
-		MineAndSlashAPI.addCompatibleItem("compacted:stone_hammer", new ConfigItem().setType(Hammer.INSTANCE).setSalvagable(true));
-		MineAndSlashAPI.addCompatibleItem("compacted:compacted_hammer", new ConfigItem().setType(Hammer.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem("compacted:stone_hammer", new ConfigItem().setType(Hammer.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem("compacted:compacted_hammer", new ConfigItem().setType(Hammer.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem("compacted:double_compacted_hammer",
-				new ConfigItem().setType(Hammer.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(Hammer.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 	}
 
 }

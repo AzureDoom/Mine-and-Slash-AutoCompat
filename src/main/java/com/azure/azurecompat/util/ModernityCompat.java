@@ -8,31 +8,22 @@ import com.robertx22.mine_and_slash.database.gearitemslots.plate.PlateHelmet;
 import com.robertx22.mine_and_slash.database.gearitemslots.plate.PlatePants;
 import com.robertx22.mine_and_slash.database.gearitemslots.weapons.Sword;
 
-public class WyrmroostCompat {
+public class ModernityCompat {
 
-	public String MODID = "wyrmroost:";
-
-	public WyrmroostCompat() {
-		MineAndSlashAPI.addCompatibleItem(MODID + "geode_sword",
+	public String MODID = "modernity:";
+	
+	public ModernityCompat() {
+		MineAndSlashAPI.addCompatibleItem(MODID + "aluminium_sword",
 				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
-		MineAndSlashAPI.addCompatibleItem(MODID + "geode_helmet",
-				new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
-		MineAndSlashAPI.addCompatibleItem(MODID + "geode_chestplate",
-				new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
-		MineAndSlashAPI.addCompatibleItem(MODID + "geode_leggings",
-				new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
-		MineAndSlashAPI.addCompatibleItem(MODID + "geode_boots",
-				new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
-		MineAndSlashAPI.addCompatibleItem(MODID + "platinum_sword",
+		MineAndSlashAPI.addCompatibleItem(MODID + "blackwood_sword",
 				new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
-		MineAndSlashAPI.addCompatibleItem(MODID + "platinum_helmet",
+		MineAndSlashAPI.addCompatibleItem(MODID + "aluminium_helmet",
 				new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
-		MineAndSlashAPI.addCompatibleItem(MODID + "platinum_chestplate",
+		MineAndSlashAPI.addCompatibleItem(MODID + "aluminium_chestplate",
 				new ConfigItem().setType(PlateChest.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
-		MineAndSlashAPI.addCompatibleItem(MODID + "platinum_leggings",
+		MineAndSlashAPI.addCompatibleItem(MODID + "aluminium_leggings",
 				new ConfigItem().setType(PlatePants.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
-		MineAndSlashAPI.addCompatibleItem(MODID + "platinum_boots",
+		MineAndSlashAPI.addCompatibleItem(MODID + "aluminium_boots",
 				new ConfigItem().setType(PlateBoots.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 	}
-
 }

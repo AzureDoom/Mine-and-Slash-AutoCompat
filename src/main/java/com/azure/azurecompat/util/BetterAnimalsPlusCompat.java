@@ -11,19 +11,19 @@ public class BetterAnimalsPlusCompat {
 	public BetterAnimalsPlusCompat() {
 
 		MineAndSlashAPI.addCompatibleItem(MODID + "bear_cape_brown",
-				new ConfigItem().setType(LeatherChest.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(LeatherChest.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(MODID + "bear_cape_black",
-				new ConfigItem().setType(LeatherChest.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(LeatherChest.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(MODID + "bear_cape_kermode",
-				new ConfigItem().setType(LeatherChest.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(LeatherChest.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(MODID + "hirschgeistskullwearable",
-				new ConfigItem().setType(LeatherChest.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(LeatherChest.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(MODID + "wolf_cape_classic",
-				new ConfigItem().setType(LeatherChest.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(LeatherChest.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(MODID + "wolf_cape_timber",
-				new ConfigItem().setType(LeatherChest.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(LeatherChest.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(MODID + "wolf_cape_black",
-				new ConfigItem().setType(LeatherChest.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(LeatherChest.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 	}
 
 }

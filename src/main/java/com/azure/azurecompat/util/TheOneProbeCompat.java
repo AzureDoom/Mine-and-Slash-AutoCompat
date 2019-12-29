@@ -9,11 +9,11 @@ public class TheOneProbeCompat {
 	public TheOneProbeCompat() {
 
 		MineAndSlashAPI.addCompatibleItem("theoneprobe:iron_helmet_probe",
-				new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem("theoneprobe:gold_helmet_probe",
-				new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem("theoneprobe:diamond_helmet_probe",
-				new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true));
+				new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 	}
 
 }
