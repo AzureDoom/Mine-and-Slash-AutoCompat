@@ -26,6 +26,7 @@ import com.azure.azurecompat.util.ExtraEnrichmentsCompat;
 import com.azure.azurecompat.util.FarlandersCompat;
 import com.azure.azurecompat.util.ForbiddenandArcanusCompat;
 import com.azure.azurecompat.util.FunItemsModCompat;
+import com.azure.azurecompat.util.GaiaDimensioCompat;
 import com.azure.azurecompat.util.GamiModCompat;
 import com.azure.azurecompat.util.GemsPlusPlusCompat;
 import com.azure.azurecompat.util.GobberCompat;
@@ -55,6 +56,7 @@ import com.azure.azurecompat.util.RediscoveredCompat;
 import com.azure.azurecompat.util.SimpleDiveGearCompat;
 import com.azure.azurecompat.util.SolarGenerationCompat;
 import com.azure.azurecompat.util.SpartanShieldsCompat;
+import com.azure.azurecompat.util.StatuesCompat;
 import com.azure.azurecompat.util.SwitchBowCompat;
 import com.azure.azurecompat.util.TetraCompat;
 import com.azure.azurecompat.util.TheOneProbeCompat;
@@ -62,6 +64,7 @@ import com.azure.azurecompat.util.TofuCraftCompat;
 import com.azure.azurecompat.util.UnderwaterBiomeCompat;
 import com.azure.azurecompat.util.UnstabletoolsCompat;
 import com.azure.azurecompat.util.UselessSwordCompat;
+import com.azure.azurecompat.util.VampirismCompat;
 import com.azure.azurecompat.util.VanillaCompat;
 import com.azure.azurecompat.util.WitherSkeletonTweaksCompact;
 import com.azure.azurecompat.util.WyrmroostCompat;
@@ -311,7 +314,8 @@ public class AzureCompat {
 		if (ModList.get().isLoaded("modernity") && Config.INSTANCE.USE_COMPATIBILITY_ON_MODERNITY_ITEMS.get()) {
 			MinecraftForge.EVENT_BUS.register(new ModernityCompat());
 		}
-		if (ModList.get().isLoaded("extraenrichments") && Config.INSTANCE.USE_COMPATIBILITY_ON_EXTRAENRICHMENTS_ITEMS.get()) {
+		if (ModList.get().isLoaded("extraenrichments")
+				&& Config.INSTANCE.USE_COMPATIBILITY_ON_EXTRAENRICHMENTS_ITEMS.get()) {
 			MinecraftForge.EVENT_BUS.register(new ExtraEnrichmentsCompat());
 		}
 		if (ModList.get().isLoaded("musketmod") && Config.INSTANCE.USE_COMPATIBILITY_ON_MUSKETMOD_ITEMS.get()) {
@@ -323,6 +327,15 @@ public class AzureCompat {
 		}
 		if (ModList.get().isLoaded("botania") && Config.INSTANCE.USE_COMPATIBILITY_ON_BOTANIA_ITEMS.get()) {
 			MinecraftForge.EVENT_BUS.register(new BotaniaCompat());
+		}
+		if (ModList.get().isLoaded("vampirism") && Config.INSTANCE.USE_COMPATIBILITY_ON_BOTANIA_ITEMS.get()) {
+			MinecraftForge.EVENT_BUS.register(new VampirismCompat());
+		}
+		if (ModList.get().isLoaded("statues") && Config.INSTANCE.USE_COMPATIBILITY_ON_STATUES_ITEMS.get()) {
+			MinecraftForge.EVENT_BUS.register(new StatuesCompat());
+		}
+		if (ModList.get().isLoaded("gaiadimension") && Config.INSTANCE.USE_COMPATIBILITY_ON_GAIADIMENSION_ITEMS.get()) {
+			MinecraftForge.EVENT_BUS.register(new GaiaDimensioCompat());
 		}
 	}
 }

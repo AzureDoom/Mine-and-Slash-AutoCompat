@@ -92,9 +92,27 @@ public class Config {
 	public BooleanValue USE_COMPATIBILITY_ON_MODERNITY_ITEMS;
 	public BooleanValue USE_COMPATIBILITY_ON_GAMISMOD_ITEMS;
 	public BooleanValue USE_COMPATIBILITY_ON_BOTANIA_ITEMS;
+	public BooleanValue USE_COMPATIBILITY_ON_VAMPIRIS_ITEMS;
+	public BooleanValue USE_COMPATIBILITY_ON_STATUES_ITEMS;
+	public BooleanValue USE_COMPATIBILITY_ON_GAIADIMENSION_ITEMS;
 
 	Config(ForgeConfigSpec.Builder builder) {
 		builder.comment("Client Settings").push(NAME);
+
+		USE_COMPATIBILITY_ON_STATUES_ITEMS = builder.comment(
+				"Turns on Auto Compatibility for Statues to get Mine and Slash stats. Turn off to configure yourself")
+				.translation("azurecompat.config.use_compatibility_on_statues_items")
+				.define("USE_COMPATIBILITY_ON_STATUES_ITEMS", true);
+
+		USE_COMPATIBILITY_ON_GAIADIMENSION_ITEMS = builder.comment(
+				"Turns on Auto Compatibility for Gaia Dimension to get Mine and Slash stats. Turn off to configure yourself")
+				.translation("azurecompat.config.use_compatibility_on_gaiadimension_items")
+				.define("USE_COMPATIBILITY_ON_GAIADIMENSION_ITEMS", true);
+
+		USE_COMPATIBILITY_ON_VAMPIRIS_ITEMS = builder.comment(
+				"Turns on Auto Compatibility for Vampirism to get Mine and Slash stats. Turn off to configure yourself")
+				.translation("azurecompat.config.use_compatibility_on_vampirism_items")
+				.define("USE_COMPATIBILITY_ON_VAMPIRIS_ITEMS", true);
 
 		USE_COMPATIBILITY_ON_BOTANIA_ITEMS = builder.comment(
 				"Turns on Auto Compatibility for Botania to get Mine and Slash stats. Turn off to configure yourself")
