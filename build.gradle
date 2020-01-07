@@ -12,9 +12,9 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '1.4.9'
+version = '1.5.0'
 group = 'com.azure.azurecompat'
-archivesBaseName = 'Mine and Slash Auto Compatibility 1.14.4'
+archivesBaseName = 'MS Auto-Compat-1.14.4'
 
 sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
 
