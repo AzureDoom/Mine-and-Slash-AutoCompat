@@ -122,5 +122,11 @@ public class BotaniaCompat {
 				new ConfigItem().setType(ClothPants.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 		MineAndSlashAPI.addCompatibleItem(MODID + "manaweave_boots",
 				new ConfigItem().setType(ClothBoots.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "manasteel_helmet_revealing",
+				new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "terrasteel_helmet_revealing",
+				new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
+		MineAndSlashAPI.addCompatibleItem(MODID + "elementium_helmet_revealing",
+				new ConfigItem().setType(PlateHelmet.INSTANCE).setSalvagable(true).setdropsAsLoot(false));
 	}
 }
