@@ -26,7 +26,7 @@ import com.azure.azurecompat.util.ExtraEnrichmentsCompat;
 import com.azure.azurecompat.util.FarlandersCompat;
 import com.azure.azurecompat.util.ForbiddenandArcanusCompat;
 import com.azure.azurecompat.util.FunItemsModCompat;
-import com.azure.azurecompat.util.GaiaDimensioCompat;
+import com.azure.azurecompat.util.GaiaDimensionCompat;
 import com.azure.azurecompat.util.GamiModCompat;
 import com.azure.azurecompat.util.GemsPlusPlusCompat;
 import com.azure.azurecompat.util.GobberCompat;
@@ -335,7 +335,7 @@ public class AzureCompat {
 			MinecraftForge.EVENT_BUS.register(new StatuesCompat());
 		}
 		if (ModList.get().isLoaded("gaiadimension") && Config.INSTANCE.USE_COMPATIBILITY_ON_GAIADIMENSION_ITEMS.get()) {
-			MinecraftForge.EVENT_BUS.register(new GaiaDimensioCompat());
+			MinecraftForge.EVENT_BUS.register(new GaiaDimensionCompat());
 		}
 	}
 }
