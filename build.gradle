@@ -15,7 +15,7 @@ apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 apply plugin: "com.wynprice.cursemaven"
 
-version = '1.5.0'
+version = '1.5.1'
 group = 'com.azure.azurecompat'
 archivesBaseName = 'MS Auto-Compat-1.14.4'
 
@@ -61,7 +61,7 @@ minecraft {
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.14.4-28.1.87'
+    minecraft 'net.minecraftforge:forge:1.14.4-28.1.113'
     compile fg.deobf("top.theillusivec4.curios:curios:FORGE-1.14.4-1.0.6")
     compile fg.deobf("curse.maven:MaS:2844167")
 }
