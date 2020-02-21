@@ -96,8 +96,8 @@ public class AzureCompat {
 	public AzureCompat() {
 		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::processIMC);
 		instance = this;
-		ModLoadingContext.get().registerConfig(ModConfig.Type.SERVER, Config.spec, "m&s-autocompat-config.toml");
-		Config.loadConfig(Config.spec, FMLPaths.CONFIGDIR.get().resolve("m&s-autocompat-config.toml").toString());
+		ModLoadingContext.get().registerConfig(ModConfig.Type.SERVER, Config.spec, "ms-autocompat-config.toml");
+		Config.loadConfig(Config.spec, FMLPaths.CONFIGDIR.get().resolve("ms-autocompat-config.toml").toString());
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

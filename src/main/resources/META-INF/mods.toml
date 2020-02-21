@@ -1,5 +1,5 @@
 modLoader="javafml" 
-loaderVersion="[30,)"
+loaderVersion="[31,)"
 issueTrackerURL="https://github.com/AzureZhen/Mine-and-Slash-AutoCompat/issues" 
 [[mods]] 
 modId="azurecompat" 
@@ -10,3 +10,9 @@ description='''
 This mods adds autocompat for linking various mods to Mine and Slash systems.
 '''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
+[[dependencies.azurecompat]]
+    modId="mmorpg" 
+    mandatory=true
+    versionRange="[1,)" 
+    ordering="NONE"
+    side="BOTH"
