@@ -95,6 +95,8 @@ public class Config {
 	public BooleanValue USE_COMPATIBILITY_ON_VAMPIRIS_ITEMS;
 	public BooleanValue USE_COMPATIBILITY_ON_STATUES_ITEMS;
 	public BooleanValue USE_COMPATIBILITY_ON_GAIADIMENSION_ITEMS;
+	public BooleanValue USE_COMPATIBILITY_ON_POMARFDIMENSIONORES_ITEMS;
+	public BooleanValue USE_COMPATIBILITY_ON_BLUESKIES_ITEMS;
 
 	Config(ForgeConfigSpec.Builder builder) {
 		builder.comment("Client Settings").push(NAME);
@@ -103,6 +105,16 @@ public class Config {
 				"Turns on Auto Compatibility for Statues to get Mine and Slash stats. Turn off to configure yourself")
 				.translation("azurecompat.config.use_compatibility_on_statues_items")
 				.define("USE_COMPATIBILITY_ON_STATUES_ITEMS", true);
+
+		USE_COMPATIBILITY_ON_BLUESKIES_ITEMS = builder.comment(
+				"Turns on Auto Compatibility for Blue Skies to get Mine and Slash stats. Turn off to configure yourself")
+				.translation("azurecompat.config.use_compatibility_on_blueskies_items")
+				.define("USE_COMPATIBILITY_ON_BLUESKIES_ITEMS", true);
+
+		USE_COMPATIBILITY_ON_POMARFDIMENSIONORES_ITEMS = builder.comment(
+				"Turns on Auto Compatibility for Pomarfs Dimension Ores to get Mine and Slash stats. Turn off to configure yourself")
+				.translation("azurecompat.config.use_compatibility_on_pomarfdimensionores_items")
+				.define("USE_COMPATIBILITY_ON_POMARFDIMENSIONORES_ITEMS", true);
 
 		USE_COMPATIBILITY_ON_GAIADIMENSION_ITEMS = builder.comment(
 				"Turns on Auto Compatibility for Gaia Dimension to get Mine and Slash stats. Turn off to configure yourself")

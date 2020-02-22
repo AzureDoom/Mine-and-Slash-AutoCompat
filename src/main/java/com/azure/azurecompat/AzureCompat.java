@@ -8,6 +8,7 @@ import com.azure.azurecompat.util.AlikeToolsCompact;
 import com.azure.azurecompat.util.AquacultureCompat;
 import com.azure.azurecompat.util.BetterAnimalsPlusCompat;
 import com.azure.azurecompat.util.BluePowerCompat;
+import com.azure.azurecompat.util.BlueSkiesCompat;
 import com.azure.azurecompat.util.BotaniaCompat;
 import com.azure.azurecompat.util.BountifulBaublesCompact;
 import com.azure.azurecompat.util.CloudBootsCompat;
@@ -48,6 +49,7 @@ import com.azure.azurecompat.util.PattysMoreStuffCompat;
 import com.azure.azurecompat.util.PattysMoreToolsCompat;
 import com.azure.azurecompat.util.PlantTech2Compat;
 import com.azure.azurecompat.util.PolyOresCompat;
+import com.azure.azurecompat.util.PomarfDimOresCompat;
 import com.azure.azurecompat.util.PowderPowerCompat;
 import com.azure.azurecompat.util.ProjectECompat;
 import com.azure.azurecompat.util.QuarkCompat;
@@ -336,6 +338,12 @@ public class AzureCompat {
 		}
 		if (ModList.get().isLoaded("gaiadimension") && Config.INSTANCE.USE_COMPATIBILITY_ON_GAIADIMENSION_ITEMS.get()) {
 			MinecraftForge.EVENT_BUS.register(new GaiaDimensionCompat());
+		}
+		if (ModList.get().isLoaded("dimensionalores") && Config.INSTANCE.USE_COMPATIBILITY_ON_POMARFDIMENSIONORES_ITEMS.get()) {
+			MinecraftForge.EVENT_BUS.register(new PomarfDimOresCompat());
+		}
+		if (ModList.get().isLoaded("blue_skies") && Config.INSTANCE.USE_COMPATIBILITY_ON_BLUESKIES_ITEMS.get()) {
+			MinecraftForge.EVENT_BUS.register(new BlueSkiesCompat());
 		}
 	}
 }
