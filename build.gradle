@@ -15,7 +15,7 @@ apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 apply plugin: "com.wynprice.cursemaven"
 
-version = '1.0.0'
+version = '1.0.1'
 group = 'com.azure.azurecompat'
 archivesBaseName = 'MS Auto-Compat-1.15.2'
 
