@@ -11,4 +11,5 @@ public class AzureCompat {
 	public AzureCompat() {
 		instance = this;
 	}
+
 }
